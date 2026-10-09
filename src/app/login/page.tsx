@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Flame, Loader2, MailCheck } from "lucide-react";
+import { Loader2, MailCheck } from "lucide-react";
+import { ChiliLogo } from "@/components/chili-logo";
 import { createClient } from "@/lib/supabase";
 
 export default function LoginPage() {
@@ -39,7 +40,7 @@ export default function LoginPage() {
             className="w-8 h-8 rounded-xl flex items-center justify-center text-white"
             style={{ background: "var(--color-terracotta)" }}
           >
-            <Flame size={18} strokeWidth={2.5} />
+            <ChiliLogo size={18} />
           </span>
           <span className="font-bold text-lg tracking-tight">LocalBoost</span>
         </Link>

@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Flame, MapPin, Phone, Plus, Minus, ShoppingBag, Check, Loader2, ArrowLeft } from "lucide-react";
+import { MapPin, Phone, Plus, Minus, ShoppingBag, Check, Loader2, ArrowLeft } from "lucide-react";
+import { ChiliLogo } from "@/components/chili-logo";
 import { formatCents } from "@/lib/slug";
 
 interface Business {
@@ -108,7 +109,7 @@ export default function OrderSite({
             className="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center text-white"
             style={{ background: "var(--color-terracotta)" }}
           >
-            <Flame size={28} strokeWidth={2.25} />
+            <ChiliLogo size={28} />
           </div>
           <h1 className="text-[32px] font-bold tracking-tight">{business.name}</h1>
           <div className="mt-2 space-y-1">

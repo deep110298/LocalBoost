@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { ChiliLogo } from "@/components/chili-logo";
 import {
-  Flame,
   Inbox,
   PenLine,
   Eye,
@@ -78,7 +78,7 @@ export default function LandingPage() {
               className="w-8 h-8 rounded-xl flex items-center justify-center text-white"
               style={{ background: "var(--color-terracotta)" }}
             >
-              <Flame size={18} strokeWidth={2.5} />
+              <ChiliLogo size={18} />
             </span>
             <span className="font-bold text-lg tracking-tight">LocalBoost</span>
           </span>
@@ -231,7 +231,7 @@ export default function LandingPage() {
               className="w-7 h-7 rounded-lg flex items-center justify-center text-white"
               style={{ background: "var(--color-terracotta)" }}
             >
-              <Flame size={15} strokeWidth={2.5} />
+              <ChiliLogo size={15} />
             </span>
             <span className="font-bold tracking-tight">LocalBoost</span>
           </span>

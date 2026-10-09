@@ -8,8 +8,8 @@ import {
   Inbox,
   UtensilsCrossed,
   Settings,
-  Flame,
 } from "lucide-react";
+import { ChiliLogo } from "@/components/chili-logo";
 
 const tabs = [
   { href: "/dashboard", label: "Home", icon: LayoutDashboard, exact: true },
@@ -35,7 +35,7 @@ export default function DashboardLayout({
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/dashboard" className="flex items-center gap-2">
             <span className="w-8 h-8 rounded-xl flex items-center justify-center text-white" style={{ background: "var(--color-terracotta)" }}>
-              <Flame size={18} strokeWidth={2.5} />
+              <ChiliLogo size={18} />
             </span>
             <span className="font-bold text-lg tracking-tight">LocalBoost</span>
           </Link>
@@ -62,7 +62,7 @@ export default function DashboardLayout({
       <header className="md:hidden bg-white/90 backdrop-blur border-b border-stone-200/60 sticky top-0 z-40">
         <div className="px-5 py-3.5 flex items-center gap-2">
           <span className="w-7 h-7 rounded-lg flex items-center justify-center text-white" style={{ background: "var(--color-terracotta)" }}>
-            <Flame size={16} strokeWidth={2.5} />
+            <ChiliLogo size={16} />
           </span>
           <span className="font-bold text-[17px] tracking-tight">LocalBoost</span>
         </div>
