@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LocalBoost App — Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif; background: #faf8f5; color: #1c1917; -webkit-font-smoothing: antialiased; display: flex; justify-content: center; }
+  .phone { width: 390px; min-height: 844px; background: #faf8f5; position: relative; border-left: 1px solid rgba(0,0,0,.06); border-right: 1px solid rgba(0,0,0,.06); }
+  .topbar { position: sticky; top: 0; background: rgba(255,255,255,.92); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,.06); padding: 14px 20px; display: flex; align-items: center; gap: 8px; z-index: 10; }
+  .logo { width: 28px; height: 28px; border-radius: 8px; background: #c2410c; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px; }
+  .brand { font-weight: 700; font-size: 17px; letter-spacing: -.3px; }
+  .content { padding: 24px 20px 110px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -.7px; margin-bottom: 4px; }
+  .sub { font-size: 15px; color: #78716c; margin-bottom: 20px; }
+  .card { background: #fff; border-radius: 16px; border: 1px solid rgba(28,25,23,.06); box-shadow: 0 1px 3px rgba(28,25,23,.06); padding: 20px; margin-bottom: 12px; }
+  .score-row { display: flex; justify-content: space-between; align-items: center; }
+  .eyebrow { font-size: 12px; font-weight: 600; color: #a8a29e; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+  .score { font-size: 44px; font-weight: 700; letter-spacing: -1.5px; line-height: 1; }
+  .score-note { font-size: 14px; color: #78716c; margin-top: 8px; max-width: 200px; line-height: 1.45; }
+  .score-icon { width: 84px; height: 84px; border-radius: 50%; background: rgba(194,65,12,.08); display: flex; align-items: center; justify-content: center; font-size: 34px; color: #c2410c; flex-shrink: 0; }
+  .btn { display: flex; align-items: center; justify-content: center; min-height: 52px; background: #c2410c; color: #fff; font-weight: 600; font-size: 16px; border-radius: 14px; text-decoration: none; margin-top: 18px; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 24px; }
+  .stat { padding: 16px; }
+  .stat .ic { font-size: 20px; margin-bottom: 8px; color: #a8a29e; }
+  .stat .v { font-size: 22px; font-weight: 700; letter-spacing: -.5px; }
+  .stat .l { font-size: 13px; color: #78716c; }
+  .sec-t { font-size: 17px; font-weight: 600; margin-bottom: 12px; }
+  .step { display: flex; align-items: center; gap: 14px; padding: 14px 16px; }
+  .step + .step { border-top: 1px solid rgba(0,0,0,.05); }
+  .num { width: 32px; height: 32px; border-radius: 50%; background: #c2410c; color: #fff; font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step b { display: block; font-size: 16px; font-weight: 500; }
+  .step span span { display: block; font-size: 14px; color: #78716c; }
+  .chev { color: #d6d3d1; font-size: 20px; margin-left: auto; }
+  .tabbar { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,.94); backdrop-filter: blur(20px); border-top: 1px solid rgba(0,0,0,.07); display: flex; justify-content: space-around; padding: 8px 0 22px; }
+  .tab { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; font-weight: 500; color: #a8a29e; min-width: 60px; }
+  .tab.on { color: #c2410c; }
+  .tab .ti { font-size: 23px; }
+  .label { text-align: center; font-size: 13px; color: #a8a29e; padding: 12px; }
+</style>
+</head>
+<body>
+<div>
+<p class="label">↓ App home screen (iPhone width, bottom tab bar) ↓</p>
+<div class="phone">
+  <div class="topbar"><span class="logo">L</span><span class="brand">LocalBoost</span></div>
+  <div class="content">
+    <h1>Good afternoon</h1>
+    <p class="sub">Here's how your business looks online today.</p>
+    <div class="card">
+      <div class="score-row">
+        <div>
+          <div class="eyebrow">Visibility score</div>
+          <div class="score">—</div>
+          <p class="score-note">Connect Google to see your score and what's holding it back.</p>
+        </div>
+        <div class="score-icon">✦</div>
+      </div>
+      <a class="btn" href="#">Connect Google Business</a>
+    </div>
+    <div class="stats">
+      <div class="card stat"><div class="ic">✉</div><div class="v">—</div><div class="l">Reviews waiting</div></div>
+      <div class="card stat"><div class="ic">★</div><div class="v">—</div><div class="l">Avg. rating</div></div>
+      <div class="card stat"><div class="ic">▤</div><div class="v">—</div><div class="l">Posts this month</div></div>
+      <div class="card stat"><div class="ic">↗</div><div class="v">—</div><div class="l">Views trend</div></div>
+    </div>
+    <div class="sec-t">Get set up</div>
+    <div class="card" style="padding:0">
+      <div class="step"><span class="num">1</span><span><b>Connect Google Business</b><span>Sync reviews and post updates</span></span><span class="chev">›</span></div>
+      <div class="step"><span class="num">2</span><span><b>Add competitors to watch</b><span>See how you stack up nearby</span></span><span class="chev">›</span></div>
+      <div class="step"><span class="num">3</span><span><b>Review your first AI reply</b><span>Approve it with one tap</span></span><span class="chev">›</span></div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div class="tab on"><span class="ti">▦</span>Home</div>
+    <div class="tab"><span class="ti">✉</span>Reviews</div>
+    <div class="tab"><span class="ti">✎</span>Posts</div>
+    <div class="tab"><span class="ti">◉</span>Watch</div>
+    <div class="tab"><span class="ti">⚙</span>Settings</div>
+  </div>
+</div>
+</div>
+</body>
+</html>
