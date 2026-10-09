@@ -30,6 +30,31 @@ npm run dev
 ```
 Open http://localhost:3000
 
+## Production deploy (Vercel)
+
+The local VM can't run `next build` (Turbopack bus-errors in this constrained
+environment — not a code problem). Production builds run on Vercel instead.
+
+### One-time setup (you)
+1. **Supabase anon key**: Supabase dashboard → Project Settings → API → copy the
+   "anon public" key into `.env.local` (replacing `PASTE_ANON_KEY_HERE`). The app
+   cannot talk to the database without this.
+2. **Vercel token**: vercel.com/account/tokens → create a token, paste it in chat
+   for one-time deploy use (it's used once via CLI and never stored).
+3. **Google Cloud** (for the Google Business integration): follow the
+   "Google Business Profile connection" section above, and add the production
+   redirect URI `https://<your-vercel-url>/api/google/callback` to the OAuth client.
+
+### Deploy (agent runs with your token)
+```bash
+cd ~/workspace/localboost
+npx vercel --token=$TOKEN --yes                    # first deploy
+npx vercel env add NEXT_PUBLIC_SUPABASE_URL production --token=$TOKEN
+npx vercel env add NEXT_PUBLIC_SUPABASE_ANON_KEY production --token=$TOKEN
+npx vercel env add NEXT_PUBLIC_APP_URL production --token=$TOKEN   # the vercel.app URL
+npx vercel --prod --token=$TOKEN                    # redeploy with env
+```
+
 ## What's next (Phase 2)
 
 - [x] Google OAuth → Google Business Profile API connection (built 2026-10-09)
