@@ -104,7 +104,7 @@ export default function OrdersPage() {
             {activeCount > 0 && (
               <span
                 className="text-[14px] font-bold text-white rounded-full px-2.5 py-0.5"
-                style={{ background: "var(--color-terracotta)" }}
+                style={{ background: "var(--color-chili)" }}
               >
                 {activeCount}
               </span>
@@ -132,7 +132,7 @@ export default function OrdersPage() {
             className={`min-h-[44px] px-5 rounded-full text-[15px] font-medium ${
               showAll === t.all ? "text-white" : "bg-white border border-stone-200 text-stone-600"
             }`}
-            style={showAll === t.all ? { background: "var(--color-terracotta)" } : undefined}
+            style={showAll === t.all ? { background: "var(--color-chili)" } : undefined}
           >
             {t.label}
           </button>
@@ -143,8 +143,8 @@ export default function OrdersPage() {
         <div className="flex justify-center py-16"><Loader2 size={28} className="animate-spin text-stone-400" /></div>
       ) : visible.length === 0 ? (
         <div className="card p-10 text-center">
-          <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: "rgba(194,65,12,0.08)" }}>
-            <ReceiptText size={28} style={{ color: "var(--color-terracotta)" }} strokeWidth={1.75} />
+          <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: "rgba(217,45,32,0.08)" }}>
+            <ReceiptText size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
           </div>
           <h2 className="text-[18px] font-semibold mb-2">No orders yet</h2>
           <p className="text-[15px] text-stone-500 max-w-[280px] mx-auto leading-relaxed">

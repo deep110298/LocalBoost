@@ -113,13 +113,13 @@ export default function LandingPage() {
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[14px] font-medium mb-7"
             style={{
-              background: "rgba(194,65,12,0.08)",
-              color: "var(--color-terracotta)",
+              background: "rgba(217,45,32,0.08)",
+              color: "var(--color-chili)",
             }}
           >
             <span
               className="w-2 h-2 rounded-full animate-pulse-dot"
-              style={{ background: "var(--color-terracotta)" }}
+              style={{ background: "var(--color-chili)" }}
             />
             Free during beta — no credit card
           </div>
@@ -131,7 +131,7 @@ export default function LandingPage() {
             online presence,{" "}
             <em
               className="font-display italic font-medium"
-              style={{ color: "var(--color-terracotta)" }}
+              style={{ color: "var(--color-chili)" }}
             >
               handled.
             </em>
@@ -147,7 +147,7 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
             <Link
               href="/login"
-              className="btn-primary !min-h-[56px] !px-9 !text-[17px] w-full sm:w-auto shadow-xl shadow-orange-900/20"
+              className="btn-primary !min-h-[56px] !px-9 !text-[17px] w-full sm:w-auto shadow-xl shadow-red-900/20"
             >
               Start free <ArrowRight size={18} className="ml-1.5" />
             </Link>
@@ -181,7 +181,7 @@ export default function LandingPage() {
                 <div className="flex items-center gap-2 mb-2">
                   <span
                     className="w-8 h-8 rounded-xl flex items-center justify-center text-white shrink-0"
-                    style={{ background: "var(--color-terracotta)" }}
+                    style={{ background: "var(--color-chili)" }}
                   >
                     <Bell size={15} />
                   </span>
@@ -190,7 +190,7 @@ export default function LandingPage() {
                     <p className="text-[11px] text-stone-400">just now</p>
                   </div>
                 </div>
-                <div className="flex gap-0.5 mb-1.5" style={{ color: "var(--color-terracotta)" }}>
+                <div className="flex gap-0.5 mb-1.5" style={{ color: "var(--color-chili)" }}>
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
                   ))}
@@ -199,7 +199,7 @@ export default function LandingPage() {
                   “The paneer tikka was unreal. Staff remembered our order!”
                 </p>
                 <div className="flex gap-2">
-                  <span className="flex-1 text-center text-[13px] font-semibold text-white rounded-xl py-2" style={{ background: "var(--color-terracotta)" }}>
+                  <span className="flex-1 text-center text-[13px] font-semibold text-white rounded-xl py-2" style={{ background: "var(--color-chili)" }}>
                     Approve reply
                   </span>
                   <span className="text-[13px] font-semibold rounded-xl py-2 px-3 bg-stone-100 text-stone-600">
@@ -253,7 +253,7 @@ export default function LandingPage() {
                   <span className="font-display italic text-[20px] md:text-[24px] text-[#faf8f5] px-6">
                     {item}
                   </span>
-                  <Sparkles size={16} style={{ color: "var(--color-terracotta)" }} className="shrink-0" />
+                  <Sparkles size={16} style={{ color: "var(--color-chili)" }} className="shrink-0" />
                 </span>
               ))}
             </div>
@@ -271,7 +271,7 @@ export default function LandingPage() {
         <div className="grid md:grid-cols-3 gap-10 md:gap-6 text-center">
           {stats.map((s, i) => (
             <Reveal key={s.value} delay={i * 100}>
-              <div className="font-display font-semibold text-[56px] md:text-[72px] leading-none mb-3" style={{ color: "var(--color-terracotta)" }}>
+              <div className="font-display font-semibold text-[56px] md:text-[72px] leading-none mb-3" style={{ color: "var(--color-chili)" }}>
                 {s.value}
               </div>
               <p className="text-[16px] text-stone-600 leading-relaxed max-w-xs mx-auto mb-2">
@@ -289,7 +289,7 @@ export default function LandingPage() {
           <h2 className="font-display font-semibold tracking-[-0.02em] text-[34px] md:text-[54px] leading-[1.05] text-center mb-4">
             Everything handled.
             <br />
-            <em className="italic font-medium" style={{ color: "var(--color-terracotta)" }}>
+            <em className="italic font-medium" style={{ color: "var(--color-chili)" }}>
               Nothing to learn.
             </em>
           </h2>
@@ -305,9 +305,9 @@ export default function LandingPage() {
             <div className="card p-6 md:p-8 h-full flex flex-col">
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5"
-                style={{ background: "rgba(194,65,12,0.08)" }}
+                style={{ background: "rgba(217,45,32,0.08)" }}
               >
-                <Inbox size={24} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+                <Inbox size={24} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
               </div>
               <h3 className="font-display font-semibold text-[26px] md:text-[30px] tracking-tight mb-2">
                 One inbox for every review
@@ -321,7 +321,7 @@ export default function LandingPage() {
                   <span className="text-[15px] font-semibold">Aarav M.</span>
                   <span className="flex items-center gap-1 text-[13px] text-stone-400">
                     Google ·
-                    <span className="flex gap-px" style={{ color: "var(--color-terracotta)" }}>
+                    <span className="flex gap-px" style={{ color: "var(--color-chili)" }}>
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} size={11} fill="currentColor" strokeWidth={0} />
                       ))}
@@ -332,7 +332,7 @@ export default function LandingPage() {
                   The paneer tikka was unreal. Staff remembered our order from last month!
                 </p>
                 <div className="bg-white rounded-xl p-4 border border-stone-100 mb-4">
-                  <p className="text-[13px] font-semibold mb-1 flex items-center gap-1.5" style={{ color: "var(--color-terracotta)" }}>
+                  <p className="text-[13px] font-semibold mb-1 flex items-center gap-1.5" style={{ color: "var(--color-chili)" }}>
                     <Sparkles size={13} /> AI draft
                   </p>
                   <p className="text-[14px] text-stone-500 leading-relaxed">
@@ -362,7 +362,7 @@ export default function LandingPage() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-2.5 mb-2">
-                  <Globe size={18} style={{ color: "var(--color-terracotta)" }} />
+                  <Globe size={18} style={{ color: "var(--color-chili)" }} />
                   <h3 className="text-[18px] font-semibold tracking-tight">A website that sells</h3>
                 </div>
                 <p className="text-[15px] text-stone-500 leading-relaxed">
@@ -400,9 +400,9 @@ export default function LandingPage() {
             <div className="card p-6 h-full">
               <div
                 className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
-                style={{ background: "rgba(194,65,12,0.08)" }}
+                style={{ background: "rgba(217,45,32,0.08)" }}
               >
-                <CalendarCheck size={22} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+                <CalendarCheck size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
               </div>
               <h3 className="text-[18px] font-semibold tracking-tight mb-1.5">Posts on autopilot</h3>
               <p className="text-[15px] text-stone-500 leading-relaxed">
@@ -416,9 +416,9 @@ export default function LandingPage() {
             <div className="card p-6 h-full">
               <div
                 className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
-                style={{ background: "rgba(194,65,12,0.08)" }}
+                style={{ background: "rgba(217,45,32,0.08)" }}
               >
-                <Eye size={22} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+                <Eye size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
               </div>
               <h3 className="text-[18px] font-semibold tracking-tight mb-1.5">Know your competition</h3>
               <p className="text-[15px] text-stone-500 leading-relaxed mb-4">
@@ -446,7 +446,7 @@ export default function LandingPage() {
               <div
                 className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 bg-white/10"
               >
-                <Gauge size={22} style={{ color: "#fb923c" }} strokeWidth={2} />
+                <Gauge size={22} style={{ color: "#f87171" }} strokeWidth={2} />
               </div>
               <div>
                 <div className="font-display font-semibold text-[64px] leading-none mb-2">
@@ -472,14 +472,14 @@ export default function LandingPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
-                  <Smartphone size={20} style={{ color: "#fb923c" }} />
+                  <Smartphone size={20} style={{ color: "#f87171" }} />
                   <span className="text-[14px] font-semibold uppercase tracking-[0.14em] text-stone-400">
                     Built for the pass
                   </span>
                 </div>
                 <h2 className="font-display font-semibold tracking-[-0.02em] text-[34px] md:text-[48px] leading-[1.05] mb-5">
                   Run it from your phone,{" "}
-                  <em className="italic font-medium" style={{ color: "#fb923c" }}>
+                  <em className="italic font-medium" style={{ color: "#f87171" }}>
                     between services.
                   </em>
                 </h2>
@@ -496,9 +496,9 @@ export default function LandingPage() {
                     <li key={t} className="flex items-center gap-3 text-[16px] text-stone-200">
                       <span
                         className="w-7 h-7 rounded-full flex items-center justify-center shrink-0"
-                        style={{ background: "rgba(194,65,12,0.25)" }}
+                        style={{ background: "rgba(217,45,32,0.25)" }}
                       >
-                        <Check size={15} style={{ color: "#fb923c" }} strokeWidth={3} />
+                        <Check size={15} style={{ color: "#f87171" }} strokeWidth={3} />
                       </span>
                       {t}
                     </li>
@@ -514,7 +514,7 @@ export default function LandingPage() {
                       <span className="flex items-center gap-1.5">
                         <span
                           className="w-6 h-6 rounded-lg flex items-center justify-center text-white"
-                          style={{ background: "var(--color-terracotta)" }}
+                          style={{ background: "var(--color-chili)" }}
                         >
                           <ChiliLogo size={13} />
                         </span>
@@ -522,7 +522,7 @@ export default function LandingPage() {
                       </span>
                       <span className="relative">
                         <Bell size={16} className="text-stone-500" />
-                        <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full" style={{ background: "var(--color-terracotta)" }} />
+                        <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full" style={{ background: "var(--color-chili)" }} />
                       </span>
                     </div>
                     <div className="flex gap-1.5 bg-stone-200/70 rounded-full p-1 mb-1">
@@ -542,7 +542,7 @@ export default function LandingPage() {
                     <div className="rounded-2xl border border-stone-100 p-3.5 shadow-sm">
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-[13px] font-semibold text-stone-900">Priya S.</span>
-                        <span className="flex gap-px" style={{ color: "var(--color-terracotta)" }}>
+                        <span className="flex gap-px" style={{ color: "var(--color-chili)" }}>
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} size={10} fill="currentColor" strokeWidth={0} />
                           ))}
@@ -553,7 +553,7 @@ export default function LandingPage() {
                       </p>
                       <span
                         className="block text-center text-[12px] font-semibold text-white rounded-xl py-2"
-                        style={{ background: "var(--color-terracotta)" }}
+                        style={{ background: "var(--color-chili)" }}
                       >
                         Approve
                       </span>
@@ -561,7 +561,7 @@ export default function LandingPage() {
                     <div className="rounded-2xl border border-stone-100 p-3.5 shadow-sm opacity-70">
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-[13px] font-semibold text-stone-900">Marcus T.</span>
-                        <span className="flex gap-px" style={{ color: "var(--color-terracotta)" }}>
+                        <span className="flex gap-px" style={{ color: "var(--color-chili)" }}>
                           {[...Array(4)].map((_, i) => (
                             <Star key={i} size={10} fill="currentColor" strokeWidth={0} />
                           ))}
@@ -591,7 +591,7 @@ export default function LandingPage() {
         <Reveal>
           <h2 className="font-display font-semibold tracking-[-0.02em] text-[34px] md:text-[54px] leading-[1.05] text-center mb-4">
             Live in a week,{" "}
-            <em className="italic font-medium" style={{ color: "var(--color-terracotta)" }}>
+            <em className="italic font-medium" style={{ color: "var(--color-chili)" }}>
               not a quarter.
             </em>
           </h2>
@@ -617,7 +617,7 @@ export default function LandingPage() {
         <Reveal>
           <h2 className="font-display font-semibold tracking-[-0.02em] text-[34px] md:text-[54px] leading-[1.05] text-center mb-4">
             One flat price.{" "}
-            <em className="italic font-medium" style={{ color: "var(--color-terracotta)" }}>
+            <em className="italic font-medium" style={{ color: "var(--color-chili)" }}>
               No surprises.
             </em>
           </h2>
@@ -632,14 +632,14 @@ export default function LandingPage() {
                 className="card p-7 flex flex-col h-full relative"
                 style={
                   p.highlight
-                    ? { border: "2px solid var(--color-terracotta)", boxShadow: "0 20px 50px -20px rgba(194,65,12,0.35)" }
+                    ? { border: "2px solid var(--color-chili)", boxShadow: "0 20px 50px -20px rgba(217,45,32,0.35)" }
                     : undefined
                 }
               >
                 {p.highlight && (
                   <span
                     className="absolute -top-3.5 left-1/2 -translate-x-1/2 text-[12px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full text-white whitespace-nowrap"
-                    style={{ background: "var(--color-terracotta)" }}
+                    style={{ background: "var(--color-chili)" }}
                   >
                     Most popular
                   </span>
@@ -653,7 +653,7 @@ export default function LandingPage() {
                 <ul className="space-y-3 mb-8 flex-1">
                   {p.features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5 text-[15px] text-stone-600">
-                      <Check size={17} className="mt-0.5 shrink-0" style={{ color: "var(--color-terracotta)" }} strokeWidth={2.5} />
+                      <Check size={17} className="mt-0.5 shrink-0" style={{ color: "var(--color-chili)" }} strokeWidth={2.5} />
                       {f}
                     </li>
                   ))}
@@ -675,7 +675,7 @@ export default function LandingPage() {
         <Reveal>
           <div
             className="rounded-[32px] px-6 py-16 md:py-24 text-center text-white relative overflow-hidden"
-            style={{ background: "var(--color-terracotta)" }}
+            style={{ background: "var(--color-chili)" }}
           >
             <div
               className="absolute -top-24 -right-24 w-96 h-96 rounded-full opacity-20"
@@ -683,7 +683,7 @@ export default function LandingPage() {
             />
             <div
               className="absolute -bottom-32 -left-24 w-96 h-96 rounded-full opacity-20"
-              style={{ background: "radial-gradient(circle, #7c2d12 0%, transparent 70%)" }}
+              style={{ background: "radial-gradient(circle, #7f1d1d 0%, transparent 70%)" }}
             />
             <div className="relative">
               <span className="inline-flex items-center justify-center w-16 h-16 rounded-3xl bg-white/15 mb-6">
@@ -716,7 +716,7 @@ export default function LandingPage() {
           <span className="flex items-center gap-2.5">
             <span
               className="w-8 h-8 rounded-xl flex items-center justify-center text-white"
-              style={{ background: "var(--color-terracotta)" }}
+              style={{ background: "var(--color-chili)" }}
             >
               <ChiliLogo size={17} />
             </span>

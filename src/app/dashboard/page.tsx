@@ -38,9 +38,9 @@ export default function DashboardPage() {
           </div>
           <div
             className="w-[88px] h-[88px] rounded-full flex items-center justify-center shrink-0"
-            style={{ background: "rgba(194,65,12,0.08)" }}
+            style={{ background: "rgba(217,45,32,0.08)" }}
           >
-            <Sparkles size={36} style={{ color: "var(--color-terracotta)" }} strokeWidth={1.75} />
+            <Sparkles size={36} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
           </div>
         </div>
         <Link href="/dashboard/settings" className="btn-primary w-full mt-5">
@@ -91,7 +91,7 @@ export default function DashboardPage() {
           >
             <span
               className="w-8 h-8 rounded-full flex items-center justify-center text-[15px] font-bold text-white shrink-0"
-              style={{ background: "var(--color-terracotta)" }}
+              style={{ background: "var(--color-chili)" }}
             >
               {i + 1}
             </span>
@@ -134,9 +134,9 @@ export default function DashboardPage() {
           >
             <span
               className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-              style={{ background: "rgba(194,65,12,0.08)" }}
+              style={{ background: "rgba(217,45,32,0.08)" }}
             >
-              <row.icon size={20} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+              <row.icon size={20} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
             </span>
             <span className="flex-1">
               <span className="block text-[16px] font-medium">{row.title}</span>

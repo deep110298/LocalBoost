@@ -170,8 +170,8 @@ export default function MenuPage() {
         <div className="flex justify-center py-16"><Loader2 size={28} className="animate-spin text-stone-400" /></div>
       ) : categories.length === 0 && items.length === 0 ? (
         <div className="card p-10 text-center">
-          <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: "rgba(194,65,12,0.08)" }}>
-            <UtensilsCrossed size={28} style={{ color: "var(--color-terracotta)" }} strokeWidth={1.75} />
+          <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: "rgba(217,45,32,0.08)" }}>
+            <UtensilsCrossed size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
           </div>
           <h2 className="text-[18px] font-semibold mb-2">No menu yet</h2>
           <p className="text-[15px] text-stone-500 max-w-[280px] mx-auto leading-relaxed mb-5">
@@ -198,7 +198,7 @@ export default function MenuPage() {
                   saving={savingItem} onSave={addItem} onCancel={() => setShowItemForm(null)}
                 />
               ) : (
-                <button onClick={() => setShowItemForm(g.id)} className="flex items-center gap-1.5 text-[15px] font-medium min-h-[44px] px-1" style={{ color: "var(--color-terracotta)" }}>
+                <button onClick={() => setShowItemForm(g.id)} className="flex items-center gap-1.5 text-[15px] font-medium min-h-[44px] px-1" style={{ color: "var(--color-chili)" }}>
                   <Plus size={18} /> Add item
                 </button>
               )}
@@ -224,7 +224,7 @@ export default function MenuPage() {
               saving={savingItem} onSave={addItem} onCancel={() => setShowItemForm(null)}
             />
           ) : (
-            <button onClick={() => setShowItemForm("none")} className="flex items-center gap-1.5 text-[15px] font-medium min-h-[44px] px-1" style={{ color: "var(--color-terracotta)" }}>
+            <button onClick={() => setShowItemForm("none")} className="flex items-center gap-1.5 text-[15px] font-medium min-h-[44px] px-1" style={{ color: "var(--color-chili)" }}>
               <Plus size={18} /> Add item without category
             </button>
           )}

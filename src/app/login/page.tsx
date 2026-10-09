@@ -38,7 +38,7 @@ export default function LoginPage() {
         <Link href="/" className="flex items-center gap-2">
           <span
             className="w-8 h-8 rounded-xl flex items-center justify-center text-white"
-            style={{ background: "var(--color-terracotta)" }}
+            style={{ background: "var(--color-chili)" }}
           >
             <ChiliLogo size={18} />
           </span>
@@ -52,9 +52,9 @@ export default function LoginPage() {
             <div className="text-center py-4">
               <div
                 className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center"
-                style={{ background: "rgba(194,65,12,0.08)" }}
+                style={{ background: "rgba(217,45,32,0.08)" }}
               >
-                <MailCheck size={28} style={{ color: "var(--color-terracotta)" }} strokeWidth={1.75} />
+                <MailCheck size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
               </div>
               <h1 className="text-[22px] font-bold tracking-tight mb-2">Check your email</h1>
               <p className="text-[15px] text-stone-500 leading-relaxed">
@@ -64,7 +64,7 @@ export default function LoginPage() {
               <button
                 onClick={() => setSent(false)}
                 className="text-[15px] font-medium mt-5 min-h-[44px]"
-                style={{ color: "var(--color-terracotta)" }}
+                style={{ color: "var(--color-chili)" }}
               >
                 Use a different email
               </button>

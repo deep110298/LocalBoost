@@ -26,8 +26,8 @@ export function LandingNav() {
       <div className="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <span
-            className="w-9 h-9 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-900/20"
-            style={{ background: "var(--color-terracotta)" }}
+            className="w-9 h-9 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20"
+            style={{ background: "var(--color-chili)" }}
           >
             <ChiliLogo size={20} />
           </span>

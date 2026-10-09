@@ -38,9 +38,9 @@ export default function ReviewsPage() {
         <div className="card p-10 text-center">
           <div
             className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center"
-            style={{ background: "rgba(194,65,12,0.08)" }}
+            style={{ background: "rgba(217,45,32,0.08)" }}
           >
-            <Inbox size={28} style={{ color: "var(--color-terracotta)" }} strokeWidth={1.75} />
+            <Inbox size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
           </div>
           <h2 className="text-[18px] font-semibold mb-2">All caught up</h2>
           <p className="text-[15px] text-stone-500 max-w-[280px] mx-auto leading-relaxed">
@@ -66,7 +66,7 @@ export default function ReviewsPage() {
             <li key={i} className="flex gap-3">
               <span
                 className="w-6 h-6 rounded-full flex items-center justify-center text-[13px] font-bold text-white shrink-0 mt-0.5"
-                style={{ background: "var(--color-terracotta)" }}
+                style={{ background: "var(--color-chili)" }}
               >
                 {i + 1}
               </span>

@@ -107,7 +107,7 @@ export default function OrderSite({
         <div className="max-w-2xl mx-auto px-5 pt-10 pb-6 text-center">
           <div
             className="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center text-white"
-            style={{ background: "var(--color-terracotta)" }}
+            style={{ background: "var(--color-chili)" }}
           >
             <ChiliLogo size={28} />
           </div>
@@ -158,7 +158,7 @@ export default function OrderSite({
                           <button
                             onClick={() => setQty(item.id, 1)}
                             className="w-11 h-11 rounded-full flex items-center justify-center shrink-0 text-white active:scale-95 transition-transform"
-                            style={{ background: "var(--color-terracotta)" }}
+                            style={{ background: "var(--color-chili)" }}
                             aria-label={`Add ${item.name}`}
                           >
                             <Plus size={20} />
@@ -176,7 +176,7 @@ export default function OrderSite({
                             <button
                               onClick={() => setQty(item.id, qty + 1)}
                               className="w-9 h-9 rounded-full flex items-center justify-center text-white active:scale-95"
-                              style={{ background: "var(--color-terracotta)" }}
+                              style={{ background: "var(--color-chili)" }}
                               aria-label="Add one"
                             >
                               <Plus size={16} />

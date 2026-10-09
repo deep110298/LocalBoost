@@ -128,9 +128,9 @@ export default function ConnectGoogleButton({
       <div className="flex items-center gap-4 p-4 min-h-[72px]">
         <div
           className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
-          style={{ background: "rgba(194,65,12,0.08)" }}
+          style={{ background: "rgba(217,45,32,0.08)" }}
         >
-          <Building2 size={22} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+          <Building2 size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
         </div>
         <div className="flex-1">
           <div className="text-[16px] font-medium">Google Business</div>

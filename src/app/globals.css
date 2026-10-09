@@ -3,8 +3,8 @@
 @theme {
   --color-cream: #faf8f5;
   --color-espresso: #1c1917;
-  --color-terracotta: #c2410c;
-  --color-terracotta-dark: #9a3412;
+  --color-chili: #d92d20;
+  --color-chili-dark: #9e1b12;
   --color-warm-gray: #78716c;
   --color-card: #ffffff;
   --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
@@ -40,7 +40,7 @@ body {
   justify-content: center;
   min-height: 48px;
   padding: 0 24px;
-  background: var(--color-terracotta);
+  background: var(--color-chili);
   color: #fff;
   font-weight: 600;
   font-size: 16px;
@@ -48,7 +48,7 @@ body {
   transition: background 0.15s ease, transform 0.1s ease;
 }
 .btn-primary:active {
-  background: var(--color-terracotta-dark);
+  background: var(--color-chili-dark);
   transform: scale(0.98);
 }
 
@@ -60,7 +60,7 @@ body {
   min-height: 48px;
   padding: 0 24px;
   background: rgba(194, 65, 12, 0.1);
-  color: var(--color-terracotta);
+  color: var(--color-chili);
   font-weight: 600;
   font-size: 16px;
   border-radius: 14px;
@@ -96,13 +96,13 @@ body {
   font-weight: 500;
 }
 .tab-item.active {
-  color: var(--color-terracotta);
+  color: var(--color-chili);
 }
 
 /* ---- 2026 motion system ---- */
 
 ::selection {
-  background: var(--color-terracotta);
+  background: var(--color-chili);
   color: #fff;
 }
 

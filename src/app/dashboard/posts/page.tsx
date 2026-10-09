@@ -11,9 +11,9 @@ export default function PostsPage() {
       <div className="card p-10 text-center mb-4">
         <div
           className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center"
-          style={{ background: "rgba(194,65,12,0.08)" }}
+          style={{ background: "rgba(217,45,32,0.08)" }}
         >
-          <PenLine size={28} style={{ color: "var(--color-terracotta)" }} strokeWidth={1.75} />
+          <PenLine size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
         </div>
         <h2 className="text-[18px] font-semibold mb-2">Nothing scheduled</h2>
         <p className="text-[15px] text-stone-500 max-w-[280px] mx-auto leading-relaxed mb-6">
@@ -27,7 +27,7 @@ export default function PostsPage() {
 
       <div className="card p-5">
         <div className="flex items-center gap-2 mb-3">
-          <Lightbulb size={18} style={{ color: "var(--color-terracotta)" }} />
+          <Lightbulb size={18} style={{ color: "var(--color-chili)" }} />
           <h3 className="text-[16px] font-semibold">Ideas for this week</h3>
         </div>
         <ul className="space-y-2.5">
@@ -42,7 +42,7 @@ export default function PostsPage() {
             >
               <span
                 className="w-1.5 h-1.5 rounded-full mt-2 shrink-0"
-                style={{ background: "var(--color-terracotta)" }}
+                style={{ background: "var(--color-chili)" }}
               />
               {idea}
             </li>

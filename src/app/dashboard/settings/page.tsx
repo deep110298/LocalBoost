@@ -50,9 +50,9 @@ export default async function SettingsPage() {
         <div className="flex items-center gap-4 p-4 min-h-[72px]">
           <div
             className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
-            style={{ background: "rgba(194,65,12,0.08)" }}
+            style={{ background: "rgba(217,45,32,0.08)" }}
           >
-            <Link2 size={22} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+            <Link2 size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
           </div>
           <div className="flex-1">
             <div className="text-[16px] font-medium">Yelp</div>
@@ -85,9 +85,9 @@ export default async function SettingsPage() {
       <button className="card w-full flex items-center gap-4 p-4 min-h-[72px] text-left active:scale-[0.99] transition-transform">
         <div
           className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
-          style={{ background: "rgba(194,65,12,0.08)" }}
+          style={{ background: "rgba(217,45,32,0.08)" }}
         >
-          <CreditCard size={22} style={{ color: "var(--color-terracotta)" }} strokeWidth={2} />
+          <CreditCard size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
         </div>
         <div className="flex-1">
           <div className="text-[16px] font-medium">Free beta</div>
