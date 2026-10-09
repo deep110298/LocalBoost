@@ -64,6 +64,12 @@ Keep it under 80 words. One observation, one offer, one ask.
 
 ## Rules
 
+- **Pre-outreach accuracy checklist (every lead, every time):** before any
+  outreach goes out — (1) open their website live and confirm the URL works
+  and your observation is current; (2) confirm name, address, and phone from
+  their Google Business profile; (3) note the exact page you saw. If anything
+  can't be verified, the lead stays at `scored` — no outreach on unverified
+  claims. Ever.
 - Every claim about a restaurant must be verified live before it's written
   anywhere. If you can't verify it, don't say it.
 - Never pretend to be the owner, a customer, or anyone you're not. Sign as

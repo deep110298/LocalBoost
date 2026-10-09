@@ -26,6 +26,14 @@ service area — say so kindly and mark `lost` with a reason.
 
 ### 2. Send the kit (within 24h of qualifying)
 - The pitch deck: `~/workspace/your_files/localboost-pitch-deck/localboost-pitch-deck.pptx`
+- **Their personalized preview (not the generic deck):** build their preview
+  link and lead with it —
+  `https://uselocalboost.vercel.app/preview?name=[Restaurant+Name]&color=[hex]&cuisine=[indian|italian|mexican]`
+  Pick the color from their existing branding (logo/site) or default to
+  `d92d20`. The page shows their restaurant's website, dashboard, and phone
+  app with their name and colors. Open the link yourself first and confirm it
+  renders with the right name. In the email: "I mocked up what [Name] would
+  look like on LocalBoost — [link]. Happy to walk you through it."
 - Pricing: Starter $99 / Growth $199 / Pro $299 (free during beta)
 - One-line plan recommendation with a reason ("Growth fits you because…")
 - Offer a 15-minute call or a walk-in visit — their choice
