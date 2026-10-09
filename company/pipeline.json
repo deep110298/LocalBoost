@@ -1,0 +1,1 @@
+{"_schema":"Lead: { name, address, phone, website, google_rating, review_count, owner_responds, score, stage, notes, outreach[], added_date }. Stages: new, scored, outreach_drafted, outreach_sent, replied, meeting, won, lost, dead.","leads":[]}

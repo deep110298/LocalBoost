@@ -1,0 +1,1 @@
+{"_schema":"Client: { name, contact {name, role, email, phone}, plan (Starter|Growth|Pro), mrr, status (onboarding|active|paused|churned), go_live_date, tone_notes, decision_maker, competitors[], health (green|yellow|red), last_digest_date, open_issues[], handoff_note, notes }.","clients":[]}
