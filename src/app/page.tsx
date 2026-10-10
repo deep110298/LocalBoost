@@ -138,7 +138,7 @@ export default function LandingPage() {
               className="font-display italic font-medium"
               style={{ color: "var(--color-chili)" }}
             >
-              handled.
+              on autopilot.
             </em>
           </h1>
         </Reveal>

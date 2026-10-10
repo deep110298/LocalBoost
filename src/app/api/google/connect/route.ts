@@ -10,10 +10,9 @@ export async function GET(req: Request) {
   if ("error" in auth) return auth.error;
 
   if (!process.env.GOOGLE_CLIENT_ID || !process.env.NEXT_PUBLIC_APP_URL) {
-    return NextResponse.json(
-      { error: "Google OAuth is not configured (GOOGLE_CLIENT_ID / NEXT_PUBLIC_APP_URL)" },
-      { status: 500 }
-    );
+    // OAuth isn't wired up in this environment yet — send the owner back to
+    // Settings with a friendly banner instead of a raw JSON error page.
+    return NextResponse.redirect(`${origin}/dashboard/settings?google=not-configured`);
   }
   return NextResponse.redirect(getGoogleOAuthUrl(auth.business.id));
 }

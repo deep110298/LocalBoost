@@ -42,6 +42,11 @@ export default function ConnectGoogleButton({
     } else if (g === "error") {
       setBanner("Google connection failed. Please try again.");
       window.history.replaceState({}, "", window.location.pathname);
+    } else if (g === "not-configured") {
+      setBanner(
+        "Google Business connection isn't available yet — we're finishing the setup on our end. Your website, menu, and orders all work in the meantime."
+      );
+      window.history.replaceState({}, "", window.location.pathname);
     }
   }, []);
 

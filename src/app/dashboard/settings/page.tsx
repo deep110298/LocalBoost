@@ -2,6 +2,7 @@ import { Link2, CreditCard, ChevronRight } from "lucide-react";
 import { createServerSupabase } from "@/lib/supabase-server";
 import ConnectGoogleButton from "./connect-google-button";
 import SignOutButton from "./sign-out-button";
+import BusinessNameForm from "./business-name-form";
 
 export default async function SettingsPage() {
   const supabase = await createServerSupabase();
@@ -10,18 +11,20 @@ export default async function SettingsPage() {
   } = await supabase.auth.getUser();
 
   let businessId: string | null = null;
+  let businessName = "";
   let connected = false;
   let locationName: string | null = null;
   if (user) {
     const { data: business } = await supabase
       .from("businesses")
-      .select("id")
+      .select("id, name")
       .eq("user_id", user.id)
       .order("created_at", { ascending: true })
       .limit(1)
       .single();
     if (business) {
       businessId = business.id;
+      businessName = business.name ?? "";
       const { data: conn } = await supabase
         .from("google_connections")
         .select("access_token, location_name")
@@ -67,17 +70,7 @@ export default async function SettingsPage() {
       <h2 className="text-[15px] font-semibold text-stone-500 uppercase tracking-wide mb-2 px-1">
         Business
       </h2>
-      <div className="card p-5 mb-6">
-        <label className="block text-[15px] font-medium mb-2">
-          Business name
-        </label>
-        <input
-          type="text"
-          placeholder="e.g. Eggholic Jersey City"
-          className="w-full min-h-[48px] px-4 border border-stone-200 rounded-xl bg-stone-50 text-[16px] placeholder:text-stone-400 focus:outline-none focus:border-stone-400"
-        />
-        <button className="btn-secondary w-full mt-3">Save</button>
-      </div>
+      <BusinessNameForm businessId={businessId} initialName={businessName} />
 
       <h2 className="text-[15px] font-semibold text-stone-500 uppercase tracking-wide mb-2 px-1">
         Plan

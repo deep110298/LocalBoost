@@ -34,3 +34,28 @@ export async function POST(req: Request) {
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
   return NextResponse.json({ category: data });
 }
+
+// DELETE /api/menu/categories?business_id=xxx&id=yyy
+// Removes the section; its items are kept and moved to "Other" (uncategorized).
+export async function DELETE(req: Request) {
+  const { searchParams } = new URL(req.url);
+  const auth = await requireBusinessOwner(searchParams.get("business_id"));
+  if ("error" in auth) return auth.error;
+  const { supabase, business } = auth;
+
+  const id = searchParams.get("id");
+  if (!id) return NextResponse.json({ error: "id required" }, { status: 400 });
+  const { error: itemsError } = await supabase
+    .from("menu_items")
+    .update({ category_id: null })
+    .eq("category_id", id)
+    .eq("business_id", business.id);
+  if (itemsError) return NextResponse.json({ error: itemsError.message }, { status: 500 });
+  const { error } = await supabase
+    .from("menu_categories")
+    .delete()
+    .eq("id", id)
+    .eq("business_id", business.id);
+  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  return NextResponse.json({ ok: true });
+}

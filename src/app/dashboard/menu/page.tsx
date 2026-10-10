@@ -24,6 +24,7 @@ export default function MenuPage() {
   const [items, setItems] = useState<MenuItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
+  const [pageError, setPageError] = useState<string | null>(null);
 
   // Add-category form
   const [newCat, setNewCat] = useState("");
@@ -112,9 +113,31 @@ export default function MenuPage() {
   }
 
   async function deleteItem(id: string) {
-    if (!businessId || !confirm("Remove this item from the menu?")) return;
-    setItems((prev) => prev.filter((i) => i.id !== id));
-    await fetch(`/api/menu/items?business_id=${businessId}&id=${id}`, { method: "DELETE" });
+    if (!businessId) return;
+    const prev = items;
+    setItems((p) => p.filter((i) => i.id !== id));
+    setPageError(null);
+    const res = await fetch(`/api/menu/items?business_id=${businessId}&id=${id}`, { method: "DELETE" });
+    if (!res.ok) {
+      setItems(prev);
+      setPageError("Couldn't remove that item. Please try again.");
+    }
+  }
+
+  async function deleteCategory(id: string) {
+    if (!businessId) return;
+    const prevCats = categories;
+    const prevItems = items;
+    setCategories((p) => p.filter((c) => c.id !== id));
+    // Items in the deleted section move to "Other" rather than being lost.
+    setItems((p) => p.map((i) => (i.category_id === id ? { ...i, category_id: null } : i)));
+    setPageError(null);
+    const res = await fetch(`/api/menu/categories?business_id=${businessId}&id=${id}`, { method: "DELETE" });
+    if (!res.ok) {
+      setCategories(prevCats);
+      setItems(prevItems);
+      setPageError("Couldn't remove that section. Please try again.");
+    }
   }
 
   async function seedSample() {
@@ -169,21 +192,35 @@ export default function MenuPage() {
       {loading ? (
         <div className="flex justify-center py-16"><Loader2 size={28} className="animate-spin text-stone-400" /></div>
       ) : categories.length === 0 && items.length === 0 ? (
-        <div className="card p-10 text-center">
-          <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: "rgba(217,45,32,0.08)" }}>
-            <UtensilsCrossed size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
+        <>
+          <div className="card p-10 text-center mb-5">
+            <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: "rgba(217,45,32,0.08)" }}>
+              <UtensilsCrossed size={28} style={{ color: "var(--color-chili)" }} strokeWidth={1.75} />
+            </div>
+            <h2 className="text-[18px] font-semibold mb-2">No menu yet</h2>
+            <p className="text-[15px] text-stone-500 max-w-[280px] mx-auto leading-relaxed mb-5">
+              Add your first section below, or start from a sample menu and edit it.
+            </p>
+            <button onClick={seedSample} className="btn-primary px-8">Load sample menu</button>
           </div>
-          <h2 className="text-[18px] font-semibold mb-2">No menu yet</h2>
-          <p className="text-[15px] text-stone-500 max-w-[280px] mx-auto leading-relaxed mb-5">
-            Add your dishes below, or start from a sample menu and edit it.
-          </p>
-          <button onClick={seedSample} className="btn-primary px-8">Load sample menu</button>
-        </div>
+          <AddCategoryCard
+            value={newCat} setValue={setNewCat}
+            adding={addingCat} onAdd={addCategory}
+          />
+        </>
       ) : (
         <div className="space-y-6">
+          {pageError && (
+            <p role="alert" className="text-[14px] text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
+              {pageError}
+            </p>
+          )}
           {grouped.map((g) => (
             <section key={g.id}>
-              <h2 className="text-[18px] font-bold tracking-tight mb-2 px-1">{g.name}</h2>
+              <div className="flex items-center gap-2 mb-2 px-1">
+                <h2 className="text-[18px] font-bold tracking-tight flex-1">{g.name}</h2>
+                <ConfirmDeleteButton label={`Delete section ${g.name}`} onDelete={() => deleteCategory(g.id)} />
+              </div>
               <div className="card divide-y divide-stone-100 mb-2">
                 {g.items.map((item) => (
                   <ItemRow key={item.id} item={item} onToggle={() => toggleAvailable(item)} onDelete={() => deleteItem(item.id)} />
@@ -230,23 +267,66 @@ export default function MenuPage() {
           )}
 
           {/* Add category */}
-          <div className="card p-4">
-            <div className="text-[15px] font-semibold mb-2 px-1">Add a section</div>
-            <div className="flex gap-2">
-              <input
-                value={newCat}
-                onChange={(e) => setNewCat(e.target.value)}
-                placeholder="e.g. Desserts"
-                className="flex-1 min-h-[52px] px-4 border border-stone-200 rounded-xl bg-white text-[16px] placeholder:text-stone-400 focus:outline-none focus:border-stone-400"
-              />
-              <button onClick={addCategory} disabled={addingCat || !newCat.trim()} className="btn-primary px-6 disabled:opacity-40">
-                {addingCat ? <Loader2 size={18} className="animate-spin" /> : "Add"}
-              </button>
-            </div>
-          </div>
+          <AddCategoryCard
+            value={newCat} setValue={setNewCat}
+            adding={addingCat} onAdd={addCategory}
+          />
         </div>
       )}
     </div>
+  );
+}
+
+function AddCategoryCard({ value, setValue, adding, onAdd }: {
+  value: string; setValue: (v: string) => void; adding: boolean; onAdd: () => void;
+}) {
+  return (
+    <div className="card p-4">
+      <div className="text-[15px] font-semibold mb-2 px-1">Add a section</div>
+      <div className="flex gap-2">
+        <input
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && onAdd()}
+          placeholder="e.g. Desserts"
+          className="flex-1 min-h-[52px] px-4 border border-stone-200 rounded-xl bg-white text-[16px] placeholder:text-stone-400 focus:outline-none focus:border-stone-400"
+        />
+        <button onClick={onAdd} disabled={adding || !value.trim()} className="btn-primary px-6 disabled:opacity-40">
+          {adding ? <Loader2 size={18} className="animate-spin" /> : "Add"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// Two-tap delete: first tap arms ("Sure?"), second tap confirms. No native
+// dialogs — they get auto-dismissed by automation and feel janky on mobile.
+function ConfirmDeleteButton({ label, onDelete }: { label: string; onDelete: () => void }) {
+  const [arming, setArming] = useState(false);
+  useEffect(() => {
+    if (!arming) return;
+    const t = setTimeout(() => setArming(false), 3000);
+    return () => clearTimeout(t);
+  }, [arming]);
+  if (arming) {
+    return (
+      <button
+        onClick={() => { setArming(false); onDelete(); }}
+        className="min-h-[44px] px-4 rounded-xl bg-red-600 text-white text-[14px] font-semibold active:scale-95"
+        aria-label={`Confirm ${label}`}
+      >
+        Sure?
+      </button>
+    );
+  }
+  return (
+    <button
+      onClick={() => setArming(true)}
+      className="w-11 h-11 rounded-xl flex items-center justify-center active:scale-95"
+      aria-label={label}
+    >
+      <Trash2 size={18} className="text-stone-400" />
+    </button>
   );
 }
 
@@ -263,9 +343,7 @@ function ItemRow({ item, onToggle, onDelete }: { item: MenuItem; onToggle: () =>
       >
         {item.available ? "On" : "Off"}
       </button>
-      <button onClick={onDelete} className="w-11 h-11 rounded-xl flex items-center justify-center active:scale-95" aria-label={`Delete ${item.name}`}>
-        <Trash2 size={18} className="text-stone-400" />
-      </button>
+      <ConfirmDeleteButton label={`Delete ${item.name}`} onDelete={onDelete} />
     </div>
   );
 }
