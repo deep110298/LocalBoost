@@ -5,7 +5,7 @@ import { requireBusinessOwner } from "@/lib/api-auth";
 // GET /api/google/connect?business_id=xxx
 // Verifies ownership, then redirects the owner to Google's consent screen.
 export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
+  const { searchParams, origin } = new URL(req.url);
   const auth = await requireBusinessOwner(searchParams.get("business_id"));
   if ("error" in auth) return auth.error;
 
