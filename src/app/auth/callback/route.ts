@@ -11,7 +11,8 @@ export async function GET(req: Request) {
     const supabase = await createServerSupabase();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (error) {
-      return NextResponse.redirect(`${origin}/login?error=auth`);
+      const kind = /expir/i.test(error.message) ? "expired" : "auth";
+      return NextResponse.redirect(`${origin}/login?error=${kind}`);
     }
   }
   return NextResponse.redirect(`${origin}/dashboard`);

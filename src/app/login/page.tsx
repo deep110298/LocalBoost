@@ -1,16 +1,54 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Loader2, MailCheck } from "lucide-react";
 import { ChiliLogo } from "@/components/chili-logo";
 import { createClient } from "@/lib/supabase";
 
-export default function LoginPage() {
+// Map raw Supabase/API errors to human-friendly guidance.
+function friendlySendError(message: string): string {
+  const m = message.toLowerCase();
+  if (m.includes("rate limit") || m.includes("too many requests")) {
+    return "You've requested a lot of sign-in emails. Please wait a few minutes, then try again.";
+  }
+  if (m.includes("email") && (m.includes("invalid") || m.includes("bad"))) {
+    return "That doesn't look like a valid email address. Please check it and try again.";
+  }
+  return "We couldn't send the sign-in link. Please check your connection and try again.";
+}
+
+const LINK_ERROR_MESSAGE =
+  "That sign-in link didn't work — it may have expired or already been used. Enter your email below and we'll send you a fresh one.";
+
+function LoginForm() {
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // Surface magic-link failures: Supabase redirects here with either
+  // ?error=... (our callback route) or #error=...&error_code=... (direct
+  // verify-link failures, which arrive as a hash fragment the server can't see).
+  useEffect(() => {
+    const queryError = searchParams.get("error");
+    let hashError: string | null = null;
+    let hashCode: string | null = null;
+    if (typeof window !== "undefined" && window.location.hash) {
+      const hash = new URLSearchParams(window.location.hash.slice(1));
+      hashError = hash.get("error");
+      hashCode = hash.get("error_code");
+    }
+    if (queryError || hashError || hashCode) {
+      setError(LINK_ERROR_MESSAGE);
+      // Clean the URL so a refresh doesn't re-show the message.
+      if (typeof window !== "undefined") {
+        window.history.replaceState(null, "", window.location.pathname);
+      }
+    }
+  }, [searchParams]);
 
   async function sendLink() {
     const trimmed = email.trim();
@@ -26,7 +64,7 @@ export default function LoginPage() {
       if (error) throw error;
       setSent(true);
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Could not send the link");
+      setError(friendlySendError(e instanceof Error ? e.message : ""));
     } finally {
       setSending(false);
     }
@@ -61,6 +99,9 @@ export default function LoginPage() {
                 We sent a sign-in link to <span className="font-medium text-stone-700">{email.trim()}</span>.
                 Tap it and you&apos;re in — no password needed.
               </p>
+              <p className="text-[13px] text-stone-400 mt-3 leading-relaxed">
+                Links expire quickly, so open it right away. Didn&apos;t get it? Check spam, then try again in a few minutes.
+              </p>
               <button
                 onClick={() => setSent(false)}
                 className="text-[15px] font-medium mt-5 min-h-[44px]"
@@ -85,7 +126,11 @@ export default function LoginPage() {
                 autoComplete="email"
                 className="w-full min-h-[52px] px-4 border border-stone-200 rounded-xl bg-white text-[16px] placeholder:text-stone-400 focus:outline-none focus:border-stone-400 mb-3"
               />
-              {error && <p className="text-[14px] text-red-600 mb-3">{error}</p>}
+              {error && (
+                <p role="alert" className="text-[14px] text-red-600 mb-3 leading-relaxed">
+                  {error}
+                </p>
+              )}
               <button
                 onClick={sendLink}
                 disabled={sending || !email.trim()}
@@ -101,5 +146,13 @@ export default function LoginPage() {
         </div>
       </main>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense>
+      <LoginForm />
+    </Suspense>
   );
 }
