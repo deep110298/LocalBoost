@@ -90,9 +90,9 @@ export default async function SettingsPage() {
           <CreditCard size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
         </div>
         <div className="flex-1">
-          <div className="text-[16px] font-medium">Free beta</div>
+          <div className="text-[16px] font-medium">Free trial</div>
           <div className="text-[14px] text-stone-500">
-            Paid plans launch soon — you&apos;re grandfathered in
+            30 days free — pick a plan anytime to keep everything
           </div>
         </div>
         <ChevronRight size={20} className="text-stone-300" />

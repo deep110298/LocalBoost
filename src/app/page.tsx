@@ -70,7 +70,13 @@ const plans = [
     name: "Starter",
     price: 99,
     tagline: "For getting started",
-    features: ["1 location", "Review inbox", "AI reply drafts", "Visibility score"],
+    features: [
+      "1 location",
+      "Website creation + hosting",
+      "Review inbox",
+      "AI reply drafts",
+      "Visibility score",
+    ],
   },
   {
     name: "Growth",
@@ -78,7 +84,6 @@ const plans = [
     tagline: "For growing fast",
     features: [
       "Everything in Starter",
-      "Website + hosting",
       "Commission-free ordering",
       "Autopilot Google posts",
       "Competitor watch",
@@ -121,7 +126,7 @@ export default function LandingPage() {
               className="w-2 h-2 rounded-full animate-pulse-dot"
               style={{ background: "var(--color-chili)" }}
             />
-            Free during beta — no credit card
+            30 days free — no credit card
           </div>
         </Reveal>
         <Reveal delay={80}>
@@ -622,7 +627,7 @@ export default function LandingPage() {
             </em>
           </h2>
           <p className="text-[16px] md:text-[18px] text-stone-500 text-center mb-12">
-            Less than one catering order a month. Free during beta.
+            Less than one catering order a month. Start with 30 days free.
           </p>
         </Reveal>
         <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto items-stretch">
@@ -649,6 +654,15 @@ export default function LandingPage() {
                 <div className="mb-6">
                   <span className="font-display font-semibold text-[52px] tracking-tight">${p.price}</span>
                   <span className="text-stone-500 text-[15px]">/month</span>
+                  <div
+                    className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-semibold"
+                    style={{
+                      background: "rgba(217,45,32,0.08)",
+                      color: "var(--color-chili)",
+                    }}
+                  >
+                    30-day free trial included
+                  </div>
                 </div>
                 <ul className="space-y-3 mb-8 flex-1">
                   {p.features.map((f) => (
@@ -662,7 +676,7 @@ export default function LandingPage() {
                   href="/login"
                   className={`${p.highlight ? "btn-primary" : "btn-secondary"} w-full`}
                 >
-                  Choose {p.name}
+                  Start free trial
                 </Link>
               </div>
             </Reveal>
@@ -695,7 +709,7 @@ export default function LandingPage() {
                 you are.
               </h2>
               <p className="text-[16px] md:text-[19px] text-white/85 max-w-lg mx-auto leading-relaxed mb-9">
-                Join the beta free. Your future regulars are searching right now —
+                Start your 30-day free trial. Your future regulars are searching right now —
                 make sure they find you.
               </p>
               <Link

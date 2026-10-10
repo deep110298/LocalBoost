@@ -28,7 +28,7 @@ service area — say so kindly and mark `lost` with a reason.
 - The pitch deck: `~/workspace/your_files/localboost-pitch-deck/localboost-pitch-deck.pptx`
 - **Their personalized preview (not the generic deck):** build their preview
   link and lead with it —
-  `https://uselocalboost.vercel.app/preview?name=[Restaurant+Name]&color=[hex]&cuisine=[indian|italian|mexican]`
+  `https://www.localboost.site/preview?name=[Restaurant+Name]&color=[hex]&cuisine=[indian|italian|mexican]`
   Pick the color from their existing branding (logo/site) or default to
   `d92d20`. The page shows their restaurant's website, dashboard, and phone
   app with their name and colors. Open the link yourself first and confirm it

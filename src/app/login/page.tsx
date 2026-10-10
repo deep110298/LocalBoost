@@ -94,7 +94,7 @@ export default function LoginPage() {
                 {sending ? <Loader2 size={18} className="animate-spin" /> : "Send sign-in link"}
               </button>
               <p className="text-[13px] text-stone-400 text-center mt-4">
-                Free during beta · No credit card
+                30 days free · No credit card
               </p>
             </>
           )}
