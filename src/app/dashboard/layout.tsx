@@ -10,6 +10,7 @@ import {
   Settings,
 } from "lucide-react";
 import { ChiliLogo } from "@/components/chili-logo";
+import TrialBanner from "./trial-banner";
 
 const tabs = [
   { href: "/dashboard", label: "Home", icon: LayoutDashboard, exact: true },
@@ -70,6 +71,7 @@ export default function DashboardLayout({
 
       {/* Content — extra bottom padding for tab bar on mobile */}
       <main className="max-w-5xl mx-auto px-5 md:px-6 pt-6 pb-28 md:pb-12">
+        <TrialBanner />
         {children}
       </main>
 

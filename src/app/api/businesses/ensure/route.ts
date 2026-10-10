@@ -13,7 +13,7 @@ export async function POST() {
 
   const { data: existing } = await supabase
     .from("businesses")
-    .select("id, name, slug")
+    .select("id, name, slug, created_at")
     .eq("user_id", user.id)
     .order("created_at", { ascending: true })
     .limit(1)
@@ -23,7 +23,7 @@ export async function POST() {
   const { data, error } = await supabase
     .from("businesses")
     .insert({ user_id: user.id, name: "My business", slug: makeSlug("My business") })
-    .select("id, name, slug")
+    .select("id, name, slug, created_at")
     .single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 

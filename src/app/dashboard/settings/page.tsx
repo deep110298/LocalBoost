@@ -1,8 +1,9 @@
-import { Link2, CreditCard, ChevronRight } from "lucide-react";
+import { Link2 } from "lucide-react";
 import { createServerSupabase } from "@/lib/supabase-server";
 import ConnectGoogleButton from "./connect-google-button";
 import SignOutButton from "./sign-out-button";
 import BusinessNameForm from "./business-name-form";
+import PlanSection from "./plan-section";
 
 export default async function SettingsPage() {
   const supabase = await createServerSupabase();
@@ -12,12 +13,13 @@ export default async function SettingsPage() {
 
   let businessId: string | null = null;
   let businessName = "";
+  let businessCreatedAt: string | null = null;
   let connected = false;
   let locationName: string | null = null;
   if (user) {
     const { data: business } = await supabase
       .from("businesses")
-      .select("id, name")
+      .select("id, name, created_at")
       .eq("user_id", user.id)
       .order("created_at", { ascending: true })
       .limit(1)
@@ -25,6 +27,7 @@ export default async function SettingsPage() {
     if (business) {
       businessId = business.id;
       businessName = business.name ?? "";
+      businessCreatedAt = business.created_at ?? null;
       const { data: conn } = await supabase
         .from("google_connections")
         .select("access_token, location_name")
@@ -72,24 +75,7 @@ export default async function SettingsPage() {
       </h2>
       <BusinessNameForm businessId={businessId} initialName={businessName} />
 
-      <h2 className="text-[15px] font-semibold text-stone-500 uppercase tracking-wide mb-2 px-1">
-        Plan
-      </h2>
-      <button className="card w-full flex items-center gap-4 p-4 min-h-[72px] text-left active:scale-[0.99] transition-transform">
-        <div
-          className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
-          style={{ background: "rgba(217,45,32,0.08)" }}
-        >
-          <CreditCard size={22} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
-        </div>
-        <div className="flex-1">
-          <div className="text-[16px] font-medium">Free trial</div>
-          <div className="text-[14px] text-stone-500">
-            30 days free — pick a plan anytime to keep everything
-          </div>
-        </div>
-        <ChevronRight size={20} className="text-stone-300" />
-      </button>
+      <PlanSection businessId={businessId} createdAt={businessCreatedAt} />
 
       <div className="mt-6">
         <SignOutButton />
