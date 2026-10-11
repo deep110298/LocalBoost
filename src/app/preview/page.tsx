@@ -121,6 +121,14 @@ function sanitizeColor(c: string | undefined): string {
   return DEFAULT_COLOR;
 }
 
+// Smart hero imagery: each business type gets a matching photo
+const VERTICAL_IMAGES: Record<string, string> = {
+  spa: "/images/spa-treatment.jpg",
+  barbershop: "/images/barbershop.jpg",
+  salon: "/images/salon.jpg",
+  auto: "/images/auto-shop.jpg",
+};
+
 function sanitizeLogo(l: string | undefined): string | null {
   if (!l) return null;
   // Allow our hosted preview logos or any https image URL (their real logo)
@@ -153,6 +161,10 @@ export default async function PreviewPage({
     : `Order direct from ${name} — no fees, no middlemen. Ready for pickup in 20 minutes.`;
   const listTitle = isService ? "Book a service" : "Popular right now";
   const itemCta = isService ? "Book" : "Add";
+  const heroImage = isService
+    ? (VERTICAL_IMAGES[verticalKey] ?? "/images/restaurant-interior.jpg")
+    : "/images/hero-spread.jpg";
+  const heroAlt = isService ? `${name} interior` : `${name} dishes`;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--color-cream)", color: "var(--color-espresso)" }}>
@@ -220,7 +232,7 @@ export default async function PreviewPage({
               </div>
             </div>
             <div className="relative h-64 md:h-full min-h-[320px]">
-              <Image src={isService ? "/images/restaurant-interior.jpg" : "/images/hero-spread.jpg"} alt={`${name} ${isService ? "interior" : "dishes"}`} fill className="object-cover" />
+              <Image src={heroImage} alt={heroAlt} fill className="object-cover" />
             </div>
           </div>
           {/* site menu / services */}
