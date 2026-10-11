@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ChiliLogo from "@/components/chili-logo";
+import { ChiliLogo } from "@/components/chili-logo";
 
 export const metadata = {
   title: "Unsubscribed — LocalBoost",
