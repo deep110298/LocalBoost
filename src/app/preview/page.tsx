@@ -65,16 +65,25 @@ function sanitizeColor(c: string | undefined): string {
   return DEFAULT_COLOR;
 }
 
+function sanitizeLogo(l: string | undefined): string | null {
+  if (!l) return null;
+  // Allow our hosted preview logos or any https image URL (their real logo)
+  if (l.startsWith("/preview-logos/") && /^\/preview-logos\/[a-z0-9_-]+\.(png|jpg|jpeg|webp|svg)$/.test(l)) return l;
+  if (/^https:\/\/[^"'\s<>]+\.(png|jpg|jpeg|webp|svg)(\?[^"'\s<>]*)?$/i.test(l)) return l;
+  return null;
+}
+
 export default async function PreviewPage({
   searchParams,
 }: {
-  searchParams: Promise<{ name?: string; color?: string; cuisine?: string }>;
+  searchParams: Promise<{ name?: string; color?: string; cuisine?: string; logo?: string }>;
 }) {
   const params = await searchParams;
   const name = (params.name || "Your Restaurant").slice(0, 40);
   const color = sanitizeColor(params.color);
   const cuisineKey = (params.cuisine || "").toLowerCase();
   const menu = MENUS[cuisineKey] ?? MENUS.default;
+  const logo = sanitizeLogo(params.logo);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--color-cream)", color: "var(--color-espresso)" }}>
@@ -95,9 +104,13 @@ export default async function PreviewPage({
           {/* site nav */}
           <div className="flex items-center justify-between px-6 md:px-10 py-4 border-b border-stone-100">
             <span className="flex items-center gap-2">
-              <span className="w-8 h-8 rounded-xl flex items-center justify-center text-white" style={{ background: color }}>
-                <ChiliLogo size={17} />
-              </span>
+              {logo ? (
+                <img src={logo} alt={`${name} logo`} className="h-9 w-9 rounded-xl object-contain bg-white border border-stone-100" />
+              ) : (
+                <span className="w-8 h-8 rounded-xl flex items-center justify-center text-white" style={{ background: color }}>
+                  <ChiliLogo size={17} />
+                </span>
+              )}
               <span className="font-display font-semibold text-[20px] tracking-tight">{name}</span>
             </span>
             <span className="hidden md:flex items-center gap-6 text-[14px] font-medium text-stone-500">
@@ -176,9 +189,13 @@ export default async function PreviewPage({
         <div className="rounded-[28px] border border-stone-900/10 shadow-2xl shadow-stone-900/15 bg-white p-6 md:p-10">
           <div className="flex items-center justify-between mb-8">
             <span className="flex items-center gap-2.5">
-              <span className="w-9 h-9 rounded-xl flex items-center justify-center text-white" style={{ background: color }}>
-                <ChiliLogo size={19} />
-              </span>
+              {logo ? (
+                <img src={logo} alt={`${name} logo`} className="h-9 w-9 rounded-xl object-contain bg-white border border-stone-100" />
+              ) : (
+                <span className="w-9 h-9 rounded-xl flex items-center justify-center text-white" style={{ background: color }}>
+                  <ChiliLogo size={19} />
+                </span>
+              )}
               <span>
                 <span className="block font-bold text-[17px] leading-tight">{name}</span>
                 <span className="block text-[13px] text-stone-400">Owner dashboard</span>
@@ -255,9 +272,13 @@ export default async function PreviewPage({
             <div className="px-4 pt-4 pb-3" style={{ background: "var(--color-cream)" }}>
               <div className="flex items-center justify-between mb-3">
                 <span className="flex items-center gap-1.5">
-                  <span className="w-6 h-6 rounded-lg flex items-center justify-center text-white" style={{ background: color }}>
-                    <ChiliLogo size={13} />
-                  </span>
+                  {logo ? (
+                    <img src={logo} alt={`${name} logo`} className="h-6 w-6 rounded-lg object-contain bg-white border border-stone-100" />
+                  ) : (
+                    <span className="w-6 h-6 rounded-lg flex items-center justify-center text-white" style={{ background: color }}>
+                      <ChiliLogo size={13} />
+                    </span>
+                  )}
                   <span className="text-[13px] font-bold">{name.length > 18 ? name.slice(0, 18) + "…" : name}</span>
                 </span>
                 <Bell size={15} className="text-stone-400" />
