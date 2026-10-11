@@ -65,7 +65,7 @@ const SERVICES: Record<
   { tagline: string; cta: string; items: { name: string; price: string; desc: string }[] }
 > = {
   spa: {
-    tagline: "Unwind, right around the corner.",
+    tagline: "Unwind deeply. Right around the corner.",
     cta: "Book appointment",
     items: [
       { name: "Deep Tissue Massage", price: "$95", desc: "60 min · pain relief, muscle recovery" },
@@ -75,7 +75,7 @@ const SERVICES: Record<
     ],
   },
   barbershop: {
-    tagline: "Sharp looks, zero wait.",
+    tagline: "Sharp looks. Zero wait.",
     cta: "Book appointment",
     items: [
       { name: "Haircut", price: "$30", desc: "30 min · consultation included" },
@@ -85,7 +85,7 @@ const SERVICES: Record<
     ],
   },
   salon: {
-    tagline: "Good hair days, on demand.",
+    tagline: "Good hair days. On demand.",
     cta: "Book appointment",
     items: [
       { name: "Women's Cut", price: "$65", desc: "60 min · wash & style included" },
@@ -95,7 +95,7 @@ const SERVICES: Record<
     ],
   },
   auto: {
-    tagline: "Fixed right, the first time.",
+    tagline: "Fixed right. The first time.",
     cta: "Book service",
     items: [
       { name: "Oil Change", price: "$59", desc: "45 min · full synthetic, filter included" },
@@ -105,7 +105,7 @@ const SERVICES: Record<
     ],
   },
   default: {
-    tagline: "Book in seconds, not phone calls.",
+    tagline: "Book in seconds. Not phone calls.",
     cta: "Book appointment",
     items: [
       { name: "Signature Service", price: "$75", desc: "60 min · our most booked" },
@@ -294,7 +294,7 @@ export default async function PreviewPage({
                     ))}
                   </span>
                 </div>
-                <p className="text-[14px] text-stone-500 mb-2.5">The food was unreal. We&apos;ll be back next week!</p>
+                <p className="text-[14px] text-stone-500 mb-2.5">{isService ? "Best massage I\u2019ve had in years. I\u2019m telling everyone!" : "The food was unreal. We\u2019ll be back next week!"}</p>
                 <p className="text-[13px] font-semibold mb-1 flex items-center gap-1.5" style={{ color }}>
                   <Sparkles size={13} /> AI draft ready
                 </p>
