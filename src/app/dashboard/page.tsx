@@ -9,9 +9,29 @@ import {
   ReceiptText,
   PenLine,
   Eye,
+  Store,
 } from "lucide-react";
+import { createServerSupabase } from "@/lib/supabase-server";
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+  // Nudge first-run owners to set their business name — new accounts go
+  // live as "My business" until they change it in Settings.
+  let needsName = false;
+  const supabase = await createServerSupabase();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (user) {
+    const { data: business } = await supabase
+      .from("businesses")
+      .select("name")
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: true })
+      .limit(1)
+      .single();
+    needsName = !business?.name || business.name === "My business";
+  }
+
   return (
     <div>
       {/* Greeting */}
@@ -21,6 +41,30 @@ export default function DashboardPage() {
       <p className="text-[15px] text-stone-500 mb-6">
         Here&apos;s how your business looks online today.
       </p>
+
+      {needsName && (
+        <Link
+          href="/dashboard/settings"
+          className="flex items-center gap-3 rounded-2xl px-4 py-3.5 mb-5 bg-white border-2"
+          style={{ borderColor: "var(--color-chili)" }}
+        >
+          <span
+            className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+            style={{ background: "rgba(217,45,32,0.08)" }}
+          >
+            <Store size={20} style={{ color: "var(--color-chili)" }} strokeWidth={2} />
+          </span>
+          <span className="flex-1 min-w-0">
+            <span className="block text-[15px] font-semibold">
+              What&apos;s your business called?
+            </span>
+            <span className="block text-[13px] text-stone-500">
+              Your website is live as “My business” — set your real name.
+            </span>
+          </span>
+          <ChevronRight size={20} className="text-stone-300 shrink-0" />
+        </Link>
+      )}
 
       {/* Visibility score hero card */}
       <div className="card p-6 mb-4">
