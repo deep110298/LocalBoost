@@ -21,8 +21,7 @@ const DEFAULT_COLOR = "#d92d20";
 const MENUS: Record<
   string,
   { tagline: string; items: { name: string; price: string; desc: string }[] }
-> = {
-  indian: {
+> = {  indian: {
     tagline: "Flavors worth finding.",
     items: [
       { name: "Chicken Biryani", price: "$16.99", desc: "Saffron rice, fried onions, raita" },
@@ -60,6 +59,63 @@ const MENUS: Record<
   },
 };
 
+// Services mode: /preview?type=service&vertical=spa — booking-focused mock
+const SERVICES: Record<
+  string,
+  { tagline: string; cta: string; items: { name: string; price: string; desc: string }[] }
+> = {
+  spa: {
+    tagline: "Unwind, right around the corner.",
+    cta: "Book appointment",
+    items: [
+      { name: "Deep Tissue Massage", price: "$95", desc: "60 min · pain relief, muscle recovery" },
+      { name: "Swedish Massage", price: "$75", desc: "60 min · full-body relaxation" },
+      { name: "Hot Stone Massage", price: "$110", desc: "75 min · deep warmth, total unwind" },
+      { name: "Cupping Therapy", price: "$85", desc: "45 min · tension release" },
+    ],
+  },
+  barbershop: {
+    tagline: "Sharp looks, zero wait.",
+    cta: "Book appointment",
+    items: [
+      { name: "Haircut", price: "$30", desc: "30 min · consultation included" },
+      { name: "Beard Trim & Shape", price: "$20", desc: "20 min · hot towel finish" },
+      { name: "Hot Towel Shave", price: "$35", desc: "30 min · classic straight razor" },
+      { name: "Kids Cut", price: "$25", desc: "30 min · under 12" },
+    ],
+  },
+  salon: {
+    tagline: "Good hair days, on demand.",
+    cta: "Book appointment",
+    items: [
+      { name: "Women's Cut", price: "$65", desc: "60 min · wash & style included" },
+      { name: "Color + Cut", price: "$140", desc: "120 min · full color, cut & finish" },
+      { name: "Blowout", price: "$45", desc: "45 min · smooth, bouncy finish" },
+      { name: "Manicure", price: "$35", desc: "45 min · shape, cuticle & polish" },
+    ],
+  },
+  auto: {
+    tagline: "Fixed right, the first time.",
+    cta: "Book service",
+    items: [
+      { name: "Oil Change", price: "$59", desc: "45 min · full synthetic, filter included" },
+      { name: "Brake Inspection", price: "Free", desc: "30 min · pads, rotors & fluid check" },
+      { name: "Tire Rotation", price: "$39", desc: "30 min · balance check included" },
+      { name: "Diagnostics", price: "$89", desc: "60 min · full systems scan" },
+    ],
+  },
+  default: {
+    tagline: "Book in seconds, not phone calls.",
+    cta: "Book appointment",
+    items: [
+      { name: "Signature Service", price: "$75", desc: "60 min · our most booked" },
+      { name: "Classic Service", price: "$55", desc: "45 min · the regular favorite" },
+      { name: "Deluxe Package", price: "$120", desc: "90 min · the full treatment" },
+      { name: "Quick Fix", price: "$35", desc: "30 min · in and out" },
+    ],
+  },
+};
+
 function sanitizeColor(c: string | undefined): string {
   if (c && /^#?[0-9a-fA-F]{6}$/.test(c)) return c.startsWith("#") ? c : `#${c}`;
   return DEFAULT_COLOR;
@@ -76,14 +132,27 @@ function sanitizeLogo(l: string | undefined): string | null {
 export default async function PreviewPage({
   searchParams,
 }: {
-  searchParams: Promise<{ name?: string; color?: string; cuisine?: string; logo?: string }>;
+  searchParams: Promise<{ name?: string; color?: string; cuisine?: string; logo?: string; type?: string; vertical?: string }>;
 }) {
   const params = await searchParams;
   const name = (params.name || "Your Restaurant").slice(0, 40);
   const color = sanitizeColor(params.color);
+  const isService = (params.type || "").toLowerCase() === "service";
   const cuisineKey = (params.cuisine || "").toLowerCase();
+  const verticalKey = (params.vertical || "").toLowerCase();
   const menu = MENUS[cuisineKey] ?? MENUS.default;
+  const service = SERVICES[verticalKey] ?? SERVICES.default;
   const logo = sanitizeLogo(params.logo);
+  // Unified content for the two modes
+  const tagline = isService ? service.tagline : menu.tagline;
+  const items = isService ? service.items : menu.items;
+  const primaryCta = isService ? service.cta : "Start an order";
+  const navCta = isService ? "Book now" : "Order now";
+  const heroSub = isService
+    ? `Book ${name} online in 30 seconds — no phone tag, no waiting on hold.`
+    : `Order direct from ${name} — no fees, no middlemen. Ready for pickup in 20 minutes.`;
+  const listTitle = isService ? "Book a service" : "Popular right now";
+  const itemCta = isService ? "Book" : "Add";
 
   return (
     <div className="min-h-screen" style={{ background: "var(--color-cream)", color: "var(--color-espresso)" }}>
@@ -114,31 +183,31 @@ export default async function PreviewPage({
               <span className="font-display font-semibold text-[20px] tracking-tight">{name}</span>
             </span>
             <span className="hidden md:flex items-center gap-6 text-[14px] font-medium text-stone-500">
-              <span>Menu</span><span>About</span><span>Reviews</span>
+              <span>{isService ? "Services" : "Menu"}</span><span>About</span><span>Reviews</span>
             </span>
             <span className="text-white text-[14px] font-semibold px-5 py-2.5 rounded-xl" style={{ background: color }}>
-              Order now
+              {navCta}
             </span>
           </div>
           {/* site hero */}
           <div className="grid md:grid-cols-2 items-center">
             <div className="px-6 md:px-10 py-10 md:py-16">
               <h1 className="font-display font-semibold tracking-[-0.02em] text-[38px] md:text-[54px] leading-[1.03] mb-4">
-                {menu.tagline.split(".")[0]}.
+                {tagline.split(".")[0]}.
                 <br />
                 <em className="italic font-medium" style={{ color }}>
-                  {menu.tagline.split(".")[1]?.trim() || "Done right."}
+                  {tagline.split(".")[1]?.trim() || "Done right."}
                 </em>
               </h1>
               <p className="text-stone-500 text-[16px] leading-relaxed mb-7">
-                Order direct from {name} — no fees, no middlemen. Ready for pickup in 20 minutes.
+                {heroSub}
               </p>
               <div className="flex gap-3">
                 <span className="text-white font-semibold px-7 py-3.5 rounded-2xl text-[16px]" style={{ background: color }}>
-                  Start an order
+                  {primaryCta}
                 </span>
                 <span className="font-semibold px-7 py-3.5 rounded-2xl text-[16px] bg-stone-100 text-stone-700">
-                  View menu
+                  {isService ? "View services" : "View menu"}
                 </span>
               </div>
               <div className="flex items-center gap-2 mt-6 text-[14px] text-stone-500">
@@ -151,14 +220,14 @@ export default async function PreviewPage({
               </div>
             </div>
             <div className="relative h-64 md:h-full min-h-[320px]">
-              <Image src="/images/hero-spread.jpg" alt={`${name} dishes`} fill className="object-cover" />
+              <Image src={isService ? "/images/restaurant-interior.jpg" : "/images/hero-spread.jpg"} alt={`${name} ${isService ? "interior" : "dishes"}`} fill className="object-cover" />
             </div>
           </div>
-          {/* site menu */}
+          {/* site menu / services */}
           <div className="px-6 md:px-10 py-10 bg-stone-50/70">
-            <h2 className="font-display font-semibold text-[26px] tracking-tight mb-6">Popular right now</h2>
+            <h2 className="font-display font-semibold text-[26px] tracking-tight mb-6">{listTitle}</h2>
             <div className="grid sm:grid-cols-2 gap-3">
-              {menu.items.map((item) => (
+              {items.map((item) => (
                 <div key={item.name} className="bg-white rounded-2xl p-5 border border-stone-100 flex justify-between gap-4">
                   <div>
                     <p className="font-semibold text-[16px] mb-1">{item.name}</p>
@@ -167,7 +236,7 @@ export default async function PreviewPage({
                   <div className="text-right shrink-0">
                     <p className="font-display font-semibold text-[18px] mb-2">{item.price}</p>
                     <span className="text-white text-[13px] font-semibold px-3.5 py-1.5 rounded-lg" style={{ background: color }}>
-                      Add
+                      {itemCta}
                     </span>
                   </div>
                 </div>
@@ -284,7 +353,7 @@ export default async function PreviewPage({
                 <Bell size={15} className="text-stone-400" />
               </div>
               <div className="flex gap-1 bg-stone-200/70 rounded-full p-1">
-                {["Inbox", "Orders", "Menu"].map((t, i) => (
+                {(isService ? ["Inbox", "Bookings", "Services"] : ["Inbox", "Orders", "Menu"]).map((t, i) => (
                   <span key={t} className={`flex-1 text-center text-[11px] font-semibold rounded-full py-1.5 ${i === 0 ? "bg-white shadow-sm" : "text-stone-500"}`}>
                     {t}
                   </span>
@@ -294,10 +363,10 @@ export default async function PreviewPage({
             <div className="p-4 space-y-3 min-h-[300px]">
               <div className="rounded-2xl border border-stone-100 p-3.5 shadow-sm">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-[13px] font-semibold">New order #1042</span>
+                  <span className="text-[13px] font-semibold">{isService ? "New booking" : "New order #1042"}</span>
                   <span className="text-[11px] font-bold px-2 py-0.5 rounded-full text-white" style={{ background: color }}>NEW</span>
                 </div>
-                <p className="text-[12px] text-stone-500 mb-2.5">2× {menu.items[0].name} · {menu.items[0].price}</p>
+                <p className="text-[12px] text-stone-500 mb-2.5">2× {items[0].name} · {items[0].price}</p>
                 <span className="block text-center text-white text-[12px] font-semibold rounded-xl py-2 bg-stone-900">Accept</span>
               </div>
               <div className="rounded-2xl border border-stone-100 p-3.5 shadow-sm">
@@ -312,8 +381,8 @@ export default async function PreviewPage({
               This could be <em className="italic font-medium" style={{ color }}>{name}</em> by Friday.
             </h2>
             <p className="text-stone-500 text-[16px] leading-relaxed mb-7">
-              Website, ordering, review inbox, and the owner app — built and
-              branded for you. You just run the kitchen.
+              Website, {isService ? "booking" : "ordering"}, review inbox, and the owner app — built and
+              branded for you. {isService ? "You just do the work." : "You just run the kitchen."}
             </p>
             <Link href="/login" className="inline-flex items-center justify-center min-h-[52px] px-8 text-[16px] font-semibold rounded-2xl text-white shadow-xl" style={{ background: color }}>
               Make it mine <ArrowRight size={17} className="ml-1.5" />
