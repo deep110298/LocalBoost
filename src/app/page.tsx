@@ -16,7 +16,6 @@ import {
   TrendingUp,
   Sparkles,
   Smartphone,
-  UtensilsCrossed,
 } from "lucide-react";
 
 const marqueeItems = [
@@ -24,7 +23,7 @@ const marqueeItems = [
   "Commission-free ordering",
   "Review inbox",
   "Google posts on autopilot",
-  "Menu sync",
+  "Menu & service sync",
   "Competitor watch",
   "Visibility score",
 ];
@@ -32,17 +31,17 @@ const marqueeItems = [
 const stats = [
   {
     value: "74%",
-    label: "say a restaurant's online presence influences whether they order",
+    label: "say a local business's online presence influences whether they choose it",
     source: "QSR Magazine",
   },
   {
     value: "94%",
-    label: "of diners say reviews influence where they choose to eat",
+    label: "of customers say reviews influence which local business they choose",
     source: "Toast",
   },
   {
     value: "54%",
-    label: "check the menu and prices online before ordering",
+    label: "check a business's menu or services online before visiting",
     source: "Menufy / Dynata",
   },
 ];
@@ -56,7 +55,7 @@ const steps = [
   {
     n: "02",
     title: "We build your site",
-    desc: "Menu, online ordering, and a design that looks like you — built and hosted for you, kept fresh from one dashboard.",
+    desc: "Your menu or services, online ordering and booking, and a design that looks like you — built and hosted for you, kept fresh from one dashboard.",
   },
   {
     n: "03",
@@ -98,7 +97,7 @@ const plans = [
       "Everything in Growth",
       "Up to 3 locations",
       "Review-request texts",
-      "Menu concierge",
+      "Menu & services concierge",
       "Priority support",
     ],
   },
@@ -131,7 +130,7 @@ export default function LandingPage() {
         </Reveal>
         <Reveal delay={80}>
           <h1 className="font-display font-semibold tracking-[-0.02em] leading-[1.02] text-[44px] md:text-[84px] mb-6">
-            Your restaurant&apos;s
+            Your business&apos;s
             <br />
             online presence,{" "}
             <em
@@ -144,8 +143,9 @@ export default function LandingPage() {
         </Reveal>
         <Reveal delay={160}>
           <p className="text-[17px] md:text-[20px] text-stone-500 max-w-2xl mx-auto leading-relaxed mb-9">
-            We build your website, keep your menu fresh, take commission-free
-            orders, and answer every review — while you run the kitchen.
+            We build your website, keep your menu or services fresh, handle
+            orders and bookings, and answer every review — while you run the
+            business.
           </p>
         </Reveal>
         <Reveal delay={220}>
@@ -166,13 +166,13 @@ export default function LandingPage() {
           <p className="text-[14px] text-stone-400">Set up in 5 minutes · Cancel anytime</p>
         </Reveal>
 
-        {/* Hero visual — food photo with floating product cards */}
+        {/* Hero visual — business photo with floating product cards */}
         <Reveal delay={120} className="mt-12 md:mt-16">
           <div className="relative max-w-4xl mx-auto">
             <div className="rounded-[28px] overflow-hidden shadow-2xl shadow-stone-900/20 border border-stone-900/10">
               <Image
-                src="/images/hero-spread.jpg"
-                alt="A vibrant spread of dishes at a restaurant using LocalBoost"
+                src="/images/salon.jpg"
+                alt="Inside a local salon running on LocalBoost"
                 width={1600}
                 height={1000}
                 className="w-full h-[320px] md:h-[480px] object-cover"
@@ -201,7 +201,7 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <p className="text-[13px] text-stone-600 leading-snug mb-3">
-                  “The paneer tikka was unreal. Staff remembered our order!”
+                  “Best fade in Jersey City — they remembered exactly what I wanted!”
                 </p>
                 <div className="flex gap-2">
                   <span className="flex-1 text-center text-[13px] font-semibold text-white rounded-xl py-2" style={{ background: "var(--color-chili)" }}>
@@ -219,16 +219,16 @@ export default function LandingPage() {
               <div className="bg-white/90 backdrop-blur-xl rounded-2xl p-4 shadow-xl shadow-stone-900/15 border border-white/60">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="w-8 h-8 rounded-xl bg-emerald-600 flex items-center justify-center text-white shrink-0">
-                    <UtensilsCrossed size={15} />
+                    <CalendarCheck size={15} />
                   </span>
                   <div>
-                    <p className="text-[13px] font-semibold leading-tight">New order #1042</p>
-                    <p className="text-[11px] text-stone-400">pickup · $36.50</p>
+                    <p className="text-[13px] font-semibold leading-tight">New booking</p>
+                    <p className="text-[11px] text-stone-400">Sat 3:00 PM</p>
                   </div>
                 </div>
-                <p className="text-[13px] text-stone-600 mb-3">2× Chicken Biryani, 1× Naan</p>
+                <p className="text-[13px] text-stone-600 mb-3">Haircut + beard trim — $45</p>
                 <span className="block text-center text-[13px] font-semibold text-white rounded-xl py-2 bg-stone-900">
-                  Accept order
+                  Confirm booking
                 </span>
               </div>
             </div>
@@ -270,7 +270,7 @@ export default function LandingPage() {
       <section className="max-w-6xl mx-auto px-5 py-16 md:py-24">
         <Reveal>
           <p className="text-center text-[14px] font-semibold uppercase tracking-[0.14em] text-stone-400 mb-10">
-            Why your online presence is the dining room
+            Why your online presence is your storefront
           </p>
         </Reveal>
         <div className="grid md:grid-cols-3 gap-10 md:gap-6 text-center">
@@ -299,8 +299,8 @@ export default function LandingPage() {
             </em>
           </h2>
           <p className="text-[16px] md:text-[18px] text-stone-500 text-center max-w-xl mx-auto mb-12">
-            One system for your website, menu, orders, and reputation. If you can
-            tap a button, you can run LocalBoost.
+            One system for your website, services, bookings, and reputation. If
+            you can tap a button, you can run LocalBoost.
           </p>
         </Reveal>
 
@@ -334,14 +334,14 @@ export default function LandingPage() {
                   </span>
                 </div>
                 <p className="text-[15px] text-stone-600 leading-relaxed mb-3">
-                  The paneer tikka was unreal. Staff remembered our order from last month!
+                  Best fade in Jersey City — they remembered exactly what I wanted.
                 </p>
                 <div className="bg-white rounded-xl p-4 border border-stone-100 mb-4">
                   <p className="text-[13px] font-semibold mb-1 flex items-center gap-1.5" style={{ color: "var(--color-chili)" }}>
                     <Sparkles size={13} /> AI draft
                   </p>
                   <p className="text-[14px] text-stone-500 leading-relaxed">
-                    Thank you, Aarav! Thrilled the paneer tikka hit the spot — see you next month.
+                    Thank you, Aarav! Glad we got the fade just right — see you next time.
                   </p>
                 </div>
                 <div className="flex gap-2">
@@ -359,8 +359,8 @@ export default function LandingPage() {
             <div className="card overflow-hidden h-full flex flex-col">
               <div className="relative h-44 md:h-48">
                 <Image
-                  src="/images/restaurant-interior.jpg"
-                  alt="A restaurant dining room"
+                  src="/images/spa-treatment.jpg"
+                  alt="A spa treatment room"
                   fill
                   className="object-cover"
                 />
@@ -371,7 +371,7 @@ export default function LandingPage() {
                   <h3 className="text-[18px] font-semibold tracking-tight">A website that sells</h3>
                 </div>
                 <p className="text-[15px] text-stone-500 leading-relaxed">
-                  Designed, hosted, and kept fresh for you. Your menu updates everywhere at once.
+                  Designed, hosted, and kept fresh for you. Your menu or services update everywhere at once.
                 </p>
               </div>
             </div>
@@ -382,8 +382,8 @@ export default function LandingPage() {
             <div className="card overflow-hidden h-full flex flex-col">
               <div className="relative h-44 md:h-48">
                 <Image
-                  src="/images/dish-closeup.jpg"
-                  alt="A sizzling dish ready to order"
+                  src="/images/barbershop.jpg"
+                  alt="A barbershop"
                   fill
                   className="object-cover"
                 />
@@ -394,7 +394,7 @@ export default function LandingPage() {
               <div className="p-6">
                 <h3 className="text-[18px] font-semibold tracking-tight mb-2">Ordering, minus the fees</h3>
                 <p className="text-[15px] text-stone-500 leading-relaxed">
-                  Customers order straight from your site. Every dollar stays with you.
+                  Customers order and book straight from your site. Every dollar stays with you.
                 </p>
               </div>
             </div>
@@ -431,8 +431,8 @@ export default function LandingPage() {
               </p>
               <div className="space-y-2">
                 {[
-                  { name: "Spice Route", trend: "+0.2", up: true },
-                  { name: "Tandoori Nights", trend: "-0.1", up: false },
+                  { name: "Main St. Barbers", trend: "+0.2", up: true },
+                  { name: "Downtown Cuts", trend: "-0.1", up: false },
                 ].map((c) => (
                   <div key={c.name} className="flex items-center justify-between bg-stone-50 rounded-xl px-3.5 py-2.5">
                     <span className="text-[14px] font-medium">{c.name}</span>
@@ -479,7 +479,7 @@ export default function LandingPage() {
                 <div className="flex items-center gap-2.5 mb-5">
                   <Smartphone size={20} style={{ color: "#f87171" }} />
                   <span className="text-[14px] font-semibold uppercase tracking-[0.14em] text-stone-400">
-                    Built for the pass
+                    Built for busy owners
                   </span>
                 </div>
                 <h2 className="font-display font-semibold tracking-[-0.02em] text-[34px] md:text-[48px] leading-[1.05] mb-5">
@@ -495,8 +495,8 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   {[
                     "Approve review replies with one tap",
-                    "Get pinged the second an order lands",
-                    "Fix a menu price from the dining room",
+                    "Get pinged the second an order or booking lands",
+                    "Update a price or service from anywhere",
                   ].map((t) => (
                     <li key={t} className="flex items-center gap-3 text-[16px] text-stone-200">
                       <span
@@ -531,7 +531,7 @@ export default function LandingPage() {
                       </span>
                     </div>
                     <div className="flex gap-1.5 bg-stone-200/70 rounded-full p-1 mb-1">
-                      {["Inbox", "Orders", "Menu"].map((t, i) => (
+                      {["Inbox", "Bookings", "Menu"].map((t, i) => (
                         <span
                           key={t}
                           className={`flex-1 text-center text-[11px] font-semibold rounded-full py-1.5 ${
@@ -554,7 +554,7 @@ export default function LandingPage() {
                         </span>
                       </div>
                       <p className="text-[12px] text-stone-500 leading-snug mb-2.5">
-                        Best biryani in Jersey City, hands down.
+                        Best fade in Jersey City, hands down.
                       </p>
                       <span
                         className="block text-center text-[12px] font-semibold text-white rounded-xl py-2"
@@ -573,7 +573,7 @@ export default function LandingPage() {
                         </span>
                       </div>
                       <p className="text-[12px] text-stone-500 leading-snug">
-                        Great naan, wish the wait was shorter on Fridays.
+                        Great cut, wish the wait was shorter on Saturdays.
                       </p>
                     </div>
                     <div className="rounded-2xl p-3.5 text-white" style={{ background: "var(--color-espresso)" }}>
@@ -601,7 +601,7 @@ export default function LandingPage() {
             </em>
           </h2>
           <p className="text-[16px] md:text-[18px] text-stone-500 text-center max-w-xl mx-auto mb-14">
-            We do the heavy lifting. You keep cooking.
+            We do the heavy lifting. You keep doing the work you love.
           </p>
         </Reveal>
         <div className="grid md:grid-cols-3 gap-10 md:gap-6">
@@ -627,7 +627,7 @@ export default function LandingPage() {
             </em>
           </h2>
           <p className="text-[16px] md:text-[18px] text-stone-500 text-center mb-12">
-            Less than one catering order a month. Start with 30 days free.
+            Less than one busy Saturday a month. Start with 30 days free.
           </p>
         </Reveal>
         <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto items-stretch">
@@ -737,7 +737,7 @@ export default function LandingPage() {
             <span className="font-bold tracking-tight text-[17px]">LocalBoost</span>
           </span>
           <p className="text-[14px] text-stone-400 text-center">
-            Built for local restaurants that deserve to be found.
+            Built for local businesses that deserve to be found.
           </p>
           <div className="flex items-center gap-6 text-[14px] font-medium text-stone-500">
             <a href="#features" className="hover:text-stone-900 transition-colors">Features</a>
