@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { ChiliLogo } from "@/components/chili-logo";
 import {
   Star,
@@ -143,6 +144,16 @@ function sanitizeLogo(l: string | undefined): string | null {
   if (l.startsWith("/preview-logos/") && /^\/preview-logos\/[a-z0-9_-]+\.(png|jpg|jpeg|webp|svg)$/.test(l)) return l;
   if (/^https:\/\/[^"'\s<>]+\.(png|jpg|jpeg|webp|svg)(\?[^"'\s<>]*)?$/i.test(l)) return l;
   return null;
+}
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ name?: string }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const name = (params.name || "Your Restaurant").slice(0, 40);
+  return { title: `${name} · LocalBoost preview` };
 }
 
 export default async function PreviewPage({

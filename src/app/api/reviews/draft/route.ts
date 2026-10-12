@@ -1,9 +1,15 @@
 import { NextResponse } from "next/server";
+import { requireBusinessOwner } from "@/lib/api-auth";
 
 // POST /api/reviews/draft — generate an AI reply draft for a review
+// Body: { business_id, review_text, rating, business_name }
+// Owner-only: no unauthenticated AI-cost-bearing calls.
 // TODO(Phase 2): call Muse API with business context + review text.
 export async function POST(req: Request) {
   const body = await req.json();
+  const auth = await requireBusinessOwner(body.business_id);
+  if ("error" in auth) return auth.error;
+
   const { review_text, rating, business_name } = body;
   if (!review_text) {
     return NextResponse.json({ error: "review_text required" }, { status: 400 });

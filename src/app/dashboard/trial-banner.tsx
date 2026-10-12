@@ -63,7 +63,7 @@ export default function TrialBanner() {
       <Clock
         size={20}
         className="shrink-0"
-        style={{ color: urgent ? "var(--color-chili)" : "var(--color-chili)" }}
+        style={{ color: "var(--color-chili)" }}
         strokeWidth={2}
       />
       <div className="flex-1 min-w-0">
