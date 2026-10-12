@@ -152,7 +152,7 @@ export async function generateMetadata({
   searchParams: Promise<{ name?: string }>;
 }): Promise<Metadata> {
   const params = await searchParams;
-  const name = (params.name || "Your Restaurant").slice(0, 40);
+  const name = (params.name || "Your Business").slice(0, 40);
   return { title: `${name} · LocalBoost preview` };
 }
 
@@ -162,7 +162,7 @@ export default async function PreviewPage({
   searchParams: Promise<{ name?: string; color?: string; cuisine?: string; logo?: string; type?: string; vertical?: string }>;
 }) {
   const params = await searchParams;
-  const name = (params.name || "Your Restaurant").slice(0, 40);
+  const name = (params.name || "Your Business").slice(0, 40);
   const color = sanitizeColor(params.color);
   const isService = (params.type || "").toLowerCase() === "service";
   const cuisineKey = (params.cuisine || "").toLowerCase();
