@@ -129,6 +129,14 @@ const VERTICAL_IMAGES: Record<string, string> = {
   auto: "/images/auto-shop.jpg",
 };
 
+// Review copy matched to each service vertical
+const SERVICE_REVIEWS: Record<string, string> = {
+  spa: "Best massage I\u2019ve had in years. I\u2019m telling everyone!",
+  barbershop: "Best fade I\u2019ve ever gotten. This is my shop now.",
+  salon: "My hair has never looked this good. Obsessed!",
+  auto: "Honest work, fair price. My car runs like new.",
+};
+
 function sanitizeLogo(l: string | undefined): string | null {
   if (!l) return null;
   // Allow our hosted preview logos or any https image URL (their real logo)
@@ -306,7 +314,7 @@ export default async function PreviewPage({
                     ))}
                   </span>
                 </div>
-                <p className="text-[14px] text-stone-500 mb-2.5">{isService ? "Best massage I\u2019ve had in years. I\u2019m telling everyone!" : "The food was unreal. We\u2019ll be back next week!"}</p>
+                <p className="text-[14px] text-stone-500 mb-2.5">{isService ? SERVICE_REVIEWS[verticalKey] ?? "Five stars — I\u2019m telling everyone!" : "The food was unreal. We\u2019ll be back next week!"}</p>
                 <p className="text-[13px] font-semibold mb-1 flex items-center gap-1.5" style={{ color }}>
                   <Sparkles size={13} /> AI draft ready
                 </p>
