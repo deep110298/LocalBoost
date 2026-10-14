@@ -105,6 +105,16 @@ const SERVICES: Record<
       { name: "Diagnostics", price: "$89", desc: "60 min · full systems scan" },
     ],
   },
+  laundromat: {
+    tagline: "Clean clothes. Zero hassle.",
+    cta: "See services",
+    items: [
+      { name: "Self-Service Wash", price: "$4.50", desc: "per load · high-efficiency machines" },
+      { name: "Wash & Fold", price: "$1.75", desc: "per lb · same-day turnaround" },
+      { name: "Dry Cleaning", price: "$8.99", desc: "per item · gentle care guaranteed" },
+      { name: "Commercial Laundry", price: "Custom", desc: "bulk pickup & delivery available" },
+    ],
+  },
   default: {
     tagline: "Book in seconds. Not phone calls.",
     cta: "Book appointment",
@@ -128,6 +138,7 @@ const VERTICAL_IMAGES: Record<string, string> = {
   barbershop: "/images/barbershop.jpg",
   salon: "/images/salon.jpg",
   auto: "/images/auto-shop.jpg",
+  laundromat: "/images/laundromat.jpg",
 };
 
 // Review copy matched to each service vertical
@@ -136,6 +147,7 @@ const SERVICE_REVIEWS: Record<string, string> = {
   barbershop: "Best fade I\u2019ve ever gotten. This is my shop now.",
   salon: "My hair has never looked this good. Obsessed!",
   auto: "Honest work, fair price. My car runs like new.",
+  laundromat: "Cleanest laundromat in the neighborhood. Machines always work!",
 };
 
 function sanitizeLogo(l: string | undefined): string | null {
