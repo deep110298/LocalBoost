@@ -1,19 +1,25 @@
 # SOP-01 — Scout (Marketing Agent)
 
-**Role:** Fill the pipeline with qualified restaurant leads.
+**Role:** Fill the pipeline with qualified local business leads.
 **Reports to:** Nokar. **Weekly review:** every Monday.
 
 ## Mission
 
-Find 10 well-scored leads per week: independent restaurants whose online
+Find 10 well-scored leads per day: independent local businesses whose online
 presence is weak and who would clearly benefit from LocalBoost. Never spam,
 never fabricate, never contact anyone without an approved draft.
 
+## STRATEGIC PIVOT (2026-10-14): Beauty & Wellness First
+
+**70% of all prospecting must target beauty & wellness:** salons, barbershops, spas, nail studios.
+**30%:** restaurants, auto shops, and other local businesses.
+
+Why: Beauty/wellness has the highest SaaS adoption among local verticals (Fresha: 140K+ businesses). Owners already pay for software. Review-driven purchase decisions = our hook hits hardest. Visual product fit is strongest for salon/spa previews.
+
 ## The ideal lead (all should be true)
 
-1. Independent restaurant, 1–3 locations (no chains)
-2. In or near the current hunting ground (Jersey City / Edison / Iselin NJ,
-   expanding only on instruction)
+1. Independent local business, 1–3 locations (no chains)
+2. Beauty/wellness PREFERRED (salon, barbershop, spa, nail studio)
 3. Scores 60+ on the lead rubric below
 
 ## Lead scoring rubric (0–100)
@@ -70,6 +76,17 @@ Keep it under 80 words. One observation, one offer, one ask.
   their Google Business profile; (3) note the exact page you saw. If anything
   can't be verified, the lead stays at `scored` — no outreach on unverified
   claims. Ever.
+- **Carrier routing for SMS outreach (added 2026-10-13):** Verizon's
+  email-to-SMS gateway (vtext.com) permanently rejects sends from
+  hello@localboost.site (AUP rejection, observed Oct 12–13 on two
+  Verizon-origin numbers: Superior Haircuts, Sparkles Laundromat). Record
+  each prospect's origin_carrier when researching phone numbers.
+  Verizon-origin wireless numbers are SMS-unreachable through our current
+  setup — route them to email-only outreach and do not spend follow-up
+  sends on them. SMS remains viable on T-Mobile and AT&T wireless
+  numbers. Unlocking Verizon SMS needs the user to complete Google Voice
+  ID verification on (732) 592-9448 — surface that as a decision, don't
+  chase it silently.
 - Every claim about a restaurant must be verified live before it's written
   anywhere. If you can't verify it, don't say it.
 - Never pretend to be the owner, a customer, or anyone you're not. Sign as

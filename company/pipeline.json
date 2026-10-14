@@ -6,7 +6,7 @@
       "address": "1670 Oak Tree Road, Edison NJ 08820",
       "google_rating": 4.4,
       "name": "Moghul Express",
-      "notes": "Modern multi-location site (Edison, Kendall Park, Piscataway, Parsippany); own ordering via ChowNow/Toast. Strong presence — not a fit.",
+      "notes": "Modern multi-location site (Edison, Kendall Park, Piscataway, Parsippany); own ordering via ChowNow/Toast. Strong presence \u2014 not a fit.",
       "outreach": [],
       "owner_responds": null,
       "phone": "732-549-6222",
@@ -20,14 +20,17 @@
       "address": "1963 Oak Tree Road, Edison NJ 08820",
       "google_rating": 4.9,
       "name": "Bombay Blue Indian Bistro",
-      "notes": "Modern template site with own 'Tasty Orders' ordering. Only 25 Google reviews — review-growth angle. Public email: info@bombayblue.net.",
+      "notes": "Modern template site with own 'Tasty Orders' ordering. Only 25 Google reviews \u2014 review-growth angle. Public email: info@bombayblue.net.",
       "outreach": [],
       "owner_responds": null,
       "phone": "732-902-6099",
       "review_count": 25,
       "score": 15,
       "stage": "scored",
-      "website": "http://bombayblue.net/"
+      "website": "http://bombayblue.net/",
+      "email": "info@bombayblue.net",
+      "email_source": "website:mailto",
+      "email_found_date": "2026-10-14"
     },
     {
       "added_date": "2026-10-09",
@@ -35,13 +38,46 @@
       "google_rating": 4.0,
       "name": "Desi Dhamaka Indian Restaurant",
       "notes": "Rating 4.0 per chamberofcommerce listing (not confirmed Google-sourced). DoorDash only, no direct ordering. Late-night biryani till 2AM, halal.",
-      "outreach": [],
+      "outreach": [
+        {
+          "channel": "sms_via_tmobile_gateway",
+          "from": "hello@localboost.site",
+          "to": "8482195184@tmomail.net",
+          "sent_at": "2026-10-12T17:59:00-04:00",
+          "status": "delivered"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day1_followup",
+          "channel": "sms_via_tmobile_gateway",
+          "from": "hello@localboost.site",
+          "to": "8482195184@tmomail.net",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-13.md",
+          "note": "day-1 nudge: 212 reviews, 1 of 10 newest replied"
+        },
+        {
+          "date": "2026-10-13T17:23:00-04:00",
+          "channel": "sms",
+          "type": "sms_sent",
+          "status": "sent",
+          "note": "Delivered (follow-up)"
+        }
+      ],
       "owner_responds": null,
       "phone": "848-219-5184",
       "review_count": 161,
       "score": 30,
-      "stage": "scored",
-      "website": "https://desidhamakanj.net/oak-tree/"
+      "stage": "outreach_sent",
+      "website": "https://desidhamakanj.net/oak-tree/",
+      "research": {
+        "google_rating": 4.0,
+        "google_reviews": 212,
+        "newest10_owner_replies": 1,
+        "carrier": "T-Mobile",
+        "wireless": true,
+        "checked": "2026-10-12"
+      }
     },
     {
       "added_date": "2026-10-09",
@@ -55,7 +91,10 @@
       "review_count": null,
       "score": 0,
       "stage": "scored",
-      "website": "https://www.kathiyawadikitchen.com/"
+      "website": "https://www.kathiyawadikitchen.com/",
+      "email": "kk2edison@gmail.com",
+      "email_source": "website:mailto",
+      "email_found_date": "2026-10-14"
     },
     {
       "added_date": "2026-10-09",
@@ -69,28 +108,32 @@
       "review_count": 365,
       "score": 60,
       "stage": "scored",
-      "website": "https://gordhanthalusa.com/"
+      "website": "https://gordhanthalusa.com/",
+      "email": "gordhanthalusa@gmail.com",
+      "email_source": "website:page-text",
+      "email_found_date": "2026-10-14"
     },
     {
       "added_date": "2026-10-09",
       "address": "1700 Oak Tree Rd #2, Edison NJ 08820",
       "google_rating": 4.1,
       "name": "Bawarchi Biryani Corner",
-      "notes": "FRANCHISE — excluded from outreach per SOP (not independent). Bare-bones site, no online menu, Uber Eats only. Public email on file: bawarchi.edison@gmail.com.",
+      "notes": "FRANCHISE \u2014 excluded from outreach per SOP (not independent). Bare-bones site, no online menu, Uber Eats only. Public email on file: bawarchi.edison@gmail.com. Email verified 2026-10-10 on the business's own contact page https://www.bawarchiedison.com/ContactUs. FRANCHISE - excluded from outreach per SOP.",
       "outreach": [],
       "owner_responds": null,
       "phone": "732-243-9777",
       "review_count": 61,
       "score": 75,
       "stage": "scored",
-      "website": "http://www.bawarchiedison.com/"
+      "website": "http://www.bawarchiedison.com/",
+      "email": "bawarchi.edison@gmail.com"
     },
     {
       "added_date": "2026-10-09",
       "address": "1655 Oak Tree Rd, Edison NJ 08820",
       "google_rating": 4.2,
       "name": "Mithaas",
-      "notes": "4 locations NJ/NY — borderline on independence. Modern polished site, own ordering via Toast/ChowNow.",
+      "notes": "4 locations NJ/NY \u2014 borderline on independence. Modern polished site, own ordering via Toast/ChowNow.",
       "outreach": [],
       "owner_responds": null,
       "phone": "732-906-2048",
@@ -132,7 +175,7 @@
       "address": "1734 Oak Tree Rd #4, Edison NJ 08820",
       "google_rating": null,
       "name": "Persis Biryani Indian Grill",
-      "notes": "No own website — Google lists a third-party ordering page as their site. No direct ordering. Google rating unverified. No public email found.",
+      "notes": "No own website \u2014 Google lists a third-party ordering page as their site. No direct ordering. Google rating unverified. No public email found.",
       "outreach": [],
       "owner_responds": null,
       "phone": "732-812-9999",
@@ -153,7 +196,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: modern site, full featured menu, own direct ordering ('Start an order', 10% off website orders). 3 locations (Jersey City, Iselin, Monmouth Junction) — independent per SOP but strong presence. Directory rating ~4.2 (not Google-confirmed). Not a fit."
+      "notes": "Website opened live 2026-10-09: modern site, full featured menu, own direct ordering ('Start an order', 10% off website orders). 3 locations (Jersey City, Iselin, Monmouth Junction) \u2014 independent per SOP but strong presence. Directory rating ~4.2 (not Google-confirmed). Not a fit."
     },
     {
       "name": "Deccan Spice",
@@ -164,10 +207,11 @@
       "review_count": null,
       "owner_responds": null,
       "score": 60,
-      "stage": "scored",
+      "stage": "dead",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: renders but extremely thin — generic filler text only, page title says 'Edison NJ' though business is in Jersey City, no nav/menu visible, no online ordering. Menu not found online (+15), no direct ordering (+15). Directory rating 4.1 (204 reviews, not Google-confirmed). Strongest fit this shift."
+      "notes": "Website opened live 2026-10-09: renders but extremely thin \u2014 generic filler text only, page title says 'Edison NJ' though business is in Jersey City, no nav/menu visible, no online ordering. Menu not found online (+15), no direct ordering (+15). Directory rating 4.1 (204 reviews, not Google-confirmed). Strongest fit this shift. Email verified 2026-10-10 on the business's own contact page https://www.deccanspice.com/jersey-city/contact/ (footer): deccanedison@gmail.com - brand-level email labeled Edison; no Jersey City-specific email published. OBSERVATION CHANGE: site now renders fully (contact page with form, menu pages, Jersey City online-order pages per live check) - the 2026-10-09 'extremely thin/filler text' note appears stale; direct-ordering status needs re-verification. | 2026-10-10: excluded \u2014 has complete updated website (deccanspice.com) + Toast online ordering for Jersey City. New targeting: no website or stale/broken site only.",
+      "email": "deccanedison@gmail.com"
     },
     {
       "name": "Paratha Junction",
@@ -195,7 +239,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: modern site, full menu with categories, own direct ordering ('Start New Order'). Directory rating 4.4 (126 reviews, not Google-confirmed). Strong presence — not a fit."
+      "notes": "Website opened live 2026-10-09: modern site, full menu with categories, own direct ordering ('Start New Order'). Directory rating 4.4 (126 reviews, not Google-confirmed). Strong presence \u2014 not a fit."
     },
     {
       "name": "Sapthagiri",
@@ -209,7 +253,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: WordPress site, full menu with prices, contact info. No direct online ordering found (+15). Same address and management name (Vinay Ankum) as VaibhaV — likely same ownership. Public email: info@sapthagiri.biz. Directory rating 4.1 (131 reviews, not Google-confirmed)."
+      "notes": "Website opened live 2026-10-09: WordPress site, full menu with prices, contact info. No direct online ordering found (+15). Same address and management name (Vinay Ankum) as VaibhaV \u2014 likely same ownership. Public email: info@sapthagiri.biz. Directory rating 4.1 (131 reviews, not Google-confirmed)."
     },
     {
       "name": "VaibhaV",
@@ -223,7 +267,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: WordPress site (same template as Sapthagiri), full menu with prices. No direct online ordering found (+15). Same address/management as Sapthagiri — likely same ownership; possible 2-for-1 angle. Directory rating 4.2 (87 reviews, not Google-confirmed)."
+      "notes": "Website opened live 2026-10-09: WordPress site (same template as Sapthagiri), full menu with prices. No direct online ordering found (+15). Same address/management as Sapthagiri \u2014 likely same ownership; possible 2-for-1 angle. Directory rating 4.2 (87 reviews, not Google-confirmed)."
     },
     {
       "name": "Masala Cafe Chettinad",
@@ -237,7 +281,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: modern polished site, menu items with prices, customer reviews section. No online ordering link found on homepage (+15, homepage-only check). 2 locations (Jersey City + Edison/Piscataway). Directory rating 4.5 (966 reviews, not Google-confirmed). Strong brand — weak fit."
+      "notes": "Website opened live 2026-10-09: modern polished site, menu items with prices, customer reviews section. No online ordering link found on homepage (+15, homepage-only check). 2 locations (Jersey City + Edison/Piscataway). Directory rating 4.5 (966 reviews, not Google-confirmed). Strong brand \u2014 weak fit."
     },
     {
       "name": "Pariwaar Delights",
@@ -251,7 +295,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: modern site, dishes listed, 'order online today' (direct ordering present). Women-led, 2 locations (Jersey City + Hoboken). Public emails: Pariwaardelights@gmail.com, pariwaardelights2@gmail.com. Directory rating 4.6 (8K reviews, not Google-confirmed). Strong presence — not a fit."
+      "notes": "Website opened live 2026-10-09: modern site, dishes listed, 'order online today' (direct ordering present). Women-led, 2 locations (Jersey City + Hoboken). Public emails: Pariwaardelights@gmail.com, pariwaardelights2@gmail.com. Directory rating 4.6 (8K reviews, not Google-confirmed). Strong presence \u2014 not a fit."
     },
     {
       "name": "Samosa Paradise",
@@ -279,7 +323,7 @@
       "stage": "scored",
       "outreach": [],
       "added_date": "2026-10-09",
-      "notes": "Website opened live 2026-10-09: functional site with full menu link, FAQ claims delivery 'via our website, Uber Eats, and DoorDash'. Footer shows 2023 copyright (mildly dated) but site works. Public email: info@golcondachimney.com. Directory rating ~4.1-4.2 (not Google-confirmed). Decent presence — weak fit."
+      "notes": "Website opened live 2026-10-09: functional site with full menu link, FAQ claims delivery 'via our website, Uber Eats, and DoorDash'. Footer shows 2023 copyright (mildly dated) but site works. Public email: info@golcondachimney.com. Directory rating ~4.1-4.2 (not Google-confirmed). Decent presence \u2014 weak fit."
     },
     {
       "name": "Las Americas Restaurant",
@@ -291,13 +335,14 @@
       "owner_responds": null,
       "score": 90,
       "stage": "outreach_drafted",
-      "notes": "Independent single-location Dominican/Latin restaurant. Google-listed website domain fails to resolve (DNS failure) — broken. Full menu with prices only on DoorDash/UberEats/Seamless; marketplace-only ordering, no direct channel. LIVE Google Maps check 2026-10-10: 3.8 stars / 257 reviews; 0 of 5 sampled reviews had an owner reply (full review list blocked by Maps sign-in wall) — owner replies rarely/never (+15). GBP Posts not yet checked (Maps check blocked by reCAPTCHA). No public email found. Score: broken site (30) + no owned menu (15) + rating below 4.3 (15) + marketplace-only ordering (15) + reviews unanswered (15).",
+      "notes": "Independent single-location Dominican/Latin restaurant. Google-listed website domain fails to resolve (DNS failure) \u2014 broken. Full menu with prices only on DoorDash/UberEats/Seamless; marketplace-only ordering, no direct channel. LIVE Google Maps check 2026-10-10: 3.8 stars / 257 reviews; 0 of 5 sampled reviews had an owner reply (full review list blocked by Maps sign-in wall) \u2014 owner replies rarely/never (+15). GBP Posts not yet checked (Maps check blocked by reCAPTCHA). No public email found. Score: broken site (30) + no owned menu (15) + rating below 4.3 (15) + marketplace-only ordering (15) + reviews unanswered (15). Email check 2026-10-10: no public business email found (site http://lasamericasrest.com still DNS-fails per direct check; no email in yellow-list/directory results). Observation unchanged.",
       "outreach": [],
       "added_date": "2026-10-10",
-      "draft_ref": "company/outreach/drafts-2026-10-10.md"
+      "draft_ref": "company/outreach/drafts-2026-10-10.md",
+      "email": ""
     },
     {
-      "name": "Alex Sazón Restaurant",
+      "name": "Alex Saz\u00f3n Restaurant",
       "address": "749 Bergen Ave, Jersey City, NJ 07306",
       "phone": "(201) 984-2852",
       "website": "https://www.alexsazonrestaurant.com/",
@@ -306,10 +351,11 @@
       "owner_responds": null,
       "score": 75,
       "stage": "outreach_drafted",
-      "notes": "Independent single-location Dominican restaurant on Bergen Ave. Google-listed site alexsazonrestaurant.com is a dead/parked spam-directory page, BUT their real site alexsazon.com is LIVE (WordPress, image-only menus, no online ordering visible) — it just isn't linked anywhere; own description says 'call for pickup or delivery'; full menu with prices only on DoorDash. Directory ratings only (4.0/182 dinepages; 3.8/794 menuweb aggregated) — NOT Google-confirmed. No public email found. Score: dead Google-listed site (30) + no owned menu (15) + rating below 4.3 (15) + no direct ordering (15). Correction applied 2026-10-10 ~11:30 EDT (draft observation was stale).",
+      "notes": "Independent single-location Dominican restaurant on Bergen Ave. Google-listed site alexsazonrestaurant.com is a dead/parked spam-directory page, BUT their real site alexsazon.com is LIVE (WordPress, image-only menus, no online ordering visible) \u2014 it just isn't linked anywhere; own description says 'call for pickup or delivery'; full menu with prices only on DoorDash. Directory ratings only (4.0/182 dinepages; 3.8/794 menuweb aggregated) \u2014 NOT Google-confirmed. No public email found. Score: dead Google-listed site (30) + no owned menu (15) + rating below 4.3 (15) + no direct ordering (15). Correction applied 2026-10-10 ~11:30 EDT (draft observation was stale). Email check 2026-10-10: no public email published on alexsazon.com (site live: image menus, reviews, address/hours; no contact page or email found). Observation unchanged. Re-verified 2026-10-11: alexsazon.com is a live WordPress site (image-only menus, reviews, hours/address, no online ordering or email found). Google-listed alexsazonrestaurant.com still dead/parked. Fit weaker than scored \u2014 real site exists, but Google traffic goes to dead domain.",
       "outreach": [],
       "added_date": "2026-10-10",
-      "draft_ref": "company/outreach/drafts-2026-10-10.md"
+      "draft_ref": "company/outreach/drafts-2026-10-10.md",
+      "email": ""
     },
     {
       "name": "All New VIP Diner (Barshay's)",
@@ -321,10 +367,11 @@
       "owner_responds": null,
       "score": 75,
       "stage": "outreach_drafted",
-      "notes": "Independent single-location diner. No official website — Google Business website field points to a Canva design URL instead of a real site. No official online menu (full menu with prices only on menuwithprice.com). Delivery via DoorDash/Postmates only, no direct ordering. Rating ~3.9/~1.8K reviews Google-derived via top-rated.online — NOT Google-confirmed; restaurantji 3.5/270. Score: no website (30) + menu missing (15) + rating below 4.3 (15) + no direct ordering (15). Verified 2026-10-10.",
+      "notes": "Independent single-location diner. No official website \u2014 Google Business website field points to a Canva design URL instead of a real site. No official online menu (full menu with prices only on menuwithprice.com). Delivery via DoorDash/Postmates only, no direct ordering. Rating ~3.9/~1.8K reviews Google-derived via top-rated.online \u2014 NOT Google-confirmed; restaurantji 3.5/270. Score: no website (30) + menu missing (15) + rating below 4.3 (15) + no direct ordering (15). Verified 2026-10-10. Email check 2026-10-10: no public business email found (no official website; official Facebook page facebook.com/105056619229912 exists but no email visible without login). Observation unchanged.",
       "outreach": [],
       "added_date": "2026-10-10",
-      "draft_ref": "company/outreach/drafts-2026-10-10.md"
+      "draft_ref": "company/outreach/drafts-2026-10-10.md",
+      "email": ""
     },
     {
       "name": "Sip Pizza",
@@ -336,7 +383,7 @@
       "owner_responds": null,
       "score": 60,
       "stage": "scored",
-      "notes": "Independent family-run halal pizza + chicken-over-rice counter. Listed website sippizza.us fails to resolve (DNS failure) — broken. Full menu with prices only on DoorDash/UberEats and aggregators; marketplace-only ordering, no direct channel. Directory ratings only (4.5/356 carta.menu/menuweb; 4.5/50+ DoorDash) — NOT Google-confirmed. No public email found. Score: broken site (30) + no owned menu (15) + marketplace-only ordering (15). Verified 2026-10-10.",
+      "notes": "Independent family-run halal pizza + chicken-over-rice counter. Listed website sippizza.us fails to resolve (DNS failure) \u2014 broken. Full menu with prices only on DoorDash/UberEats and aggregators; marketplace-only ordering, no direct channel. Directory ratings only (4.5/356 carta.menu/menuweb; 4.5/50+ DoorDash) \u2014 NOT Google-confirmed. No public email found. Score: broken site (30) + no owned menu (15) + marketplace-only ordering (15). Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
     },
@@ -350,7 +397,7 @@
       "owner_responds": null,
       "score": 45,
       "stage": "scored",
-      "notes": "Independent single-location diner. Live site is a thin one-page brochure (About paragraph + guestbook only); no menu, prices, ordering, or contact page. Third-party menu on menucollectors.com is stale. Delivery only via Uber Eats per Yelp Q&A; no direct ordering. Rating 4.2/1,125 Google-derived via wanderlog — NOT Google-confirmed. CONFLICT: Google-derived sources flag the listing as 'Permanently Closed' while Yelp shows Sept 2026 activity — VERIFY BY PHONE before any outreach. Score: menu missing (15) + rating below 4.3 (15) + no direct ordering (15). Verified 2026-10-10.",
+      "notes": "Independent single-location diner. Live site is a thin one-page brochure (About paragraph + guestbook only); no menu, prices, ordering, or contact page. Third-party menu on menucollectors.com is stale. Delivery only via Uber Eats per Yelp Q&A; no direct ordering. Rating 4.2/1,125 Google-derived via wanderlog \u2014 NOT Google-confirmed. CONFLICT: Google-derived sources flag the listing as 'Permanently Closed' while Yelp shows Sept 2026 activity \u2014 VERIFY BY PHONE before any outreach. Score: menu missing (15) + rating below 4.3 (15) + no direct ordering (15). Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
     },
@@ -364,7 +411,7 @@
       "owner_responds": null,
       "score": 30,
       "stage": "scored",
-      "notes": "Independent single-location Chinese (Hunan) restaurant. Website live (basic WordPress template): photo gallery + pickup/delivery button that hands off to third-party MealKeyway ordering page — no menu with prices on own site. Directory ratings only (4.2, counts vary 108–171) — NOT Google-confirmed. No public email on site. Score: no owned menu (15) + rating below 4.3 (15). Verified 2026-10-10.",
+      "notes": "Independent single-location Chinese (Hunan) restaurant. Website live (basic WordPress template): photo gallery + pickup/delivery button that hands off to third-party MealKeyway ordering page \u2014 no menu with prices on own site. Directory ratings only (4.2, counts vary 108\u2013171) \u2014 NOT Google-confirmed. No public email on site. Score: no owned menu (15) + rating below 4.3 (15). Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
     },
@@ -378,7 +425,7 @@
       "owner_responds": null,
       "score": 15,
       "stage": "scored",
-      "notes": "Independent single-location taqueria. Website loads (hours, address, phones, catering note) but online ordering is disabled and no menu items render on the official site — site contradicts itself on takeout/delivery availability. Full menu with prices only on menuweb.menu. Directory ratings only (4.6/539 datagemba Google-derived) — NOT Google-confirmed. Score: no direct online ordering (15). Verified 2026-10-10.",
+      "notes": "Independent single-location taqueria. Website loads (hours, address, phones, catering note) but online ordering is disabled and no menu items render on the official site \u2014 site contradicts itself on takeout/delivery availability. Full menu with prices only on menuweb.menu. Directory ratings only (4.6/539 datagemba Google-derived) \u2014 NOT Google-confirmed. Score: no direct online ordering (15). Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
     },
@@ -392,7 +439,7 @@
       "owner_responds": null,
       "score": 15,
       "stage": "scored",
-      "notes": "FRANCHISE — excluded from outreach per SOP (not independent). Journal Square location opened July 2026 as a franchise of the NYC-based chain (4 NYC + 2 Texas + 2 London locations per northjersey.com, 2026-06-20). Delivery apps only, no direct online ordering. No Google rating data found (location ~3 months old). Score reflects ordering criterion only. Verified 2026-10-10.",
+      "notes": "FRANCHISE \u2014 excluded from outreach per SOP (not independent). Journal Square location opened July 2026 as a franchise of the NYC-based chain (4 NYC + 2 Texas + 2 London locations per northjersey.com, 2026-06-20). Delivery apps only, no direct online ordering. No Google rating data found (location ~3 months old). Score reflects ordering criterion only. Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
     },
@@ -406,7 +453,7 @@
       "owner_responds": null,
       "score": 0,
       "stage": "scored",
-      "notes": "Family-run single-location Bangladeshi restaurant; James Beard 2024 semifinalist. Modern polished Wix site (NYT press quotes, newsletter signup, FAQ, takeout and dine-in pages). Full priced menu via branded Menufy ordering page (direct ordering) + phone call-ahead. Directory ratings only (4.7/711 top-rated.online; ~4.7 restaurantguru) — NOT Google-confirmed. Public email: Hello@KoraiKitchen.com. No rubric weaknesses verified — strong presence, not a fit. Verified 2026-10-10.",
+      "notes": "Family-run single-location Bangladeshi restaurant; James Beard 2024 semifinalist. Modern polished Wix site (NYT press quotes, newsletter signup, FAQ, takeout and dine-in pages). Full priced menu via branded Menufy ordering page (direct ordering) + phone call-ahead. Directory ratings only (4.7/711 top-rated.online; ~4.7 restaurantguru) \u2014 NOT Google-confirmed. Public email: Hello@KoraiKitchen.com. No rubric weaknesses verified \u2014 strong presence, not a fit. Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
     },
@@ -420,9 +467,1764 @@
       "owner_responds": null,
       "score": 0,
       "stage": "scored",
-      "notes": "Independent single location (24/7 Mexican, owner Roberto Islas, chef Santos Xochiua). Modern Wix site; ordering routed through own branded Toast page (commission-free direct ordering). No current Google rating verifiable (only stale directory page at old Grand St address) — recorded null. No public email (newsletter signup only). No rubric weaknesses verified — not a fit. Verified 2026-10-10.",
+      "notes": "Independent single location (24/7 Mexican, owner Roberto Islas, chef Santos Xochiua). Modern Wix site; ordering routed through own branded Toast page (commission-free direct ordering). No current Google rating verifiable (only stale directory page at old Grand St address) \u2014 recorded null. No public email (newsletter signup only). No rubric weaknesses verified \u2014 not a fit. Verified 2026-10-10.",
       "outreach": [],
       "added_date": "2026-10-10"
+    },
+    {
+      "name": "Rama African Hair Braiding",
+      "address": "492 Communipaw Ave, Jersey City, NJ 07304",
+      "phone": "(201) 395-0000",
+      "website": "none",
+      "category": "hair salon",
+      "google_rating": 3.9,
+      "review_count": 106,
+      "owner_responds": false,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location African hair braiding salon (Bergen-Lafayette). NO website at all (salondiscover.com listing shows 'Website:' blank, verified 2026-10-10). No online booking. Birdeye 3.9/106 (not Google-confirmed); Birdeye profile 'not claimed by the business owner' -> owner replies rarely/never (+15). Score: no website (30) + no online booking (15) + rating below 4.3 (15) + reviews unanswered (15). No public email found. | 2026-10-10 evening: talk track drafted (services framing, exclusive-invitation tone). No public email found after web search \u2014 phone/walk-in only. Preview generator is restaurant-only; no preview link for salon leads until services variant built.",
+      "draft_ref": "company/outreach/drafts-2026-10-10.md"
+    },
+    {
+      "name": "Mia Spa",
+      "address": "743 Newark Ave, Jersey City, NJ 07306",
+      "phone": "(201) 232-1130",
+      "website": "https://mia-spa.business.site/",
+      "category": "spa",
+      "google_rating": 3.9,
+      "review_count": 122,
+      "owner_responds": false,
+      "score": 75,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location massage spa (Journal Square). Website is only a thin Google business.site stub (mia-spa.business.site) - no real site, no online booking. Birdeye 3.9/122 (not Google-confirmed), profile 'not claimed' -> owner replies rarely/never (+15); several 1-star reviews mention rude service. Phone (201) 232-1130 per birdeye/manta/chamberofcommerce (hubbiz lists a different number). Score: no website (30) + no online booking (15) + rating below 4.3 (15) + reviews unanswered (15). No public email found. Note: mixed review character - parent to decide on outreach fit. Re-verified 2026-10-11: mia-spa.business.site now returns 404 (Google discontinued business.site) \u2014 no website at all now. No public email found."
+    },
+    {
+      "name": "Superstarz Barber Shop",
+      "address": "609 Communipaw Ave, Jersey City, NJ 07304",
+      "phone": "(201) 521-2045",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": 5.0,
+      "review_count": 4,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location barbershop (Bergen-Lafayette). No website - Google lists only their Instagram (instagram.com/superstarzbarbershop) as the site. No online booking. Rating 5.0 but only 4 reviews (Google-derived via meta.ai, not Google-confirmed). Score: no website (30) + no online booking (15) + under 50 reviews (15). Owner responses unverified. No public email found."
+    },
+    {
+      "name": "Westkee's Barbershop",
+      "address": "490 Communipaw Ave, Jersey City, NJ 07304",
+      "phone": "(201) 685-7158",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": 5.0,
+      "review_count": 1,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location barbershop (Bergen-Lafayette). No website - Google lists only Instagram as the site. No online booking. Rating 5.0/1 review (Google-derived via meta.ai, not Google-confirmed). Score: no website (30) + no online booking (15) + under 50 reviews (15). Owner responses unverified. No public email found."
+    },
+    {
+      "name": "Pica's Automotive Services Center",
+      "address": "90 NJ-139, Jersey City, NJ 07306",
+      "phone": "(201) 798-5566",
+      "website": "none",
+      "category": "auto repair",
+      "google_rating": 4.9,
+      "review_count": 15,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location auto repair (self-described 'small independent shop', 24 years, Journal Square area). No website - Google lists only their Facebook page. No online booking/appointments. Rating 4.9/15 (Google-derived via meta.ai, not Google-confirmed). Score: no website (30) + no online booking (15) + under 50 reviews (15). Owner responses unverified. No public email found."
+    },
+    {
+      "name": "Sudz Laundromat",
+      "address": "37 Gill Ln, Iselin, NJ 08830",
+      "phone": "(732) 710-3240",
+      "website": "http://sudzlaundromatnj.localsearch.com",
+      "category": "laundromat",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location laundromat (Iselin). Website is only a thin localsearch.com stub page (sudzlaundromatnj.localsearch.com) - address/phone/hours only, no services, photos, or booking; effectively no website. No online booking. No reviews found (superpages 'be the first to review'). Score: no website (30) + no online booking (15) + under 50 reviews (15). Owner responses unverified. No public email found. | No Google Business Profile found 2026-10-12; skipped for review-based outreach"
+    },
+    {
+      "name": "One Stop Laundry and Dry Cleaners",
+      "address": "97 State Route 27, Edison, NJ 08820",
+      "phone": "(732) 548-1558",
+      "website": "none",
+      "category": "dry cleaners",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 45,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location laundry/dry cleaner (Edison). No website found. No online booking. Google rating unverified (chamberofcommerce lists 62 reviews, rating not shown - not Google-confirmed). Score: no website (30) + no online booking (15). Owner responses unverified. No public email found."
+    },
+    {
+      "name": "City Cleaners",
+      "address": "1700 Oak Tree Rd Ste 3, Edison, NJ 08820",
+      "phone": "(732) 603-0273",
+      "website": "none",
+      "category": "dry cleaners",
+      "google_rating": 4.0,
+      "review_count": 1,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-10",
+      "email": "",
+      "notes": "Independent single-location dry cleaner (Edison, 26 years in business). No website (cmac.ws listing shows 'Website: N/A'). No online booking. Rating 4.0/1 review (yellowbot, not Google-confirmed). Score: no website (30) + no online booking (15) + under 50 reviews (15). Owner responses unverified. No public email found."
+    },
+    {
+      "name": "BLUE TOUCH SPA",
+      "address": "581 Central Avenue, Jersey City, NJ 07307",
+      "phone": "(201) 920-7009",
+      "email": "bluetouchspanj@gmail.com",
+      "website": "https://www.bluetouchspa.com",
+      "score": 92,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-11",
+      "notes": "Google-listed domain bluetouchspa.com resolves but renders only a Setmore booking widget \u2014 no real website content (broken/incomplete). Heights location, 75 reviews at 4.95. Independent spa (deep tissue/Swedish/cupping/hot stone). Email source: https://bluetouchspa.setmore.com",
+      "outreach": [
+        {
+          "date": "2026-10-11T17:32:46-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for Blue Touch Spa",
+          "status": "sent"
+        },
+        {
+          "date": "2026-10-11T21:00:00-04:00",
+          "type": "followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "Made something for Blue Touch Spa",
+          "status": "sent",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "delivery": "Delivered",
+          "approved_by_user": "2026-10-11 via 'Ya this is fine to send'"
+        },
+        {
+          "date": "2026-10-12",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "quick follow-up \u2014 Blue Touch Spa",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-12.md"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day3_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "quick thought \u2014 Blue Touch Spa",
+          "status": "drafted",
+          "scheduled": "2026-10-16",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#B1",
+          "note": "CADENCE (2026-10-14 closer shift): draft verified current; deferred to 2026-10-16 \u2014 sending 2026-10-14 would be the 4th email in 4 days (initial 10-11, preview 10-11 eve, day-1 10-13). Exclusive-invitation framing rule: don't spam."
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "owner_responds": null
+    },
+    {
+      "name": "American Trimmers Barbershop",
+      "address": "410 Martin Luther King Jr Dr, Jersey City, NJ 07304",
+      "phone": "(347) 335-3685",
+      "email": "lomesemm@yahoo.com",
+      "website": "none",
+      "score": 90,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-11",
+      "notes": "No website at all \u2014 only web presence is a Setmore booking page. Small independent shop (4 reviews, 5.0), owner Kodjo the master barber; open 7 days. Not a franchise/chain. Email source: https://americantrimmers.setmore.com",
+      "outreach": [
+        {
+          "date": "2026-10-11T17:32:46-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for American Trimmers",
+          "status": "sent"
+        },
+        {
+          "date": "2026-10-11T21:25:00-04:00",
+          "type": "followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "Made something for American Trimmers",
+          "status": "sent",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "delivery": "Delivered",
+          "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+        },
+        {
+          "date": "2026-10-12",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "one question \u2014 American Trimmers' website",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-12.md"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day3_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "re: American Trimmers' website",
+          "status": "drafted",
+          "scheduled": "2026-10-16",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#B2",
+          "note": "CADENCE (2026-10-14 closer shift): draft verified current; deferred to 2026-10-16 \u2014 sending 2026-10-14 would be the 4th email in 4 days (initial 10-11, preview 10-11 eve, day-1 10-13). Exclusive-invitation framing rule: don't spam."
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "owner_responds": null
+    },
+    {
+      "name": "Paulanto Bakery",
+      "address": "387 Broadway, Bayonne, NJ 07002",
+      "phone": "(201) 339-9001",
+      "email": "paulantobakery@yahoo.com",
+      "website": "none (Google listing points to Facebook page https://m.facebook.com/Paulantobakery/)",
+      "score": 88,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-11",
+      "notes": "Long-standing independent Bayonne bakery (4.7 stars, 128 reviews; known for $1 morning specials). Zero web presence beyond a Facebook page \u2014 no website, no online ordering. Email source: https://www.instagram.com/paulantobakery",
+      "outreach": [
+        {
+          "date": "2026-10-11T17:32:46-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for Paulanto Bakery",
+          "status": "sent"
+        },
+        {
+          "date": "2026-10-11T21:26:00-04:00",
+          "type": "followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "Made something for Paulanto",
+          "status": "sent",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "delivery": "Delivered",
+          "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+        },
+        {
+          "date": "2026-10-12",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "following up \u2014 Paulanto Bakery",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-12.md"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day3_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "one more thought \u2014 Paulanto Bakery",
+          "status": "drafted",
+          "scheduled": "2026-10-16",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#B3",
+          "note": "CADENCE (2026-10-14 closer shift): draft verified current; deferred to 2026-10-16 \u2014 sending 2026-10-14 would be the 4th email in 4 days (initial 10-11, preview 10-11 eve, day-1 10-13). Exclusive-invitation framing rule: don't spam."
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "owner_responds": null
+    },
+    {
+      "name": "Ray's Auto Bayonne",
+      "address": "825-827 Broadway, Bayonne, NJ 07002",
+      "phone": "(201) 823-1949",
+      "email": "RAYSAUTOBAYONNE@AOL.COM",
+      "website": "none (Google listing points to Instagram only)",
+      "score": 85,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-11",
+      "notes": "Independent family-owned auto repair ('Family owned and operated' per Google description). No website \u2014 only web presence is a 70-follower Instagram business profile with 13 posts. Email source: https://www.instagram.com/raysautobayonne",
+      "outreach": [
+        {
+          "date": "2026-10-11T17:32:46-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for Ray's Auto",
+          "status": "sent"
+        },
+        {
+          "date": "2026-10-11T21:26:00-04:00",
+          "type": "followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "Made something for Ray's Auto",
+          "status": "sent",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "delivery": "Delivered",
+          "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+        },
+        {
+          "date": "2026-10-12",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "quick question for Ray's Auto",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-12.md"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day3_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "quick check \u2014 Ray's Auto",
+          "status": "drafted",
+          "scheduled": "2026-10-16",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#B4",
+          "note": "CADENCE (2026-10-14 closer shift): draft verified current; deferred to 2026-10-16 \u2014 sending 2026-10-14 would be the 4th email in 4 days (initial 10-11, preview 10-11 eve, day-1 10-13). Exclusive-invitation framing rule: don't spam."
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "owner_responds": null
+    },
+    {
+      "name": "Gladys Beauty Salon",
+      "address": "196 Sip Ave, Jersey City, NJ 07306",
+      "phone": "201-685-7621",
+      "email": "gladysbeautysalon1210@gmail.com",
+      "website": "none",
+      "score": 84,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-11",
+      "notes": "No website at all \u2014 only a Setmore booking page with services/hours/team entered by the business. Men's haircut specialist, Journal Square-adjacent 07306; independent, not a franchise. Email source: https://gladysbeautysalon.setmore.com/",
+      "outreach": [
+        {
+          "date": "2026-10-11T17:32:46-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for Gladys Beauty Salon",
+          "status": "sent"
+        },
+        {
+          "date": "2026-10-11T21:27:00-04:00",
+          "type": "followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "Made something for Gladys",
+          "status": "sent",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "delivery": "Delivered",
+          "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+        },
+        {
+          "date": "2026-10-12",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "checking in \u2014 Gladys Beauty Salon",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-12.md"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day3_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "checking back \u2014 Gladys Beauty Salon",
+          "status": "drafted",
+          "scheduled": "2026-10-16",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#B5",
+          "note": "CADENCE (2026-10-14 closer shift): draft verified current; deferred to 2026-10-16 \u2014 sending 2026-10-14 would be the 4th email in 4 days (initial 10-11, preview 10-11 eve, day-1 10-13). Exclusive-invitation framing rule: don't spam."
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "owner_responds": null
+    },
+    {
+      "name": "C & M Barbershop",
+      "address": "520 Central Ave, Jersey City, NJ 07307",
+      "phone": "+1 (201) 360-0245",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": 4.7,
+      "review_count": 26,
+      "owner_responds": null,
+      "score": 100,
+      "stage": "on_hold",
+      "outreach": [
+        {
+          "date": "2026-10-12",
+          "subject": "invitation for C & M Barbershop",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-12",
+      "email": "",
+      "draft_ref": "company/outreach/drafts-2026-10-12.md",
+      "notes": "Independent single-location barbershop (Heights). NO website at all (CMac.ws lists Website: N/A, Email: N/A). Phone/walk-in only, no online booking. Rating 4.7/26 via barberhead.com+trustreviewers.com (NOT Google-confirmed). Owner responses: no evidence found. CONFLICTING Sunday hours (CMac.ws: closed vs trustreviewers: 12-4PM). Score: no website (30) + no online booking (15) + under 50 reviews (15) + reviews unanswered (15) + no Google posts (10) + outdated info (15). Verified live 2026-10-12. No public business email found anywhere \u2014 NOT sendable yet.",
+      "google_verified": {
+        "note": "NO GBP under this name; 520 Central Ave now lists as La Elegancia Official (4.9/17, owner replies to 9/10). Business may have rebranded/closed \u2014 DO NOT outreach until resolved.",
+        "verified_at": "2026-10-12",
+        "status": "suspect"
+      }
+    },
+    {
+      "name": "Express Nails Spa",
+      "address": "329 Central Ave A, Jersey City, NJ 07307",
+      "phone": "+1 (201) 795-4455",
+      "website": "https://express-nail-spa.hub.biz (third-party directory listing, not own site)",
+      "category": "nail salon",
+      "google_rating": 3.4,
+      "review_count": 262,
+      "owner_responds": false,
+      "score": 100,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-12",
+          "subject": "invitation for Express Nails Spa",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-12",
+      "email": "",
+      "draft_ref": "company/outreach/drafts-2026-10-12.md",
+      "notes": "Independent nail spa (Heights). No own website \u2014 only a Hubbiz directory stub (generic tags + reviews header). Call-to-book only; Fresha venue page shows hours but no booking widget. Birdeye 3.4/262 (NOT Google-confirmed), profile explicitly 'not claimed by the business owner' \u2192 owner never replies (+15). CONFLICTING hours across directories (7 days 10-8 vs Mon-Thu 10-8/Fri-Sat 9-9/Sun 10-6). Score: no website (30) + no online booking (15) + rating below 4.3 (15) + reviews unanswered (15) + no Google posts (10) + outdated info (15). Verified live 2026-10-12. No public business email found \u2014 NOT sendable yet. | landline (MCI Metro ATS, not wireless) \u2014 cannot receive SMS; verified 2026-10-12",
+      "google_verified": {
+        "google_rating": 3.5,
+        "google_reviews": 250,
+        "owner_replies": "0 of newest 10",
+        "yelp": "2.5/76",
+        "verified_at": "2026-10-12",
+        "source": "Google Maps live"
+      }
+    },
+    {
+      "name": "D & J Auto Repair",
+      "address": "148 Central Ave, Jersey City, NJ 07306",
+      "phone": "(201) 792-7243",
+      "website": "http://djrepaircompleteautocare.localsearch.com (directory stub only)",
+      "category": "auto repair",
+      "google_rating": 3.9,
+      "review_count": 47,
+      "owner_responds": false,
+      "score": 90,
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "channel": "sms_via_tmobile_gateway",
+          "from": "hello@localboost.site",
+          "to": "2017927243@tmomail.net",
+          "sent_at": "2026-10-12T15:41:00-04:00",
+          "status": "delivered"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day1_followup",
+          "channel": "sms_via_tmobile_gateway",
+          "from": "hello@localboost.site",
+          "to": "2017927243@tmomail.net",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-13.md",
+          "note": "day-1 nudge: 71 reviews, 0 of 10 newest replied"
+        },
+        {
+          "date": "2026-10-13T17:23:00-04:00",
+          "channel": "sms",
+          "type": "sms_sent",
+          "status": "sent",
+          "note": "Delivered (follow-up)"
+        }
+      ],
+      "added_date": "2026-10-12",
+      "email": "",
+      "draft_ref": "company/outreach/drafts-2026-10-12.md",
+      "notes": "Independent auto repair (Heights). No real website \u2014 live-verified generic LocalSearch stub (name/phone/address/hours + call CTA; no services/pricing, no booking). Call only. Loc8NearMe 3.9/47 (NOT Google-confirmed); no owner replies on any review site (+15). Stub hours Mon-Fri 9-5 conflict with Google/other sources Mon-Sat 9-6:30. Also listed as 'D & J Repair Complete Auto Care'; staff name Kamlesh in reviews. Score: no website (30) + no online booking (15) + rating below 4.3 / under 50 reviews (15) + reviews unanswered (15) + outdated info (15). Verified live 2026-10-12. No public business email found \u2014 NOT sendable yet.",
+      "google_verified": {
+        "google_rating": 4.3,
+        "google_reviews": 71,
+        "owner_replies": "0 of newest 10",
+        "yelp": "4.2/6",
+        "verified_at": "2026-10-12",
+        "source": "Google Maps live"
+      }
+    },
+    {
+      "name": "Zoe Nail and Spa",
+      "address": "382 Central Ave, Jersey City, NJ 07307",
+      "phone": "+1 (201) 383-9945",
+      "website": "https://zoenailspallc.business.site/ (dead, HTTP 404)",
+      "category": "nail salon",
+      "google_rating": 4.2,
+      "review_count": 90,
+      "owner_responds": null,
+      "score": 85,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-12",
+          "subject": "invitation for Zoe Nail and Spa",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-12",
+      "email": "",
+      "draft_ref": "company/outreach/drafts-2026-10-12.md",
+      "notes": "Independent nail salon (Heights). Own website is dead \u2014 zoenailspallc.business.site returns 404 (Google discontinued business.site) \u2192 effectively no website. Has functional third-party online booking via getsquire.com (5.0/67, services+prices). Birdeye 4.2/90 (NOT Google-confirmed), profile unclaimed; no visible owner replies. CONFLICTING Saturday hours (Birdeye/Squire: Sat 9:30-6:30 vs bestprosintown snippet: 'Sat Closed'). Score: no website (30) + rating below 4.3 (15) + reviews unanswered (15) + no Google posts (10) + outdated info (15). Verified live 2026-10-12. No public business email found (dead site; no official IG/FB for the JC location) \u2014 NOT sendable yet. | landline (MCI Metro ATS, not wireless) \u2014 cannot receive SMS; verified 2026-10-12",
+      "google_verified": {
+        "google_rating": 4.1,
+        "google_reviews": 93,
+        "owner_replies": "0 of newest 10",
+        "yelp": "4.0/25",
+        "verified_at": "2026-10-12",
+        "source": "Google Maps live"
+      }
+    },
+    {
+      "name": "Rainbow Brite Laundromat",
+      "address": "463 Central Ave, Jersey City, NJ 07307 (ADDRESS CONFLICT: older directories incl. YellowPages/MapQuest/hubbiz list 436 Central Ave, same phone)",
+      "phone": "(201) 963-4118",
+      "website": "none",
+      "category": "laundromat",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-12",
+          "subject": "invitation for Rainbow Brite Laundromat",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-12",
+      "email": "",
+      "draft_ref": "company/outreach/drafts-2026-10-12.md",
+      "notes": "Independent single-location laundromat (Heights). No website at all \u2014 only generic directory pages. Walk-in only; self-service coin laundry, wash & fold, dry cleaning. No Google rating found. ADDRESS CONFLICT: 436 vs 463 Central Ave (same phone (201) 963-4118); fresher sources (Firmania crawled 18d, us-business.info crawled 3d) say 463. DO NOT outreach until Google Business profile confirms address. Score: no website (30) + no online booking (15) + weak review presence (15) + outdated/conflicting address info (15). Verified live 2026-10-12. No public business email found (cmac.ws Email: N/A) \u2014 NOT sendable yet."
+    },
+    {
+      "name": "Design Nails",
+      "address": "349 1/2 Central Ave, Jersey City, NJ 07307",
+      "phone": "+1 (201) 420-8858",
+      "website": "https://design-nails.business.site/ (dead, HTTP 404)",
+      "category": "nail salon",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-12",
+      "email": "",
+      "notes": "Independent nail salon (Heights). Own website dead \u2014 business.site returns 404 live 2026-10-12. Phone/walk-in only, no online booking. CONFLICTING ratings (meta.ai 4.7/30 vs dataGemba 3.7/97, both NOT Google-confirmed) and hours (meta.ai Sun 10-4/Mon-Sat 10-8 vs us.locale.online Sun 10-8). Score: dead website (30) + no online booking (15) + weak/unverifiable review footprint (15) + conflicting info (15). Qualified 75+ but DRAFT QUEUED for next shift (5-draft daily cap reached). No public business email found (Instagram instagram.com/jackdesignnails exists but email not visible without login) \u2014 NOT sendable yet."
+    },
+    {
+      "name": "D Starr",
+      "address": "469 Central Ave, Jersey City, NJ 07307",
+      "phone": "(201) 963-0030",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-12",
+      "email": "",
+      "notes": "Independent barbershop (Heights). CONFIRMED still operating: Hubbiz Oct-2026 JC barbers directory + 2026 beauty-salon directory, same address/phone as 2014 list. No official website (directories list a wrong unrelated URL: smart-startacademy.com). Call/walk-in only, no online booking. No Google rating/review data surfaced after multiple searches (not guessed). Hours Mon-Fri 7:30am-6:30pm directory-sourced, unverified. Score: no website (30) + no online booking (15) + outdated info (15, wrong URL in directories). No public business email found. Verified live 2026-10-12."
+    },
+    {
+      "name": "Family Wash",
+      "address": "291 Central Ave Ste A, Jersey City, NJ 07307",
+      "phone": "(201) 656-6463",
+      "website": "none",
+      "category": "laundromat",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-12",
+      "email": "",
+      "notes": "Independent laundromat (Heights), also listed as 'Family Wash Inc'. No website (no site URL on yellowbot/firmania/us-business.info/laundromatlocations.info). Walk-in only, coin laundry; no online booking. No Google rating found. CAUTION: 'Marena Wash Laundromat' (+1 201-993-3490) appears at the same 291 Central Ave address \u2014 different phone, may be a separate unit or rebrand; verify identity before outreach. Score: no website (30) + no online booking (15) + weak/unverifiable review presence (15). No public business email found. Verified live 2026-10-12."
+    },
+    {
+      "name": "Dave's Transmissions",
+      "address": "146 Central Ave, Jersey City, NJ 07307",
+      "phone": "(201) 656-0669",
+      "website": "http://www.davestransmissions.net (directory-listed; status unverified)",
+      "category": "auto repair",
+      "google_rating": 4.3,
+      "review_count": 90,
+      "owner_responds": false,
+      "score": 45,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-12",
+      "email": "",
+      "notes": "Independent transmission shop (Heights). CONFIRMED active/open. Birdeye 4.3/90 (NOT Google-confirmed); no owner replies found anywhere; BBB profile notes 2 unanswered complaints (BBB rating F); owner Davide Delvalle, in business since 2003. WEBSITE STATUS UNVERIFIED: browser.open on davestransmissions.net failed with a local worker error this run \u2014 old site may be dead but NOT verified; YP lists a localsearch stub. Call only, no online booking. Conflicting ZIP (07306 vs 07307) and Saturday hours (9-6 vs 8-3) across directories. Score: no online booking (15) + reviews unanswered (15) + outdated info (15). Website factor needs re-check next run. No public business email found. Verified live 2026-10-12."
+    },
+    {
+      "name": "SUPERHOT BARBERSHOP",
+      "address": "642 Elizabeth Ave, Elizabeth, NJ 07206",
+      "phone": "+1 (908) 242-5567",
+      "vertical": "barbershop",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "channel": "sms_via_gateway",
+          "from": "hello@localboost.site",
+          "to": "9082425567@txt.att.net",
+          "sent_at": "2026-10-12T20:23:00-04:00",
+          "status": "retry_queue"
+        }
+      ],
+      "research": {
+        "google_rating": 5.0,
+        "google_reviews": 212,
+        "checked": "2026-10-12"
+      },
+      "notes": ""
+    },
+    {
+      "name": "777 Tire Shop",
+      "address": "8525 Denton Dr, Dallas, TX 75235",
+      "phone": "+1 (682) 248-2944",
+      "vertical": "tire",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "channel": "sms_via_gateway",
+          "from": "hello@localboost.site",
+          "to": "6822482944@tmomail.net",
+          "sent_at": "2026-10-12T20:24:00-04:00",
+          "status": "delivered"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day1_followup",
+          "channel": "sms_via_gateway",
+          "from": "hello@localboost.site",
+          "to": "6822482944@tmomail.net",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-13.md",
+          "note": "day-1 nudge: 4.8\u2605/71 reviews, 0 of 10 newest replied"
+        },
+        {
+          "date": "2026-10-13T17:23:00-04:00",
+          "channel": "sms",
+          "type": "sms_sent",
+          "status": "sent",
+          "note": "Delivered (follow-up)"
+        }
+      ],
+      "research": {
+        "google_rating": 4.8,
+        "google_reviews": 71,
+        "checked": "2026-10-12"
+      },
+      "notes": ""
+    },
+    {
+      "name": "Superior Haircuts Salon",
+      "address": "118-10 Queens Blvd, Queens, NY 11375",
+      "phone": "+1 (516) 672-7522",
+      "vertical": "hair_salon",
+      "stage": "dead",
+      "outreach": [
+        {
+          "channel": "sms_via_gateway",
+          "from": "hello@localboost.site",
+          "to": "5166727522@vtext.com",
+          "sent_at": "2026-10-12T20:24:00-04:00",
+          "status": "bounced"
+        }
+      ],
+      "research": {
+        "google_rating": 4.0,
+        "google_reviews": 60,
+        "checked": "2026-10-12"
+      },
+      "notes": "Verizon gateway permanent bounce (AUP rejection) \u2014 likely ported or blocked | 2026-10-13: carrier gateway permanent hard bounce (Verizon AUP rejection) \u2014 unreachable by SMS; no email on file. Stage -> dead."
+    },
+    {
+      "name": "K2K Barber Shop",
+      "address": "14 Centre St, Elizabeth, NJ 07202",
+      "phone": "+1 (908) 327-9291",
+      "vertical": "barbershop",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "channel": "sms_via_gateway",
+          "from": "hello@localboost.site",
+          "to": "9083279291@txt.att.net",
+          "sent_at": "2026-10-12T20:25:00-04:00",
+          "status": "retry_queue"
+        }
+      ],
+      "research": {
+        "google_rating": 4.8,
+        "google_reviews": 56,
+        "checked": "2026-10-12"
+      },
+      "notes": ""
+    },
+    {
+      "name": "DC Studio Barbershop",
+      "address": "340 Morris Ave, Elizabeth, NJ 07208",
+      "phone": "+1 (908) 425-3688",
+      "vertical": "barbershop",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "channel": "sms_via_gateway",
+          "from": "hello@localboost.site",
+          "to": "9084253688@txt.att.net",
+          "sent_at": "2026-10-12T20:25:00-04:00",
+          "status": "retry_queue"
+        }
+      ],
+      "research": {
+        "google_rating": 4.7,
+        "google_reviews": 54,
+        "checked": "2026-10-12"
+      },
+      "notes": ""
+    },
+    {
+      "name": "La Belle Summerhill Nail Bar",
+      "vertical": "nail_salon",
+      "address": "572 Hank Aaron Dr SE #1180, Atlanta, GA 30315",
+      "phone": "+1 (404) 907-4391",
+      "origin_carrier": "NEW CINGULAR WIRELESS PCS, LLC - GA",
+      "website_status": "none",
+      "google_rating": 4.5,
+      "google_reviews": 252,
+      "newest10_replied": 0,
+      "stage": "draft_ready",
+      "outreach": [
+        {
+          "date": "2026-10-13T17:23:00-04:00",
+          "channel": "sms",
+          "type": "sms_sent",
+          "status": "sent",
+          "note": "In Retry Queue (AT&T)"
+        }
+      ],
+      "notes": "Round 2, drafted 2026-10-12, send blocked on Zoho reset"
+    },
+    {
+      "name": "Sparkles Laundromat",
+      "vertical": "laundromat",
+      "address": "1025 N 7th St, Phoenix, AZ",
+      "phone": "+1 (602) 469-7336",
+      "origin_carrier": "CELLCO PARTNERSHIP DBA VERIZON WIRELESS - AZ",
+      "website_status": "none",
+      "google_rating": 3.7,
+      "google_reviews": 134,
+      "newest10_replied": 0,
+      "stage": "sms_blocked",
+      "outreach": [
+        {
+          "date": "2026-10-13T17:23:00-04:00",
+          "channel": "sms",
+          "type": "sms_bounced",
+          "status": "bounced",
+          "note": "Undeliverable \u2014 Verizon gateway permanent AUP rejection"
+        }
+      ],
+      "notes": "Round 2, drafted 2026-10-12, send blocked on Zoho reset Verizon gateway blocks hello@localboost.site; needs alternate channel. | 2026-10-13 Nokar research: no public website or email found (5-min due diligence: Google/Maps/directory listings); email fallback not possible. Verizon gateway permanently rejects hello@localboost.site (AUP). Route per SOP carrier rule; Verizon SMS unlock needs user Google Voice ID verification."
+    },
+    {
+      "name": "Ferry Nails Spa",
+      "address": "118 Ferry St, Newark, NJ 07105",
+      "phone": "+1 973-230-8758",
+      "email": "",
+      "website": "http://ferrynail-spa.payflorist.com",
+      "category": "nail salon",
+      "google_rating": 4.1,
+      "review_count": 22,
+      "owner_responds": false,
+      "score": 90,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-13",
+          "subject": "invitation for Ferry Nails Spa",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-13",
+      "notes": "Independent nail spa (Ironbound, Ferry St). Google-listed website returns HTTP 500 empty response on live fetch 2026-10-13 \u2014 broken. Walk-in/call only, no online booking. Manta profile shows business as unclaimed -> owner never responds to reviews (+15). Google rating via search-provider GBP snapshot (NOT live Google Maps confirmed). No public business email found \u2014 NOT sendable yet. Score: broken website (30) + no online booking (15) + rating below 4.3 / under 50 reviews (15) + reviews unanswered (15) + outdated info (15, listing points to dead site). Verified live 2026-10-13.",
+      "draft_ref": "company/outreach/drafts-2026-10-13.md"
+    },
+    {
+      "name": "Kissable Nails",
+      "address": "133 Wilson Ave, Newark, NJ 07105",
+      "phone": "+1 973-344-7999",
+      "email": "",
+      "website": "https://kubiti.wordpress.com/nail-trends/",
+      "category": "nail salon",
+      "google_rating": 3.0,
+      "review_count": 12,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-13",
+          "subject": "invitation for Kissable Nails",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-13",
+      "notes": "Independent nail salon (Ironbound, Wilson Ave). Google-listed website returns HTTP 403 (blocked/private) on live fetch 2026-10-13 \u2014 broken. Fresha directory listing exists but 'Call to book' only, no instant online booking. Google rating 3.0 via search-provider GBP snapshot (third-party directories vary: Birdeye 3.9/139, Loc8NearMe 4.2/64 \u2014 NOT Google-confirmed). Owner responses unverified. No public business email found \u2014 NOT sendable yet. Score: broken website (30) + no online booking (15) + rating below 4.3 / under 50 reviews (15) + outdated info (15, listing points to blocked page). Verified live 2026-10-13.",
+      "draft_ref": "company/outreach/drafts-2026-10-13.md"
+    },
+    {
+      "name": "Teixeira's Bakery",
+      "address": "186 Ferry St, Newark, NJ 07105",
+      "phone": "+1 973-344-4902",
+      "email": "",
+      "website": "none (Facebook page only: facebook.com/pages/Teixeiras-Bakery/153268451353190 \u2014 fetch blocked)",
+      "category": "bakery",
+      "google_rating": 4.4,
+      "review_count": 87,
+      "owner_responds": false,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-13",
+      "notes": "Independent Portuguese bakery (Ironbound, Ferry St). No standalone website \u2014 only a legacy Facebook page (fetch blocked 403, unverifiable); note: teixeirasbakery.com belongs to a DIFFERENT Teixeira's location (Kossuth St), not this one. No online ordering; delivery apps only. Google rating 4.4/87 via search-provider GBP snapshot (NOT live confirmed). Tripadvisor 'Claim your listing' + ShowMeLocal unclaimed -> owner not responding. No public business email found. Score: no website (30) + no online booking (15) + reviews unanswered (15). Verified live 2026-10-13."
+    },
+    {
+      "name": "Dental Excellence",
+      "address": "277 Ferry St, Newark, NJ 07105",
+      "phone": "+1 973-578-8800",
+      "email": "",
+      "website": "http://www.dentalexc.com/",
+      "category": "dental",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 45,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-13",
+      "notes": "Independent dental practice (Ironbound, Ferry St). Website opened live 2026-10-13: single block of Portuguese marketing copy \u2014 no services detail, pricing, contact form, or booking (thin-stub); no email on site. Phone booking only. Google rating unconfirmable (third-party directories conflict: denteldoc.com 3.1 vs appointmentfordentist.com 4.4/431 \u2014 NOT Google-confirmed, recorded null). Hours Tue/Thu 9-5, Sat 8-2. Score: thin-stub website (30) + no online booking (15). Verified live 2026-10-13."
+    },
+    {
+      "name": "Bairradino Barber Shop",
+      "address": "125 Ferry St, Newark, NJ 07105",
+      "phone": "+1 862-448-1016",
+      "email": "",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": 4.5,
+      "review_count": 2,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-13",
+          "subject": "invitation for Bairradino Barber Shop",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-13",
+      "notes": "Independent barbershop (Ironbound, Ferry St). No own website \u2014 Google lists only phone; goironbound.com is the district BID site, not the business's. Walk-ins per reviews, no online booking. Google rating 4.5/2 via search-provider GBP snapshot (NOT live confirmed). Conflicting phone numbers (Google +1 862-448-1016 vs directories (973) 465-9196) and hours (Google Mon-Sat 7AM-6:45PM vs directories Mon-Fri 9-5). Owner responses unverified. No public business email found \u2014 NOT sendable yet. Score: no website (30) + no online booking (15) + under 50 reviews (15) + outdated info (15). Verified live 2026-10-13.",
+      "draft_ref": "company/outreach/drafts-2026-10-13.md"
+    },
+    {
+      "name": "Nail Studio",
+      "address": "571 Main Ave, Passaic, NJ 07055",
+      "phone": "(973) 815-0248",
+      "email": "",
+      "website": "nail-studio.info",
+      "category": "nail salon",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": false,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-13",
+          "subject": "invitation for Nail Studio",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-13",
+      "notes": "Independent nail salon (Passaic, Main Ave). nail-studio.info opened live 2026-10-13: blank parked page (only '2025 Copyright | All Rights Reserved. Privacy Policy') \u2014 effectively broken. Walk-in only, no Booksy/Fresha booking. Birdeye 3.9/118 unclaimed by owner -> reviews unanswered (+15); loc8nearme 3.5/51. Ratings NOT Google-confirmed, recorded null. Hours consistent Mon-Sat 10-8, Sun 10-6. No public business email found (cmac.ws Email: N/A) \u2014 NOT sendable yet. Score: broken website (30) + no online booking (15) + rating below 4.3 (15) + reviews unanswered (15). Verified live 2026-10-13.",
+      "draft_ref": "company/outreach/drafts-2026-10-13.md"
+    },
+    {
+      "name": "Yankee Kuts Barber Shop",
+      "address": "569 Main Ave, Passaic, NJ 07055",
+      "phone": "(973) 413-4594",
+      "email": "",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": false,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-13",
+      "notes": "Independent barbershop (Passaic, Main Ave). No website at all. Booksy page exists (5.0/4) with online booking available. Rating 4.6-4.7 across directories (77-78 reviews, NOT Google-confirmed \u2014 recorded null). Birdeye 'not claimed by the business owner' -> owner never responds to reviews (+15). Hours conflict: Birdeye Mon-Fri 9-6 only vs others 9-8 daily + Sun 9-6 (+15 outdated info). No public business email found. Score: no website (30) + reviews unanswered (15) + outdated info (15). Verified live 2026-10-13."
+    },
+    {
+      "name": "Pasteleria Varela",
+      "address": "584 Main Ave, Passaic, NJ 07055",
+      "phone": "(973) 928-6637",
+      "email": "",
+      "website": "none (Facebook page only: facebook.com/1444254105791605)",
+      "category": "bakery",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-13",
+      "notes": "Independent bakery (Passaic, Main Ave) specializing in custom cakes for events. No website \u2014 Facebook page only. Custom cake orders by phone/FB message only, no online ordering. Rating 5.0/4 (NOT Google-confirmed \u2014 recorded null). Hours consistent Mon-Sat 7-7, Sun 7-2. Owner responses unverified (too few reviews). No public business email found. Score: no website (30) + no online booking (15) + under 50 reviews (15). Verified live 2026-10-13."
+    },
+    {
+      "name": "Hermanos Bakery",
+      "address": "34 State St, Passaic, NJ 07055",
+      "phone": "(973) 471-9911",
+      "email": "",
+      "website": "http://hermanos-bakery.edan.io/",
+      "category": "bakery",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-13",
+      "notes": "Independent Colombian bakery (Passaic, State St). hermanos-bakery.edan.io opened live 2026-10-13: auto-generated template with fabricated testimonials ('Atticus Hill', 'Michael Brown') and upscale-bakery copy that does not describe the real business \u2014 thin stub, potentially misleading to customers. No online ordering. Rating 3.9/7 (NOT Google-confirmed \u2014 recorded null). No public business email found (site has no contact email). Score: thin-stub website (30) + no online booking (15) + under 50 reviews (15). Verified live 2026-10-13."
+    },
+    {
+      "name": "Fresh Laundry",
+      "address": "169 Market St, Passaic, NJ 07055",
+      "phone": "(973) 777-8996",
+      "email": "",
+      "website": "freshlaundry.us",
+      "category": "laundromat",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-13",
+      "notes": "Independent laundromat (Passaic, Market St). freshlaundry.us opened live 2026-10-13: now loads an unrelated Shopify women's clothing boutique \u2014 the listed website sends laundry searchers to a clothing store. No online booking. CAUTION: localitybiz flags status 'Closed' while chamberofcommerce/us-business.info show active \u2014 verify still operating before outreach. Only 2 known reviews (2017-2018, NOT Google-confirmed). No public business email found (freshlaundry.us hijacked). Score: broken website (30) + no online booking (15) + weak review presence (15) + conflicting info (15). Verified live 2026-10-13. DRAFT HELD 2026-10-13: possible-closure flag + laundromat preview vertical not yet deployed \u2014 no outreach until verified active."
+    },
+    {
+      "name": "El Sabroso Restaurant",
+      "address": "Jersey City, NJ (street address unverified)",
+      "phone": "",
+      "email": "info@elsabrosojc.com",
+      "website": "https://www.elsabrosojc.com/",
+      "category": "restaurant",
+      "google_rating": 4.2,
+      "review_count": 722,
+      "owner_responds": false,
+      "score": 90,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-12",
+      "outreach": [
+        {
+          "date": "2026-10-12T20:26:00-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for El Sabroso",
+          "status": "sent",
+          "delivery": "Delivered",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "draft_ref": "company/outreach/send-batch-2026-10-12.json"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "following up \u2014 El Sabroso",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#A1"
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "notes": "Independent restaurant (Jersey City). Website is a single 2021-era page with just hours and a menu link \u2014 no online ordering. LIVE Google Maps check 2026-10-12 10:34 EDT: 4.2 stars / 722 reviews; 0 of 10 newest have an owner reply. Email verified on own site (mailto-confirmed) 2026-10-11.",
+      "google_verified": {
+        "google_rating": 4.2,
+        "google_reviews": 722,
+        "owner_replies": "0 of newest 10",
+        "verified_at": "2026-10-12",
+        "source": "Google Maps live"
+      }
+    },
+    {
+      "name": "Bayonne AutoTech and Collision",
+      "address": "Bayonne, NJ (street address unverified)",
+      "phone": "",
+      "email": "bayonneautotech@gmail.com",
+      "website": "site template still names 'Able Autoworks' (stale)",
+      "category": "auto repair",
+      "google_rating": 4.1,
+      "review_count": 36,
+      "owner_responds": false,
+      "score": 85,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-12",
+      "outreach": [
+        {
+          "date": "2026-10-12T20:26:00-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for Bayonne AutoTech",
+          "status": "sent",
+          "delivery": "Delivered",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "draft_ref": "company/outreach/send-batch-2026-10-12.json"
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "quick follow-up \u2014 Bayonne AutoTech",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#A2"
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "notes": "Independent auto repair (Bayonne). Website template copy still names a different business ('Able Autoworks'), 2019-era images, footer phone mismatches Google listing. LIVE Google Maps check 2026-10-12 10:34 EDT: 4.1 stars / 36 reviews; 2 of 10 newest answered. Email double-confirmed on site footer + Instagram 2026-10-11.",
+      "google_verified": {
+        "google_rating": 4.1,
+        "google_reviews": 36,
+        "owner_replies": "2 of newest 10",
+        "verified_at": "2026-10-12",
+        "source": "Google Maps live"
+      }
+    },
+    {
+      "name": "Hoboken Hair",
+      "address": "Hoboken, NJ (street address unverified)",
+      "phone": "",
+      "email": "myhobokenhair2@gmail.com",
+      "website": "https://www.myhobokenhair.com/",
+      "category": "hair salon",
+      "google_rating": 4.7,
+      "review_count": 411,
+      "owner_responds": false,
+      "score": 85,
+      "stage": "outreach_sent",
+      "added_date": "2026-10-12",
+      "outreach": [
+        {
+          "date": "2026-10-12T20:27:00-04:00",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "invitation for Hoboken Hair",
+          "status": "sent",
+          "delivery": "Delivered",
+          "includes_preview_link": true,
+          "includes_unsubscribe": true,
+          "draft_ref": "company/outreach/send-batch-2026-10-12.json",
+          "note": "Body said '600+ glowing reviews' \u2014 verified count is 411; corrected in the 2026-10-13 day-1 draft."
+        },
+        {
+          "date": "2026-10-13",
+          "type": "day1_followup",
+          "channel": "email",
+          "from": "hello@localboost.site",
+          "subject": "one question \u2014 Hoboken Hair",
+          "status": "drafted",
+          "draft_ref": "company/outreach/followups-2026-10-13.md#A3"
+        },
+        {
+          "date": "2026-10-13T15:29:00-04:00",
+          "channel": "email",
+          "type": "followup_sent",
+          "status": "sent",
+          "note": "Day-1 nudge, delivered"
+        }
+      ],
+      "notes": "Independent hair salon (Hoboken). Google description still pitches COVID compliance; site is a one-pager with no services, prices, or photos. LIVE Google Maps check 2026-10-12 10:34 EDT: 4.7 stars / 411 reviews; 0 of 10 newest have an owner reply. Email from own site 2026-10-11.",
+      "google_verified": {
+        "google_rating": 4.7,
+        "google_reviews": 411,
+        "owner_replies": "0 of newest 10",
+        "verified_at": "2026-10-12",
+        "source": "Google Maps live"
+      }
+    },
+    {
+      "name": "Los Dos Amigos Taco Truck",
+      "vertical": "taco_truck",
+      "address": "7115 Parkwood St, Detroit, MI 48204",
+      "phone": "+1 (313) 218-3360",
+      "origin_carrier": "OMNIPOINT (T-Mobile)",
+      "website_status": "none/facebook",
+      "google_rating": 4.6,
+      "google_reviews": 49,
+      "newest10_replied": 0,
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "date": "2026-10-14T08:25:00-04:00",
+          "channel": "sms",
+          "type": "sms_sent",
+          "status": "Delivered",
+          "note": "Initial text via T-Mobile gateway"
+        }
+      ],
+      "notes": "Round 3, verified 2026-10-13"
+    },
+    {
+      "name": "Long Nail",
+      "address": "769 West Side Ave, Jersey City, NJ 07306",
+      "phone": "(201) 324-0330",
+      "email": "",
+      "website": "none",
+      "category": "nail salon",
+      "google_rating": 2.6,
+      "review_count": 17,
+      "owner_responds": false,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-14",
+          "subject": "invitation for Long Nail",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-14",
+      "draft_ref": "company/outreach/drafts-2026-10-14.md",
+      "notes": "Independent nail salon (West Side Ave). Active per Google place data (Open Now, Mon-Sat 9:30a-7:30p). NO own website at all (directories + Instagram location page only). Birdeye 2.6/17 (NOT Google-confirmed), profile explicitly 'not claimed by the business owner' -> reviews unanswered (+15). Call-only, no online booking. Score: no website (30) + no online booking (15) + rating below 4.3 (15) + reviews unanswered (15). No public email found (Birdeye/BestProsInTown/SuperPages/Instagram location page) \u2014 NOT sendable yet. Verified live 2026-10-14."
+    },
+    {
+      "name": "Thanh Huong Restaurant",
+      "address": "533 West Side Ave, Jersey City, NJ 07304",
+      "phone": "(201) 333-3030",
+      "email": "",
+      "website": "https://www.facebook.com/thanhhuongrestaurant (Google-listed website field)",
+      "category": "restaurant",
+      "google_rating": 4.4,
+      "review_count": 35,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-14",
+          "subject": "invitation for Thanh Huong Restaurant",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-14",
+      "draft_ref": "company/outreach/drafts-2026-10-14.md",
+      "notes": "Family-run Vietnamese restaurant (West Side Ave, ~20 years in business). Active per Google place data. NO standalone website \u2014 Google listing's Website field is only their Facebook page; YellowPages also lists an auto-generated cafecityguide stub. Phone-only ordering (own delivery $20 min); Uber Eats listing marked closed. Rating 4.4/35 via search-aggregated Google place data (NOT Google-confirmed); Restaurantji 4.6/210 third-party. Owner responses unverified. Score: no standalone website (30) + menu missing on own site (15) + under 50 reviews (15) + no direct online ordering (15). No public email found \u2014 NOT sendable yet. Verified live 2026-10-14."
+    },
+    {
+      "name": "La Primicia Restaurant",
+      "address": "452 West Side Ave, Jersey City, NJ 07304",
+      "phone": "(551) 200-9988",
+      "email": "",
+      "website": "http://www.laprimiciarestaurant.com/",
+      "category": "restaurant",
+      "google_rating": 4.6,
+      "review_count": 35,
+      "owner_responds": null,
+      "score": 75,
+      "stage": "outreach_drafted",
+      "outreach": [
+        {
+          "date": "2026-10-14",
+          "subject": "invitation for La Primicia Restaurant",
+          "status": "drafted",
+          "missing_email": true
+        }
+      ],
+      "added_date": "2026-10-14",
+      "draft_ref": "company/outreach/drafts-2026-10-14.md",
+      "notes": "Independent Dominican restaurant (West Side Ave; NOT Mexican). laprimiciarestaurant.com opened live 2026-10-14: thin one-pager (tagline, dish names, hours Mon-Sat 7a-9p) \u2014 no prices, no ordering, no contact/email. DoorDash marketplace only; no direct ordering. Rating conflict: 4.6/35 vs Restaurantji 2.8/148 (NOT Google-confirmed). Owner responses unverified. Score: thin-stub site (30) + no menu w/ prices on own site (15) + under 50 reviews (15) + no direct online ordering (15). No public email found \u2014 NOT sendable yet. Verified live 2026-10-14."
+    },
+    {
+      "name": "El Matatan Barbershop",
+      "address": "467 West Side Ave, Jersey City, NJ 07304",
+      "phone": "(201) 434-1102",
+      "email": "",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": 4.3,
+      "review_count": 133,
+      "owner_responds": false,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "Independent barbershop (West Side Ave). Verified active (hours Mon-Thu 9a-7p, Fri-Sat 9a-9p, Sun 11a-5p). NO website at all (meta.ai directory lists hours/phone only). Call-only, no online booking. Birdeye 4.3/133 (NOT Google-confirmed), profile unclaimed -> owner never replies. FLAG: 'El Matatan barbershop2' exists at 180 Duncan Ave with a different phone \u2014 possible second location or copycat. Score: no website (30) + no online booking (15) + reviews unanswered (15). No public email found. Verified live 2026-10-14."
+    },
+    {
+      "name": "Adriana's Laundromat",
+      "address": "389 West Side Ave, Jersey City, NJ 07305",
+      "phone": "(201) 435-9798",
+      "email": "",
+      "website": "https://adrianaslaundry.lovable.app/",
+      "category": "laundromat",
+      "google_rating": 4.2,
+      "review_count": 210,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "Independent laundromat (West Side Ave). Website adrianaslaundry.lovable.app opened live 2026-10-14: AI-generated one-pager ('Fresh waves, quiet calm') \u2014 address/phone/hours + embedded Google reviews only; no booking, no contact form, no email. Rating 4.2/210 per site-displayed Google (conflict: Loc8NearMe 3.8/5). No online booking. Score: thin-stub website (30) + rating below 4.3 (15) + no online booking (15). No public email found (full site, MapQuest, Loc8NearMe, YellowPages). Verified live 2026-10-14."
+    },
+    {
+      "name": "King's Laundry",
+      "address": "753 West Side Ave, Jersey City, NJ 07306",
+      "phone": "(201) 309-4880",
+      "email": "",
+      "website": "none",
+      "category": "laundromat",
+      "google_rating": 4.0,
+      "review_count": 61,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "Independent laundromat (West Side Ave). NO website at all (Loc8NearMe, laundromatnear.me show hours/phone only). Walk-in only, no online booking. Rating conflict: 4.0/61 (fresher crawl) vs 3.1/32 (older crawl) \u2014 both below 4.3, both NOT Google-confirmed. Owner responses unverified. Score: no website (30) + rating below 4.3 (15) + no online booking (15). No public email found. Verified live 2026-10-14."
+    },
+    {
+      "name": "Al's Unisex Barbershop",
+      "address": "464 West Side Ave, Jersey City, NJ 07304",
+      "phone": "(201) 851-9018",
+      "email": "",
+      "website": "none",
+      "category": "barbershop",
+      "google_rating": null,
+      "review_count": null,
+      "owner_responds": null,
+      "score": 45,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "Independent barbershop (West Side Ave). Verified active via directory (hours Mon-Thu 9a-7p, Fri-Sat 9a-8p). NO website \u2014 zero web presence beyond directory entries. Call-only, no online booking. No reviews found anywhere (scored conservatively). Score: no website (30) + no online booking (15). No public email found. Verified live 2026-10-14."
+    },
+    {
+      "name": "Carmine's Italian Deli",
+      "address": "165 Mallory Ave, Jersey City, NJ 07304",
+      "phone": "(201) 434-5155",
+      "email": "",
+      "website": "https://carminesitaliandeli.shop/ (auto-generated directory stub, not their site)",
+      "category": "restaurant",
+      "google_rating": 4.6,
+      "review_count": 282,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "Independent cash-only Italian deli (corridor-adjacent, Mallory Ave). NO real website \u2014 carminesitaliandeli.shop is an auto-generated directory stub (not the deli's site). No online ordering (cash-only, phone/takeout). Rating 4.6/282 via search-aggregated Google place data (NOT Google-confirmed); best pitch angle is review management + website. Owner responses unverified. Score: no real website (30) + no menu on own site (15) + no online ordering (15). No public email found. Verified live 2026-10-14."
+    },
+    {
+      "name": "Morgan Seafood Restaurant",
+      "address": "2801 John F Kennedy Blvd, Jersey City, NJ 07306",
+      "phone": "(201) 792-2400",
+      "email": "",
+      "website": "none",
+      "category": "restaurant",
+      "google_rating": 4.3,
+      "review_count": 422,
+      "owner_responds": null,
+      "score": 60,
+      "stage": "scored",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "Independent Egyptian/Mediterranean seafood restaurant (JFK Blvd). Active (MapQuest review Oct 2025). NO website at all \u2014 listings only on aggregators (menupix/sluurpy/menuweb/mapquest/wanderlog); Sluurpy shows menu prices in EUR (stale/inaccurate \u2014 fixable credibility problem). Marketplace-only ordering, no direct channel. Rating 4.3/422 (Sluurpy cites Google; NOT Google-confirmed). Owner responses unverified. Score: no website (30) + no owned menu (15) + no direct online ordering (15). No public email found. Verified live 2026-10-14."
+    },
+    {
+      "name": "La Isla Restaurant",
+      "address": "738 West Side Ave, Jersey City, NJ 07306",
+      "phone": "(201) 721-6025",
+      "email": "",
+      "website": "http://www.laislarestaurant.com (now serves unrelated La Isla in Hoboken)",
+      "category": "restaurant",
+      "google_rating": 4.2,
+      "review_count": 118,
+      "owner_responds": null,
+      "score": 0,
+      "stage": "dead",
+      "outreach": [],
+      "added_date": "2026-10-14",
+      "notes": "DEAD \u2014 do not contact. Google place data flags the Jersey City location PERMANENTLY CLOSED; listed domain laislarestaurant.com now serves an unrelated La Isla Restaurant (Cuban, 104 Washington St, Hoboken NJ). Note: the Hoboken La Isla is a different business."
+    },
+    {
+      "name": "Tina's Nail and Spa",
+      "vertical": "nail_salon",
+      "address": "445 N 12th St, Philadelphia, PA",
+      "phone": "+1 (215) 765-6666",
+      "instagram": "@tinasnailandspa",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "The Nail Cafe",
+      "vertical": "nail_salon",
+      "address": "1547 Ridge Ave, Philadelphia, PA 19130",
+      "phone": "+1 (215) 232-1110",
+      "instagram": "@thenailcafephilly",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "D.Tails & D.Signs",
+      "vertical": "barber",
+      "address": "1500 John F Kennedy Blvd, Philadelphia, PA",
+      "phone": "+1 (215) 735-2950",
+      "instagram": null,
+      "website_status": "none",
+      "google_rating": 4.7,
+      "google_reviews": 20,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Virgo Nails",
+      "vertical": "nail_salon",
+      "address": "9902 Roosevelt Boulevard, Philadelphia, PA 19115",
+      "phone": "+1 (215) 490-9811",
+      "instagram": "@virgonailss",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Harmony Nail & Spa",
+      "vertical": "nail_salon",
+      "address": "330 W Oregon Ave, Philadelphia, PA 19148",
+      "phone": "+1 (267) 773-7149",
+      "instagram": "@harmonynails215",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Donna Skin & Body Care",
+      "vertical": "spa",
+      "address": "Philadelphia, PA 19116",
+      "phone": "+1 (215) 969-2526",
+      "instagram": "@donna_skinandbody_care",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (spa). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Monroe Handy's Barber Shop",
+      "vertical": "barber",
+      "address": "101 N 15th St, Philadelphia, PA",
+      "phone": null,
+      "instagram": null,
+      "website_status": "facebook_only",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Fine Shaves & Cuts",
+      "vertical": "barber",
+      "address": "131 S 10th St, Philadelphia, PA",
+      "phone": "+1 (215) 995-2331",
+      "instagram": null,
+      "website_status": "minimal/wixsite",
+      "google_rating": 4.7,
+      "google_reviews": 284,
+      "newest10_replied": 1,
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "date": "2026-10-14T12:34:24.470825",
+          "channel": "sms",
+          "type": "sms_sent",
+          "note": "Verified review data outreach via T-Mobile gateway"
+        }
+      ],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14",
+      "verified": true
+    },
+    {
+      "name": "Temple Fades at Mecca Unisex Salon",
+      "vertical": "barber",
+      "address": "1432 Cecil B. Moore Ave, Philadelphia, PA",
+      "phone": "+1 (215) 475-0684",
+      "instagram": null,
+      "website_status": "minimal",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Tight Image Barbershop",
+      "vertical": "barber",
+      "address": "427 N Eutaw St, Baltimore, MD",
+      "phone": "+1 (410) 837-7776",
+      "instagram": "@philsthatbarber",
+      "website_status": "none/instagram",
+      "google_rating": 4.5,
+      "google_reviews": 190,
+      "newest10_replied": 2,
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "date": "2026-10-14T12:34:24.470845",
+          "channel": "sms",
+          "type": "sms_sent",
+          "note": "Verified review data outreach via T-Mobile gateway"
+        }
+      ],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14",
+      "verified": true
+    },
+    {
+      "name": "AB Barbershop",
+      "vertical": "barber",
+      "address": "411 N Charles St, Baltimore, MD",
+      "phone": "+1 (667) 214-4066",
+      "instagram": null,
+      "website_status": "none",
+      "google_rating": 4.8,
+      "google_reviews": 56,
+      "newest10_replied": 2,
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "date": "2026-10-14T12:34:24.470849",
+          "channel": "sms",
+          "type": "sms_sent",
+          "note": "Verified review data outreach via T-Mobile gateway"
+        }
+      ],
+      "notes": "Now ABi's RE:FRESH GROOMING STUDIO",
+      "added": "2026-10-14",
+      "verified": true
+    },
+    {
+      "name": "Nail Art Revolution",
+      "vertical": "nail_salon",
+      "address": "Baltimore, MD",
+      "phone": null,
+      "instagram": "@nailartrevolution",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Kim's Day Spa",
+      "vertical": "spa",
+      "address": "1137 S Charles St, Baltimore, MD 21230",
+      "phone": "+1 (410) 752-0070",
+      "instagram": "@kimdayspa",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (spa). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Diva Day Spa",
+      "vertical": "spa",
+      "address": "Maryland",
+      "phone": "+1 (410) 429-4729",
+      "instagram": null,
+      "website_status": "has_website",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (spa). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "aQueens Beauty Haven",
+      "vertical": "nail_salon",
+      "address": "Baltimore, MD",
+      "phone": "+1 (443) 535-1138",
+      "instagram": null,
+      "website_status": "booking_page_only",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Off The Hook Barber Shop",
+      "vertical": "barber",
+      "address": "257-A Peters St SW, Atlanta, GA",
+      "phone": "+1 (404) 589-4625",
+      "instagram": null,
+      "website_status": "none",
+      "google_rating": 4.8,
+      "google_reviews": 289,
+      "newest10_replied": 4,
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "outreach_sent",
+      "outreach": [
+        {
+          "date": "2026-10-14T12:34:24.470851",
+          "channel": "sms",
+          "type": "sms_sent",
+          "note": "Verified review data outreach via T-Mobile gateway"
+        }
+      ],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14",
+      "verified": true
+    },
+    {
+      "name": "The Boujee Spa Experience",
+      "vertical": "spa",
+      "address": "5577 Riverdale Rd, Atlanta, GA 30349",
+      "phone": null,
+      "instagram": "@TheBoujeespaexperience",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (spa). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "Total Bliss Nail Spa",
+      "vertical": "nail_salon",
+      "address": "Atlanta, GA",
+      "phone": null,
+      "instagram": "@totalblissnailspa",
+      "website_status": "none/instagram",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "instagram",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (nail_salon). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "D'Lux Barber and Beauty Bar",
+      "vertical": "barber",
+      "address": "236 Forsyth St SW #107, Atlanta, GA",
+      "phone": "+1 (678) 362-5292",
+      "instagram": null,
+      "website_status": "minimal/business.site",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
+    },
+    {
+      "name": "KHRISTIAN",
+      "vertical": "barber",
+      "address": "190 Pryor St SW, Atlanta, GA",
+      "phone": "+1 (708) 548-4057",
+      "instagram": null,
+      "website_status": "booking_page_only",
+      "google_rating": null,
+      "google_reviews": null,
+      "newest10_replied": "unverified",
+      "carrier": "unverified",
+      "reachable_via": "sms",
+      "stage": "scored",
+      "outreach": [],
+      "notes": "Scout 2026-10-14: beauty/wellness push (barber). Carrier NOT verified (no lookup API). Owner reply rate NOT verified (needs live Maps check).",
+      "added": "2026-10-14"
     }
   ]
 }

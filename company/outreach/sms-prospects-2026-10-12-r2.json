@@ -1,0 +1,102 @@
+[
+  {
+    "address": "572 Hank Aaron Dr SE #1180, Atlanta, GA 30315",
+    "name": "La Belle Summerhill Nail Bar",
+    "origin_carrier": "NEW CINGULAR WIRELESS PCS, LLC - GA",
+    "phone": "+1 (404) 907-4391",
+    "vertical": "nail_salon",
+    "website_status": "none",
+    "google_rating": 4.5,
+    "google_reviews": 252,
+    "newest10_replied": 0
+  },
+  {
+    "address": "290 M.L.K. Jr Dr SE, Atlanta, GA",
+    "name": "Cynthia Mobile Detail",
+    "origin_carrier": "NEW CINGULAR WIRELESS PCS, LLC - GA",
+    "phone": "+1 (404) 747-8878",
+    "vertical": "auto_detailing",
+    "website_status": "none",
+    "google_rating": 4.9,
+    "google_reviews": 60,
+    "newest10_replied": 6
+  },
+  {
+    "address": "200 Memorial Dr SW, Atlanta, GA",
+    "name": "Atlanta Soap & Suds",
+    "notes": "Carrier is METROPCS, INC. (wireless, T-Mobile prepaid brand) \u2014 not literally in the keep-list but mobile-origin; flag for parent review.",
+    "origin_carrier": "METROPCS, INC.",
+    "phone": "+1 (470) 759-8012",
+    "vertical": "auto_detailing",
+    "website_status": "none",
+    "google_rating": 5.0,
+    "google_reviews": 15,
+    "newest10_replied": 1
+  },
+  {
+    "address": "389 Glenn St SW, Atlanta, GA",
+    "name": "Impeccable Press Car Wash and Detail",
+    "origin_carrier": "CELLCO PARTNERSHIP DBA VERIZON WIRELESS - GA",
+    "phone": "+1 (470) 716-0357",
+    "vertical": "car_wash",
+    "website_status": "none",
+    "google_rating": null,
+    "google_reviews": 0,
+    "newest10_replied": null
+  },
+  {
+    "address": "1025 N 7th St, Phoenix, AZ",
+    "name": "Sparkles Laundromat",
+    "origin_carrier": "CELLCO PARTNERSHIP DBA VERIZON WIRELESS - AZ",
+    "phone": "+1 (602) 469-7336",
+    "vertical": "laundromat",
+    "website_status": "none",
+    "google_rating": 3.7,
+    "google_reviews": 134,
+    "newest10_replied": 0
+  },
+  {
+    "address": "316 W 3rd St, Los Angeles, CA",
+    "name": "The Art Gallery Barbershop LLC",
+    "origin_carrier": "T-MOBILE USA, INC.",
+    "phone": "+1 (213) 539-6053",
+    "vertical": "barbershop",
+    "website_status": "none",
+    "google_rating": 5.0,
+    "google_reviews": 7,
+    "newest10_replied": 0
+  },
+  {
+    "address": "111 E Pico Blvd, Los Angeles, CA",
+    "name": "LacaletaBarberShop",
+    "origin_carrier": "NEW CINGULAR WIRELESS PCS, LLC - DC",
+    "phone": "+1 (646) 464-1137",
+    "vertical": "barbershop",
+    "website_status": "none",
+    "google_rating": null,
+    "google_reviews": 0,
+    "newest10_replied": null
+  },
+  {
+    "address": "837 Lee Street SW, Atlanta, GA",
+    "name": "Eyes on Lashes Lash Extentions",
+    "origin_carrier": "NEW CINGULAR WIRELESS PCS, LLC - GA",
+    "phone": "+1 (404) 314-6868",
+    "vertical": "beauty_salon",
+    "website_status": "none",
+    "google_rating": null,
+    "google_reviews": 0,
+    "newest10_replied": null
+  },
+  {
+    "address": "2371 Glenwood Ave SE, Atlanta, GA",
+    "name": "Tacos",
+    "origin_carrier": "NEW CINGULAR WIRELESS PCS, LLC - GA",
+    "phone": "+1 (470) 605-1943",
+    "vertical": "restaurant",
+    "website_status": "none",
+    "google_rating": null,
+    "google_reviews": 0,
+    "newest10_replied": null
+  }
+]

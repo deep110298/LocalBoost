@@ -1,0 +1,101 @@
+{
+  "approved_by_user": "2026-10-11T17:28:49-04:00 via 'Send all 5'",
+  "approved_channel": "hello@localboost.site",
+  "emails": [
+    {
+      "body": "Hi \u2014 I looked up Blue Touch Spa and found you own bluetouchspa.com, but it only loads a booking widget \u2014 no services, no photos, nothing about the spa itself. We're inviting a small number of independent Jersey City businesses to try LocalBoost: your own website, online booking, and review replies, all handled for one flat price, starting with a free 30-day trial. Open to a 10-minute look this week?\n\u2014 LocalBoost team",
+      "lead": "BLUE TOUCH SPA",
+      "recipient": "bluetouchspanj@gmail.com",
+      "subject": "invitation for Blue Touch Spa"
+    },
+    {
+      "body": "Hi \u2014 American Trimmers has a 5-star reputation but no website at all; the only thing Google finds is a booking widget. We're inviting a small number of independent Jersey City businesses to try LocalBoost: your own website, online booking, and review replies, all handled for one flat price, starting with a free 30-day trial. Worth a 10-minute look this week?\n\u2014 LocalBoost team",
+      "lead": "American Trimmers Barbershop",
+      "recipient": "lomesemm@yahoo.com",
+      "subject": "invitation for American Trimmers"
+    },
+    {
+      "body": "Hi \u2014 Paulanto is a Bayonne institution, but there's no website \u2014 Google just points to a Facebook page, and there's no way to order online. We're inviting a small number of independent NJ businesses to try LocalBoost: your own website, online ordering, and review replies, all handled for one flat price, starting with a free 30-day trial. Open to a 10-minute look this week?\n\u2014 LocalBoost team",
+      "lead": "Paulanto Bakery",
+      "recipient": "paulantobakery@yahoo.com",
+      "subject": "invitation for Paulanto Bakery"
+    },
+    {
+      "body": "Hi \u2014 Ray's Auto has no website at all; Google just points to an Instagram page, so new customers can't find your services, hours, or a way to book. We're inviting a small number of independent Bayonne businesses to try LocalBoost: your own website, online appointment booking, and review replies, all handled for one flat price, starting with a free 30-day trial. Worth a 10-minute look this week?\n\u2014 LocalBoost team",
+      "lead": "Ray's Auto Bayonne",
+      "recipient": "RAYSAUTOBAYONNE@AOL.COM",
+      "subject": "invitation for Ray's Auto"
+    },
+    {
+      "body": "Hi \u2014 Gladys has a full price list and booking on Setmore, but no website, so Google has nothing of yours to show new customers searching in Jersey City. We're inviting a small number of independent local businesses to try LocalBoost: your own website, online booking, and review replies, all handled for one flat price, starting with a free 30-day trial. Open to a 10-minute look this week?\n\u2014 LocalBoost team",
+      "lead": "Gladys Beauty Salon",
+      "recipient": "gladysbeautysalon1210@gmail.com",
+      "subject": "invitation for Gladys Beauty Salon"
+    }
+  ],
+  "send_date": "2026-10-11",
+  "status": "sent",
+  "sent_at": "2026-10-11T17:32:46-04:00",
+  "followups": [
+    {
+      "type": "followup",
+      "sent_at": "2026-10-11T21:00:00-04:00",
+      "lead": "BLUE TOUCH SPA",
+      "recipient": "bluetouchspanj@gmail.com",
+      "subject": "Made something for Blue Touch Spa",
+      "includes_preview_link": true,
+      "preview_url": "https://www.localboost.site/preview?type=service&vertical=spa&name=Blue%20Touch%20Spa&color=0f766e",
+      "includes_unsubscribe": true,
+      "delivery": "Delivered",
+      "approved_by_user": "2026-10-11 via 'Ya this is fine to send'"
+    },
+    {
+      "type": "followup",
+      "sent_at": "2026-10-11T21:25:00-04:00",
+      "lead": "American Trimmers Barbershop",
+      "recipient": "lomesemm@yahoo.com",
+      "subject": "Made something for American Trimmers",
+      "includes_preview_link": true,
+      "preview_url": "https://www.localboost.site/preview?type=service&vertical=barbershop&name=American%20Trimmers%20Barbershop&color=1e3a5f",
+      "includes_unsubscribe": true,
+      "delivery": "Delivered",
+      "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+    },
+    {
+      "type": "followup",
+      "sent_at": "2026-10-11T21:26:00-04:00",
+      "lead": "Paulanto Bakery",
+      "recipient": "paulantobakery@yahoo.com",
+      "subject": "Made something for Paulanto",
+      "includes_preview_link": true,
+      "preview_url": "https://www.localboost.site/preview?name=Paulanto%20Bakery&color=b45309&cuisine=default",
+      "includes_unsubscribe": true,
+      "delivery": "Delivered",
+      "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+    },
+    {
+      "type": "followup",
+      "sent_at": "2026-10-11T21:26:00-04:00",
+      "lead": "Ray's Auto Bayonne",
+      "recipient": "RAYSAUTOBAYONNE@AOL.COM",
+      "subject": "Made something for Ray's Auto",
+      "includes_preview_link": true,
+      "preview_url": "https://www.localboost.site/preview?type=service&vertical=auto&name=Ray%27s%20Auto%20Bayonne&color=dc2626",
+      "includes_unsubscribe": true,
+      "delivery": "Delivered",
+      "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+    },
+    {
+      "type": "followup",
+      "sent_at": "2026-10-11T21:27:00-04:00",
+      "lead": "Gladys Beauty Salon",
+      "recipient": "gladysbeautysalon1210@gmail.com",
+      "subject": "Made something for Gladys",
+      "includes_preview_link": true,
+      "preview_url": "https://www.localboost.site/preview?type=service&vertical=salon&name=Gladys%20Beauty%20Salon&color=be185d",
+      "includes_unsubscribe": true,
+      "delivery": "Delivered",
+      "approved_by_user": "2026-10-11 via 'Go ahead you own this process'"
+    }
+  ]
+}
