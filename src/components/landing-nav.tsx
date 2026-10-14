@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ChiliLogo } from "@/components/chili-logo";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export function LandingNav() {
@@ -25,13 +25,14 @@ export function LandingNav() {
     >
       <div className="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <span
-            className="w-9 h-9 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-900/20"
-            style={{ background: "var(--color-chili)" }}
-          >
-            <ChiliLogo size={20} />
-          </span>
-          <span className="font-bold text-[19px] tracking-tight">LocalBoost</span>
+          <Image
+            src="/logo.webp"
+            alt="LocalBoost"
+            width={160}
+            height={40}
+            className="h-9 w-auto"
+            priority
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-[15px] font-medium text-stone-500">
           <a href="#features" className="hover:text-stone-900 transition-colors">
