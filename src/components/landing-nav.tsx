@@ -26,7 +26,7 @@ export function LandingNav() {
       <div className="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <Image
-            src="/logo-v2.webp"
+            src="/logo-v3.png"
             alt="LocalBoost"
             width={160}
             height={40}
