@@ -18,7 +18,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "LocalBoost — Your restaurant's online presence, on autopilot",
+  title: "LocalBoost — Your business's online presence, on autopilot",
   description: "Review inbox, Google Business autopilot, competitor watch, and visibility score for local businesses.",
 };
 

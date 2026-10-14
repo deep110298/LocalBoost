@@ -53,7 +53,7 @@ export async function POST(req: Request) {
     .select("id")
     .eq("slug", slug)
     .single();
-  if (!business) return NextResponse.json({ error: "Restaurant not found" }, { status: 404 });
+  if (!business) return NextResponse.json({ error: "Business not found" }, { status: 404 });
 
   // Validate items against the live menu and price from the DB.
   const ids = [...new Set(items.map((i) => i.item_id))];

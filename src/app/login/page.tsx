@@ -122,7 +122,7 @@ function LoginForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && sendLink()}
-                placeholder="you@yourrestaurant.com"
+                placeholder="you@yourbusiness.com"
                 autoComplete="email"
                 className="w-full min-h-[52px] px-4 border border-stone-200 rounded-xl bg-white text-[16px] placeholder:text-stone-400 focus:outline-none focus:border-stone-400 mb-3"
               />

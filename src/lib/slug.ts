@@ -6,7 +6,7 @@ export function slugify(name: string): string {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
-    .slice(0, 40) || "restaurant";
+    .slice(0, 40) || "business";
 }
 
 /** Unique slug: base + 4 random chars, e.g. "eggholic-jc-a1b2" */
