@@ -20,6 +20,28 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "LocalBoost — Your business's online presence, on autopilot",
   description: "Review inbox, Google Business autopilot, competitor watch, and visibility score for local businesses.",
+  openGraph: {
+    title: "LocalBoost — Your business's online presence, on autopilot",
+    description: "We build websites, handle reviews & bookings for local businesses. 30-day free trial.",
+    url: "https://www.localboost.site",
+    siteName: "LocalBoost",
+    images: [
+      {
+        url: "https://www.localboost.site/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "LocalBoost",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LocalBoost — Your business's online presence, on autopilot",
+    description: "We build websites, handle reviews & bookings for local businesses. 30-day free trial.",
+    images: ["https://www.localboost.site/logo.webp"],
+  },
 };
 
 export default function RootLayout({
