@@ -113,21 +113,6 @@ export default function LandingPage() {
 
       {/* ============ HERO ============ */}
       <section className="relative max-w-6xl mx-auto px-5 pt-14 md:pt-20 pb-10 text-center">
-        <Reveal>
-          <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[14px] font-medium mb-7"
-            style={{
-              background: "rgba(217,45,32,0.08)",
-              color: "var(--color-chili)",
-            }}
-          >
-            <span
-              className="w-2 h-2 rounded-full animate-pulse-dot"
-              style={{ background: "var(--color-chili)" }}
-            />
-            30 days free — no credit card
-          </div>
-        </Reveal>
         <Reveal delay={80}>
           <h1 className="font-display font-semibold tracking-[-0.02em] leading-[1.02] text-[44px] md:text-[84px] mb-6">
             Your business&apos;s
