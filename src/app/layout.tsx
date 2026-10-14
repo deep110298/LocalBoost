@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "LocalBoost",
     images: [
       {
-        url: "https://www.localboost.site/logo.webp",
+        url: "https://www.localboost.site/logo-v2.webp",
         width: 1200,
         height: 630,
         alt: "LocalBoost",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LocalBoost — Your business's online presence, on autopilot",
     description: "We build websites, handle reviews & bookings for local businesses. 30-day free trial.",
-    images: ["https://www.localboost.site/logo.webp"],
+    images: ["https://www.localboost.site/logo-v2.webp"],
   },
 };
 
