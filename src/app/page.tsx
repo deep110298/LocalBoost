@@ -359,8 +359,8 @@ export default function LandingPage() {
             <div className="card overflow-hidden h-full flex flex-col">
               <div className="relative h-44 md:h-48">
                 <Image
-                  src="/images/spa-treatment.jpg"
-                  alt="A spa treatment room"
+                  src="/images/restaurant-interior.jpg"
+                  alt="A local restaurant interior"
                   fill
                   className="object-cover"
                 />
@@ -382,8 +382,8 @@ export default function LandingPage() {
             <div className="card overflow-hidden h-full flex flex-col">
               <div className="relative h-44 md:h-48">
                 <Image
-                  src="/images/barbershop.jpg"
-                  alt="A barbershop"
+                  src="/images/dish-closeup.jpg"
+                  alt="A signature dish"
                   fill
                   className="object-cover"
                 />
